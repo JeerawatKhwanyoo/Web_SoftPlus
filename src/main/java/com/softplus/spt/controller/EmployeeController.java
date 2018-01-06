@@ -18,7 +18,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 @RequestMapping("/employee")
-
 public class EmployeeController {
    @Autowired
     EmployeeService employeeService;
@@ -50,6 +49,7 @@ public class EmployeeController {
        try{
            return new ResponseEntity<String>(new JSONSerializer()
                    .exclude("*.class")
+                   .prettyPrint(true)
                    .deepSerialize(employeeService.findAll()),headers, HttpStatus.OK);
        }catch(Exception e){
             e.printStackTrace();
