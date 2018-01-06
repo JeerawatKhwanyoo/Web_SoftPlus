@@ -9,11 +9,18 @@ import java.util.List;
 
 @Service
 public class EmployeeServicelmp implements EmployeeService{
+
     @Autowired
     EmployeeRepository employeeRepository;
+
     @Override
-    public List<Employee> findByouCode(String ouCode) {
-        return EmployeeRepository.;
+    public List<Employee> findId(Long id) {
+        return employeeRepository.findAll();
+    }
+
+    @Override
+    public List<Employee> findAll() {
+        return employeeRepository.findAll();
     }
 }
 
