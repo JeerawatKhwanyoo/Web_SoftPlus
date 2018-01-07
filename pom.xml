@@ -6,7 +6,7 @@
 	<groupId>com.softplus</groupId>
 	<artifactId>spt</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<name>spt</name>
 	<description>Demo project for Spring Boot</description>
@@ -30,15 +30,7 @@
 		<spring-framework.version>4.3.0.RELEASE</spring-framework.version>
 		<springsecurity.version>4.0.4.RELEASE</springsecurity.version>
 
-
-
-
-
 	</properties>
-
-
-
-
 
 	<dependencies>
 
@@ -193,10 +185,11 @@
 			<scope>provided</scope>
 		</dependency>
 
-
-
-
-
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+			<version>1.2.2</version>
+		</dependency>
 
 	</dependencies>
 

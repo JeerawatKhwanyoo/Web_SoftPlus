@@ -1,6 +1,5 @@
 package com.softplus.spt.spring;
 
-import com.softplus.spt.constant.ApplicationConstant;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.*;
@@ -9,21 +8,23 @@ import org.springframework.web.client.RestTemplate;
 import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.context.request.RequestContextListener;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
+import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.ViewResolver;
-import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.web.servlet.config.annotation.*;
+import org.springframework.web.servlet.i18n.CookieLocaleResolver;
 import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
 import org.springframework.web.servlet.view.UrlBasedViewResolver;
 import org.springframework.web.servlet.view.tiles3.TilesConfigurer;
 import org.springframework.web.servlet.view.tiles3.TilesView;
+
+import java.util.Locale;
 
 @EnableAutoConfiguration
 @Configuration
 @EnableWebMvc
 @EnableAspectJAutoProxy
 @ComponentScan(basePackages = "com.softplus.spt")
-public class ApplcationConfiguration extends WebMvcConfigurerAdapter{
+public class ApplicationConfiguration extends WebMvcConfigurerAdapter{
 
     @Bean
     public ViewResolver viewResolver() {
@@ -33,11 +34,17 @@ public class ApplcationConfiguration extends WebMvcConfigurerAdapter{
         return viewResolver;
     }
 
+    @Bean
+    public CommonsMultipartResolver multipartResolver() {
+        CommonsMultipartResolver resolver=new CommonsMultipartResolver();
+        resolver.setDefaultEncoding("utf-8");
+        return resolver;
+    }
+
 //    @Override
 //    public void addResourceHandlers(ResourceHandlerRegistry registry) {
 //        VersionResourceResolver versionResourceResolver = new VersionResourceResolver()
 //                .addVersionStrategy(new FixedVersionStrategy(ApplicationConstant.APPLICATION_VERSION_CURRENT), "/**");
-//
 //
 //        if (!registry.hasMappingForPattern("/resources/**")) {
 //            registry.addResourceHandler("/resources/**")
@@ -49,26 +56,28 @@ public class ApplcationConfiguration extends WebMvcConfigurerAdapter{
 //        }
 //    }
 
+    @Override
+    public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
+        configurer.enable();
+    }
+
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        registry.addInterceptor(localeChangeInterceptor());
+    }
+
     @Bean
     public LocaleChangeInterceptor localeChangeInterceptor() {
         LocaleChangeInterceptor localeChangeInterceptor = new LocaleChangeInterceptor();
         localeChangeInterceptor.setParamName("lang");
-
         return localeChangeInterceptor;
     }
 
-//    @Bean
-//    public CommonsMultipartResolver multipartResolver() {
-//        CommonsMultipartResolver resolver=new CommonsMultipartResolver();
-//        resolver.setDefaultEncoding("utf-8");
-//        return resolver;
-//    }
-
-
-
-    @Override
-    public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
-        configurer.enable();
+    @Bean
+    public LocaleResolver localeResolver(){
+        CookieLocaleResolver resolver=new CookieLocaleResolver();
+        resolver.setDefaultLocale(new Locale("en"));
+        return resolver;
     }
 
     @Bean
@@ -82,11 +91,11 @@ public class ApplcationConfiguration extends WebMvcConfigurerAdapter{
         return messageSource;
     }
 
-//    @Bean
-//    public CommonsMultipartResolver commonsMultipartResolver() {
-//        CommonsMultipartResolver commonsMultipartResolver = new CommonsMultipartResolver();
-//        return commonsMultipartResolver;
-//    }
+    @Bean
+    public CommonsMultipartResolver commonsMultipartResolver() {
+        CommonsMultipartResolver commonsMultipartResolver = new CommonsMultipartResolver();
+        return commonsMultipartResolver;
+    }
 
     @Bean
     public TilesConfigurer tilesConfigurer(){

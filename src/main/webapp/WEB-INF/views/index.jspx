@@ -3,12 +3,16 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8" />
     <jsp:output omit-xml-declaration="yes" />
 
-    <!-- Load JS  -->
-    <spring:url value="${urls.getForLookupPath('/resources/script/app/index.js')}"        var="jquery_js" />
-    <script type="text/javascript"  src="${jquery_js}" ><!-- required for FF3 and Opera --></script>
+    <c:set scope="request" var="label_hello_world"><spring:message code="label_hello_world"/></c:set>
+
+     <!--Load JS  -->
+    <!--<spring:url value="${urls.getForLookupPath('/resources/scripts/app/index.js')}"        var="index_js" />-->
+    <!--<script type="text/javascript"  src="${index_js}" >&lt;!&ndash; required for FF3 and Opera &ndash;&gt;</script>-->
+    <spring:url value="/resources/scripts/app/index.js" var="index_js" />
+    <script src="${index_js}" type="text/javascript"><!-- required for FF3 and Opera --></script>
 
     <div id="body-container">
-        <h1>Hello</h1>
+        <h1>${label_hello_world}</h1>
     </div>
 
 </div>
