@@ -13,8 +13,13 @@ import java.util.List;
 
 @Repository
 public interface EmployeeRepository extends JpaSpecificationExecutor<Employee>, JpaRepository<Employee,Long>,
-        PagingAndSortingRepository<Employee,Long>, CrudRepository<Employee,Long> {
-    
+
+    PagingAndSortingRepository<Employee,Long>, CrudRepository<Employee,Long> {
+
+    List<Employee> findByDescriptionContainsAndFirstName(@Param("description") String description,
+                                                         @Param("firstName") String firstName
+    );
+
 }
 
 

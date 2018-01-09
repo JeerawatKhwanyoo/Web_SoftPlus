@@ -33,6 +33,7 @@ public class EmployeeController {
        try{
            return new ResponseEntity<String>(new JSONSerializer()
                    .exclude("*.class")
+                   .prettyPrint(true)
                    .deepSerialize(employeeService.findId(id)), headers, HttpStatus.OK);
        }catch(Exception e){
         e.printStackTrace();

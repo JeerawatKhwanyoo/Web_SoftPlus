@@ -8,7 +8,7 @@
      <!--Load JS  -->
     <!--<spring:url value="${urls.getForLookupPath('/resources/scripts/app/index.js')}"        var="index_js" />-->
     <!--<script type="text/javascript"  src="${index_js}" >&lt;!&ndash; required for FF3 and Opera &ndash;&gt;</script>-->
-    <spring:url value="/resources/scripts/app/index.js" var="index_js" />
+    <spring:url value="/scripts/app/index.js" var="index_js" />
     <script src="${index_js}" type="text/javascript"><!-- required for FF3 and Opera --></script>
 
     <div id="body-container">

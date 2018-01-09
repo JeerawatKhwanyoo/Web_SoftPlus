@@ -14,8 +14,8 @@ public class EmployeeServicelmp implements EmployeeService{
     EmployeeRepository employeeRepository;
 
     @Override
-    public List<Employee> findId(Long id) {
-        return employeeRepository.findAll();
+    public Employee findId(Long id) {
+        return employeeRepository.findOne(id);
     }
 
     @Override
