@@ -66,6 +66,8 @@ public class ApplicationConfiguration extends WebMvcConfigurerAdapter{
         registry.addInterceptor(localeChangeInterceptor());
     }
 
+
+
     @Bean
     public LocaleChangeInterceptor localeChangeInterceptor() {
         LocaleChangeInterceptor localeChangeInterceptor = new LocaleChangeInterceptor();
