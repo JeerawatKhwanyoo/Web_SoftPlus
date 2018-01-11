@@ -21,7 +21,7 @@ html {
     width:100%;
     position:relative;
     /*background: url(../img/dev.jpg) no-repeat top center;*/
-    background: rgba(148, 255, 44, 0.15);
+    /*background: rgba(148, 255, 44, 0.15);*/
 
     background-size: cover;
     height: auto;
@@ -87,7 +87,10 @@ html {
     right:0;
 
 }
+.well{
+    background: #beffe1;
 
+<<<<<<< HEAD
 /*============================*/
 /*header*/
 
@@ -105,3 +108,28 @@ html {
 
 
 /*==========================*!*/
+/*=======*/
+/*}*/
+
+/* ===========================
+--- Footer
+============================ */
+
+footer {
+    text-align: center;
+    padding: 5% 0 ;
+
+}
+
+footer p {
+    color: #f8f8f8;
+}
+
+.credits, .credits a {
+    color: #fff;
+}
+
+footer {
+    background-color: #ff9900;
+}
+>>>>>>> editcontact

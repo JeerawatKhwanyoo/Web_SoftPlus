@@ -22,20 +22,34 @@
         <!--</div>-->
 
         <div class="container">
+
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>CONTACT</h2>
+            </div>
+        </div>
+
+
+
             <div class="row">
                 <div class="col-sm-12">
                     <div class = "col-sm-5">
+
                         <div class="map-wrapper">
                             <div class="map-canvas" id="map-canvas">Loading map...</div>
                         </div>
+
                     </div>
 
                         <div class="col-sm-offset-1 col-sm-6">
+                            <div class="well">
                             <h5><b>Address:</b> 51/597  Soft Square Building, Mueng Ake Village</h5><br/>
                             <h5> Moo 7, Lakhok , Muengpathumthani, Pathumthani 12000</h5><br/>
                             <h5><b>Phone:</b> Phone: 0-2997-2000</h5><br/>
                             <h5><b>Fax:</b> Fax: +66 2997 2001</h5>
+                            </div>
                         </div>
+
                 </div>
             </div>
             <div class="row">
@@ -49,18 +63,51 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-5">
-                    <input class="form-control" type="text" placeholder="Phon Number"/>
+                <div class="col-sm-12">
+                    <div class="col-sm-5">
+                        <input class="form-control" type="text" placeholder="Phone Number"/>
+                    </div>
                 </div>
             </div>
 
             <!--<input class="form-control" type="text" placeholder="Phon Number"/>-->
+
+
+
+
+
+
         </div>
 
 
 
     </section>
     <!-- /Section: contact -->
+
+
+
+
+
+     <footer>
+         <div class="container">
+             <div class="row">
+
+                 <div class="col-sm-12 col-sm-12">
+
+                     <p>SOFT PLUS TECHNOLOGY</p>
+
+                 </div>
+
+             </div>
+         </div>
+     </footer>
+
+
+
+
+
+
+
 
 
 
