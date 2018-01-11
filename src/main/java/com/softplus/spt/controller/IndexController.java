@@ -23,4 +23,14 @@ public class IndexController {
         return new ResponseEntity<>("TEST PAGE",headers, HttpStatus.OK);
     }
 
+    @RequestMapping(value = "/home",produces = "text/html", method = RequestMethod.GET)
+    public String home(){
+        return "home";
+    }
+
+    @RequestMapping(value = "/contact",produces = "text/html", method = RequestMethod.GET)
+    public String contact(){
+        return "contact";
+    }
+
 }

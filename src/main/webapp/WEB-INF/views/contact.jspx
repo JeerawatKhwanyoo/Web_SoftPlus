@@ -1,0 +1,84 @@
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" xmlns="http://www.w3.org/1999/xhtml" version="2.0">
+    <html>
+    <head><title>cotact</title></head>
+    <body>
+
+     <!--Section: contact-->
+    <section id="contact" class="home-section text-center">
+        <!--<div class="heading-contact">-->
+            <!--<div class="container">-->
+                <!--<div class="row">-->
+                    <!--<div class="col-sm-8 col-sm-offset-2">-->
+                        <!--<div class="wow bounceInDown" data-wow-delay="0.4s">-->
+                            <!--<div class="section-heading">-->
+                                <!--<h2>Get in touch</h2>-->
+                                <!--<i class="fa fa-2x fa-angle-down"></i>-->
+
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class = "col-sm-5">
+                        <div class="map-wrapper">
+                            <div class="map-canvas" id="map-canvas">Loading map...</div>
+                        </div>
+                    </div>
+
+                        <div class="col-sm-offset-1 col-sm-6">
+                            <h5><b>Address:</b> 51/597  Soft Square Building, Mueng Ake Village</h5><br/>
+                            <h5> Moo 7, Lakhok , Muengpathumthani, Pathumthani 12000</h5><br/>
+                            <h5><b>Phone:</b> Phone: 0-2997-2000</h5><br/>
+                            <h5><b>Fax:</b> Fax: +66 2997 2001</h5>
+                        </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="col-sm-5">
+                        <input class="form-control" type="text"  placeholder="Full Name"/>
+                    </div>
+                    <div class="col-sm-offset-2 col-sm-5">
+                        <input class="form-control" type="text"  placeholder="Email Address"/>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-5">
+                    <input class="form-control" type="text" placeholder="Phon Number"/>
+                </div>
+            </div>
+
+            <!--<input class="form-control" type="text" placeholder="Phon Number"/>-->
+        </div>
+
+
+
+    </section>
+    <!-- /Section: contact -->
+
+
+
+
+
+
+
+     <script async="" defer="" type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnT4zYILpXT9HGQ8Lub1JpbypllEr4T5Y&amp;callback=initializeMap">
+         // initializeMap();
+     </script>
+
+
+
+
+
+
+
+
+    </body>
+    </html>
+</jsp:root>
