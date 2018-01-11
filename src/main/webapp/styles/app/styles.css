@@ -13,15 +13,6 @@ html {
     height: 100%;
 }
 
-/*--- General sections*/
-/*============================ *!*/
-
-
-/* ===========================
---- Contact
-============================ */
-
-
 
 .contact-section {
 
@@ -91,12 +82,6 @@ html {
 }
 
 
-
-
-/*<<<<<<< HEAD*/
-/*============================*/
-/*header*/
-
 .navbar-nav li a:hover, .navbar-nav li.active a {
     color: #050402 !important;
     background-color: #eef8e9 !important;
@@ -109,13 +94,6 @@ html {
 
 }
 
-
-/*==========================*!*/
-
-
-/* ===========================
---- Footer
-============================ */
 
 footer {
     text-align: center;
@@ -134,4 +112,4 @@ footer p {
 footer {
     background-color: #050402;
 }
-/*>>>>>>> editcontact*/
+
