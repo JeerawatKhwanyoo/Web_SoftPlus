@@ -9,6 +9,14 @@
     <put-attribute name="body" value="/WEB-INF/views/index.jspx" />
   </definition>
 
+  <definition name="home" extends="default">
+    <put-attribute name="body" value="/WEB-INF/views/home.jspx" />
+  </definition>
+
+
+  <definition name="contact" extends="default">
+    <put-attribute name="body" value="/WEB-INF/views/contact.jspx" />
+  </definition>
 
 
 </tiles-definitions>
