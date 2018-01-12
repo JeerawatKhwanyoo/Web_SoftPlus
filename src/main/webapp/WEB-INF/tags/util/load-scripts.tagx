@@ -52,6 +52,11 @@
     <script src="${header}" type="text/javascript"><!-- required for FF3 and Opera --></script>
 
 
+    <spring:url value="/scripts/app/ourCompany.js" var="ourCompany" />
+    <script src="${ourCompany}" type="text/javascript"><!-- required for FF3 and Opera --></script>
+
+    <spring:url value="/scripts/app/coOperation.js" var="coOperation" />
+    <script src="${coOperation}" type="text/javascript"><!-- required for FF3 and Opera --></script>
 
 
     <spring:url value="/styles/app/styles.css" var="styles" />

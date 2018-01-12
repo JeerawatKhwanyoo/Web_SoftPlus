@@ -13,15 +13,145 @@
                 padding-left: 0 !important;
                 padding-right: 0 !important;
             }
+
+
+
+            #slideshow2 {
+
+                margin: 10px auto;
+                position: relative;
+                width: 100%;
+                height: 350px;
+                padding: 10px;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+            }
+
+            #slideshow2 > div {
+                position: absolute;
+                top: 15px;
+                left: 15px;
+                right: 15px;
+                bottom: 15px;
+
+            }
+
+            footer {
+                text-align: center;
+                padding: 5% 0 ;
+
+            }
+
+            footer p {
+                color: #f8f8f8;
+            }
+
+            .credits, .credits a {
+                color: #fff;
+            }
+
+            footer {
+                background-color: #050402;
+            }
+
+
+
+
+
+
+
         </style>
     </head>
 
 
 
     <body>
-    <section id="coOperation" class="contact-section text-center">
-        <h1>A</h1>
+
+
+    <!-- Section: coOperation -->
+    <section id="coOperation" class="home-section text-center">
+
+        <div class="heading-about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="wow bounceInDown" data-wow-delay="0.4s">
+                            <div class="section-heading">
+                                <h2>Co-Operation  Internship Program</h2>
+                                <!--<i class="fa fa-2x fa-angle-down"></i>-->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2 col-sm-offset-5">
+                    <hr class="marginbot-50"/>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="col-sm-6">
+                        <div class="well">
+                            <h4>Overview :</h4><br/>
+                            <h5>Cooperative Education (Coop-Ed.) is a work integrated education program collaborated between Soft Plus Group and educational institutes that allows students to apply their knowledge in the classroom to the field work, and vice versa.</h5><br/>
+                            <h5>The program will give students the opportunity to gain practical training in 1 semester during 3rd academic year.</h5><br/>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-offset-1 col-sm-5">
+                        <div id="slideshow2">
+                            <div>
+                                <img src="/SPT/img/softcoop2.JPG" style="width: 100%;height: 100%"/>
+                            </div>
+                            <div>
+                                <img src="/SPT/img/softcoop1.jpg" style="width: 100%;height: 100%"/>
+                            </div>
+                            <div>
+                                <img src="/SPT/img/softcoop3.jpg" style="width: 100%;height: 100%"/>
+                            </div>
+                            <div>
+                                <img src="/SPT/img/softcoop4.jpg" style="width: 100%;height: 100%"/>
+                            </div>
+                            <div>
+                                <img src="/SPT/img/softcoop5.png" style="width: 100%;height: 100%"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
     </section>
+    <!-- /Section: coOperation -->
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-12 col-sm-12">
+
+                    <p>SOFT PLUS TECHNOLOGY</p>
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+
 
     </body>
 
