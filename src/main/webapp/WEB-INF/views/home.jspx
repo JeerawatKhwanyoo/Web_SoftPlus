@@ -17,8 +17,11 @@
     </head>
 
 
+
     <body>
-    <div class="container-fluid">
+    <section id="home" class="contact-section text-center">
+
+    <div class="container-fluid" id="myPage">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
@@ -56,9 +59,10 @@
     </div>
 
 
-
+    </section>
 
 </body>
+
 
 
 

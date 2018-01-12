@@ -33,4 +33,18 @@ public class IndexController {
         return "contact";
     }
 
+    @RequestMapping(value = "/peopleDeveloper", produces = "text/html", method = RequestMethod.GET)
+    public String peopleDeveloper(){
+        return "peopleDeveloper";
+    }
+
+    @RequestMapping(value = "/ourcompany", produces = "text/html", method = RequestMethod.GET)
+    public String ourCompany(){
+        return "ourcompany";
+    }
+
+    @RequestMapping(value = "/coOperation", produces = "text/html", method = RequestMethod.GET)
+    public String coOperation(){
+        return "coOperation";
+    }
 }

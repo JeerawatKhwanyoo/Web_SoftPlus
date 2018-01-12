@@ -18,5 +18,21 @@
     <put-attribute name="body" value="/WEB-INF/views/contact.jspx" />
   </definition>
 
+  <definition name="peopleDeveloper" extends="default">
+    <put-attribute name="body" value="/WEB-INF/views/peopleDeveloper.jspx" />
+  </definition>
+
+  <definition name="ourcompany" extends="default">
+    <put-attribute name="body" value="/WEB-INF/views/ourCompanny.jspx" />
+  </definition>
+
+  <definition name="coOperation" extends="default">
+    <put-attribute name="body" value="/WEB-INF/views/coOperation.jspx" />
+  </definition>
+
+
+
+
+
 
 </tiles-definitions>
