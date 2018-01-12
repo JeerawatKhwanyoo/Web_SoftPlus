@@ -16,18 +16,25 @@ html {
 /*--- General sections*/
 /*============================ *!*/
 
-.home-section {
+
+/* ===========================
+--- Contact
+============================ */
+
+
+
+.contact-section {
 
     width:100%;
     position:relative;
-    /*background: url(../img/dev.jpg) no-repeat top center;*/
-    /*background: rgba(148, 255, 44, 0.15);*/
+    /*background: url(/SPT/img/location-iconNEW.png) no-repeat top center;*/
+    background: rgba(255, 192, 0, 0.91);
 
     background-size: cover;
+    /*background-size: 75%;*/
     height: auto;
-
-    padding-top: 110px;
-    padding-bottom: 110px;
+    padding-top: 0%;
+    padding-bottom: 10%;
     display:block;
     position:relative;
     z-index:120;
@@ -49,8 +56,6 @@ html {
 }
 
 
-
-
 .bg-dark {
     background: #575757;
 }
@@ -61,13 +66,6 @@ html {
     color: #fff;
 }
 
-
-
-
-
-/* ===========================
---- Contact
-============================ */
 
 .map-wrapper {
     position:relative;
@@ -88,9 +86,14 @@ html {
 
 }
 .well{
-    background: #beffe1;
+    background: #f8ff7f;
 
-<<<<<<< HEAD
+}
+
+
+
+
+/*<<<<<<< HEAD*/
 /*============================*/
 /*header*/
 
@@ -108,8 +111,7 @@ html {
 
 
 /*==========================*!*/
-/*=======*/
-/*}*/
+
 
 /* ===========================
 --- Footer
@@ -130,6 +132,6 @@ footer p {
 }
 
 footer {
-    background-color: #ff9900;
+    background-color: #050402;
 }
->>>>>>> editcontact
+/*>>>>>>> editcontact*/
