@@ -17,57 +17,6 @@ html {
 
 
 
-
-.section-heading h2 {
-    font-size: 40px;
-}
-.section-heading i {
-    margin-bottom: 20px;
-}
-
-
-/* --- section bg var --- */
-
-.bg-white {
-    background: #fff;
-}
-
-
-.bg-dark {
-    background: #575757;
-}
-
-/* --- section color var --- */
-
-.text-light {
-    color: #fff;
-}
-
-
-.map-wrapper {
-    position:relative;
-    height:500px;
-
-
-}
-.map-canvas {
-    position:relative;
-    margin-bottom:20%;
-    width: 100%;
-    height:80%;
-    color: #29383F;
-    position:relative;
-    left:0%;
-    top:0;
-    right:0;
-
-}
-.well{
-    background: #f8ff7f;
-
-}
-
-
 .navbar-nav li a:hover, .navbar-nav li.active a {
     color: #050402 !important;
     background-color: #eef8e9 !important;

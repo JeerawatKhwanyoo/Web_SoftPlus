@@ -23,7 +23,7 @@
   </definition>
 
   <definition name="ourcompany" extends="default">
-    <put-attribute name="body" value="/WEB-INF/views/ourCompanny.jspx" />
+    <put-attribute name="body" value="/WEB-INF/views/ourCompany.jspx" />
   </definition>
 
   <definition name="coOperation" extends="default">

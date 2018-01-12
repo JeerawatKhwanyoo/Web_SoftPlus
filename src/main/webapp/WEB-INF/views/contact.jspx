@@ -7,7 +7,146 @@
 <c:set scope="request" var="label_hello_world"><spring:message code="label_hello_world"/></c:set>
 
 
-    <head><title>cotact</title></head>
+    <head><title>cotact</title>
+
+
+
+
+        <style>
+            .container-fluid{
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+
+            .contact-section {
+
+                width:100%;
+                position:relative;
+                /*background: url(/SPT/img/location-iconNEW.png) no-repeat top center;*/
+                /*background: rgba(255, 192, 0, 0.91);*/
+
+                background-size: cover;
+                /*background-size: 75%;*/
+                height: auto;
+                padding-top: 0%;
+                padding-bottom: 10%;
+                display:block;
+                position:relative;
+                z-index:120;
+            }
+
+
+            .section-heading h2 {
+                font-size: 40px;
+            }
+            .section-heading i {
+                margin-bottom: 20px;
+            }
+
+
+            /* --- section bg var --- */
+
+            .bg-white {
+                background: #fff;
+            }
+
+
+            .bg-dark {
+                background: #575757;
+            }
+
+            /* --- section color var --- */
+
+            .text-light {
+                color: #fff;
+            }
+
+
+            .map-wrapper {
+                position:relative;
+                height:500px;
+
+
+            }
+            .map-canvas {
+                position:relative;
+                margin-bottom:20%;
+                width: 100%;
+                height:80%;
+                color: #29383F;
+                position:relative;
+                left:0%;
+                top:0;
+                right:0;
+
+            }
+            /*.well{*/
+                /*!*background: #f8ff7f;*!*/
+
+            /*}*/
+
+
+            .navbar-nav li a:hover, .navbar-nav li.active a {
+                color: #050402 !important;
+                background-color: #eef8e9 !important;
+            }
+
+
+            .navbar li a, .navbar .navbar-brand {
+
+                color: #eef8e9 !important;
+
+            }
+
+            .carousel-control.right, .carousel-control.left {
+                background-image: none;
+                color: #f4511e;
+            }
+
+            footer {
+                text-align: center;
+                padding: 5% 0 ;
+
+            }
+
+            footer p {
+                color: #f8f8f8;
+            }
+
+            .credits, .credits a {
+                color: #fff;
+            }
+
+            footer {
+                background-color: #050402;
+            }
+
+
+         /*.address{*/
+             /*background: url(/SPT/img/location-iconNEW.png) no-repeat top center;*/
+            /**/
+         /*}*/
+
+
+
+
+
+
+
+
+        </style>
+
+
+
+
+
+
+
+
+
+
+
+    </head>
     <body>
 
      <!--Section: contact-->
@@ -22,6 +161,17 @@
                 </div>
             </div>
 
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2 col-sm-offset-5">
+                        <hr class="marginbot-50"/>
+                    </div>
+                </div>
+            </div>
+
+
             <div class="row">
                 <div class="col-sm-12">
                     <div class = "col-sm-5">
@@ -30,50 +180,43 @@
                         </div>
                     </div>
 
-                        <div class="col-sm-offset-1 col-sm-6">
-                            <div class="well">
-                                <!--<body background="/SPT/img/location-iconNEW.png"></body>-->
-                                <!--<img src="/SPT/img/location-iconNEW.png" style = "width: 50%; height: 50%"/>-->
-                                <span class="glyphicon glyphicon-map-marker"></span>
-                            <!--<h5><b>Address:</b> 51/597  Soft Square Building, Mueng Ake Village</h5><br/>-->
-                            <h5> Moo 7, Lakhok , Muengpathumthani, Pathumthani 12000</h5><br/>
-                            <h5><b>Phone:</b> Phone: 0-2997-2000</h5><br/>
-                            <h5><b>Fax:</b> Fax: +66 2997 2001</h5>
-                            </div>
+                        <div class="col-sm-offset-1 col-sm-6" id="address">
+                            <!--<div class="well">-->
+                         <div class="address">
+
+                            <br/>
+                                <span class="glyphicon glyphicon-map-marker">
+                                    <b> Address:</b> 51/597  Soft Square Building, Mueng Ake Village
+                                    <br/>
+                                   <br/>
+                                    Moo 7, Lakhok , Muengpathumthani, Pathumthani 12000
+                                </span>
+                            <br/>
+                            <br/>
+                            <span class="glyphicon glyphicon-phone-alt">
+                                <b> Phone: </b> Phone: 0-2997-2000
+                           </span>
+                            <br/>
+                            <br/>
+                            <span class="glyphicon glyphicon-envelope">
+                                <b> Email: </b>contact@ssoftplus.co.th
+                           </span>
+
+                         </div>
+
+                            <br/>
+
+                            <img src="/SPT/img/qrcode.jpg" style = "width: 40%;height: 40%;"/>
+
+
+                            <!--</div>-->
                         </div>
 
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="col-sm-5">
-                        <input class="form-control" type="text"  placeholder="Full Name"/>
-                    </div>
-                    <div class="col-sm-offset-1 col-sm-5">
-                        <input class="form-control" type="text"  placeholder="Email Address"/>
-                    </div>
-                </div>
-            </div>
-            <br/>
-            <!--<div class="row">-->
-                <!--<div class="col-sm-12">-->
-                    <!--<div class="col-sm-5">-->
-                        <!--<input class="form-control" type="text" placeholder="Phone Number"/>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
 
 
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="col-sm-5">
-                        <input class="form-control" type="textarea" style="margin: 0px 0px 10px; width: 100%; height: 174px;"
-                               placeholder="* Comments..."/>
 
-
-                    </div>
-                </div>
-            </div>
 
 
         </div>
@@ -88,9 +231,7 @@
              <div class="row">
 
                  <div class="col-sm-12 col-sm-12">
-
                      <p>SOFT PLUS TECHNOLOGY</p>
-
                  </div>
 
              </div>

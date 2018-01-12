@@ -1,0 +1,163 @@
+<html>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:component="urn:jsptagdir:/WEB-INF/tags/component" xmlns:util="urn:jsptagdir:/WEB-INF/tags/util"
+     xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8" />
+    <jsp:output omit-xml-declaration="yes" />
+
+    <c:set scope="request" var="label_hello_world"><spring:message code="label_hello_world"/></c:set>
+
+    <head>
+
+        <style>
+            .container-fluid{
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+
+            #slideshow {
+                margin: 10px auto;
+                position: relative;
+                width: 100%;
+                height: 350px;
+                padding: 10px;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+            }
+
+            #slideshow > div {
+                position: absolute;
+                top: 15px;
+                left: 15px;
+                right: 15px;
+                bottom: 15px;
+            }
+
+.well{
+    background: #eef8e9;
+}
+
+
+
+
+
+            footer {
+                text-align: center;
+                padding: 5% 0 ;
+
+            }
+
+            footer p {
+                color: #f8f8f8;
+            }
+
+            .credits, .credits a {
+                color: #fff;
+            }
+
+            footer {
+                background-color: #050402;
+            }
+
+
+
+
+
+
+
+
+
+        </style>
+
+
+
+
+
+
+
+    </head>
+
+
+
+    <body>
+
+                <!-- Section: Our -->
+                <section id="ourCompany" class="Our-section text-center">
+                    <div class="heading-about">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-8 col-sm-offset-2">
+                                            <h2>Our Company</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-2 col-sm-offset-5">
+                                <hr class="marginbot-50"/>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="col-sm-5">
+                                    <div id="slideshow">
+                                        <div>
+                                            <img src="/SPT/img/s1.png" style = "width: 100%; height: 100%" />
+                                        </div>
+                                        <div>
+                                            <img src="/SPT/img/s2.jpg" style = "width: 100%; height: 100%"/>
+                                        </div>
+                                        <div>
+                                            <img src="/SPT/img/s3.jpg" style = "width: 100%; height: 100%"/>
+                                        </div>
+                                        <div>
+                                            <img src="/SPT/img/s4.jpg" style = "width: 100%; height: 100%"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-5">
+                                    <div class="well">
+                                        <h3>ประวัติ</h3>
+                                            Soft Plus Group has been established since 1988. So far we have approximately 400 IT personnel to provide customers full IT support
+                                                and IT turn-key solution in various kinds of business and industries, including government agents.<br/>
+
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+                <!-- /Section: Our -->
+
+
+                <footer>
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-sm-12 col-sm-12">
+
+                                <p>SOFT PLUS TECHNOLOGY</p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </footer>
+
+
+
+    </body>
+
+
+
+
+</div>
+
+</html>
