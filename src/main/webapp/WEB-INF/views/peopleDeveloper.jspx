@@ -13,6 +13,18 @@
                 padding-left: 0 !important;
                 padding-right: 0 !important;
             }
+
+            p{
+                font-size: 12px;
+            }
+
+            h4{
+                font-size: 17px;
+            }
+
+            .well{
+                background-color: #eef8e9;
+            }
         </style>
     </head>
 
@@ -21,13 +33,187 @@
     <body>
     <section id="peopleDeveloper" class="contact-section text-center">
 
-        <div id="people" class="container-fluid text-center">
-            <div id="band" class="container text-center">
+        <div id="band" class=" well container-fluid ">
 
-            <h1>C</h1>
+                <br/>
+                <div class="row">
+
+                    <div class="  col-sm-offset-4 col-sm-4" >
+
+                        <h4>ภาณุพงศ์	จันทกลาง</h4>
+                        <a href="#demo" data-toggle="collapse">
+                            <img src="/SPT/img/img-people.png" class="img-circle person" alt="Random Name" style="width: 50%; height: 50%;"></img>
+                        </a>
+                        <div >
+                            <p>Project Managet</p>
+                            <p>ชื่อเล่น: แนน</p>
+                            <p>อีเมลล์: panupong_c@softsquaregroup.com</p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            <div class="row">
+                <div class=" col-sm-offset-1 col-sm-2" >
+                    <p class="text-center"></p><br/>
+                    <h4>กำพล	ประพันธ์สันติ</h4>
+                    <a href="#demo1" data-toggle="collapse">
+                        <img src="/SPT/img/img-people2.png" class="img-circle person" alt="Random Name" style="width: 80%; height: 80%;"></img>
+                    </a>
+                    <div>
+                        <p>System Analysis</p>
+                        <p>ชื่อเล่น: โอ๊ต</p>
+                        <p>อีเมลล์: kumphol_p@softsquaregroup.com</p>
+
+                    </div>
+                </div>
+
+                <div class=" col-sm-offset-2 col-sm-2" >
+                    <p class="text-center"></p><br/>
+                    <h4>สุริยา	เอี่ยมเอิบ</h4>
+                    <a href="#demo" data-toggle="collapse">
+                        <img src="/SPT/img/img-people2.png" class="img-circle person" alt="Random Name" style="width: 80%; height: 80%;"></img>
+                    </a>
+                    <div >
+                        <p>System Analysis</p>
+                        <p>ชื่อเล่น: อ๊อด</p>
+                        <p>อีเมลล์: suriya_e@softsquaregroup.com</p>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-offset-2 col-sm-2" >
+                    <p class="text-center"></p><br/>
+                    <h4>กฤษฏิ์ชนภัค	เจนชัยภูมิ</h4>
+                    <a href="#demo" data-toggle="collapse">
+                        <img src="/SPT/img/img-people2.png" class="img-circle person" alt="Random Name" style="width: 80%; height: 80%;"></img>
+                    </a>
+                    <div >
+                        <p>System Analysis</p>
+                        <p>ชื่อเล่น: แบงค์</p>
+                        <p>อีเมลล์: kritchanapak_j@softsquaregroup.com</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="  col-sm-3">
+                    <p class="text-center"></p><br/>
+                    <h4>นายอภิรัฐ นิทัสนะศาสน์</h4>
+                    <a href="#demo" data-toggle="collapse">
+                        <img src="/SPT/img/img-people2.png" class="img-circle person" alt="Random Name" style="width: 50%; height: 50%;"></img>
+                    </a>
+                    <div >
+                        <p>Senior Software Developer</p>
+                        <p>ชื่อเล่น: เอ็กซ์</p>
+                        <p>อีเมลล์: aphirat_n@softsquaregroup.com</p>
+
+                    </div>
+                </div>
+                <div class="  col-sm-3">
+                    <p class="text-center"></p><br/>
+                    <h4>สิริรัตน์	ไชยภูมิ</h4>
+                    <a href="#demo" data-toggle="collapse">
+                        <img src="/SPT/img/img-people2.png" class="img-circle person" alt="Random Name" style="width: 50%; height: 50%;"></img>
+                    </a>
+                    <div >
+                        <p>Software Developer</p>
+                        <p>ชื่อเล่น: มิ้วค์</p>
+                        <p>อีเมลล์: sirirad_c@softsquaregroup.com</p>
+
+                    </div>
+                </div>
+
+
+
+                <div class="  col-sm-3">
+                    <p class="text-center"></p><br/>
+                    <h4>ฤทธิชัย อังควิริยะโชติ</h4>
+                    <a href="#demo" data-toggle="collapse">
+                        <img src="/SPT/img/img-people2.png" class="img-circle person" alt="Random Name" style="width: 50%; height: 50%;"></img>
+                    </a>
+                    <div >
+                        <p>Software Developer</p>
+                        <p>ชื่อเล่น: เอ</p>
+                        <p>อีเมลล์: rittichai_u@softsquaregroup.com</p>
+
+                    </div>
+                </div>
+
+                <div class=" col-sm-3">
+                    <p class="text-center"></p><br/>
+                    <h4>ณัฐชัย ทิพยบุญนนท์</h4>
+                    <a href="#demo" data-toggle="collapse">
+                        <img src="/SPT/img/img-people2.png" class="img-circle person" alt="Random Name" style="width: 50%; height: 50%;"></img>
+                    </a>
+                    <div >
+                        <p>Software Developer</p>
+                        <p>ชื่อเล่น: นิว</p>
+                        <p>อีเมลล์: nuttachai_i@softsquaregroup.com</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="  col-sm-3">
+                    <p class="text-center"></p><br/>
+                    <h4>กรกฏ	มนัสตรง</h4>
+                    <a href="#demo" data-toggle="collapse">
+                        <img src="/SPT/img/img-people2.png" class="img-circle person" alt="Random Name" style="width: 50%; height: 50%;"></img>
+                    </a>
+                    <div >
+                        <p>Software Developer</p>
+                        <p>ชื่อเล่น: เจ</p>
+                        <p>อีเมลล์: korrakote_m@softsquaregroup.com</p>
+                    </div>
+                </div>
+
+                <div class=" col-sm-3">
+                    <p class="text-center"></p><br/>
+                    <h4>สุนิสา	นุ่มประเสริฐ</h4>
+                    <a href="#demo" data-toggle="collapse">
+                        <img src="/SPT/img/img-people2.png" class="img-circle person" alt="Random Name" style="width: 50%; height: 50%;"></img>
+                    </a>
+                    <div >
+                        <p>Software Developer</p>
+                        <p>ชื่อเล่น: ต่าย</p>
+                        <p>อีเมลล์: sunisa_n@softsquaregroup.com</p>
+
+                    </div>
+                </div>
+
+                <div class=" col-sm-3">
+                    <p class="text-center"></p><br/>
+                    <h4>รัฐนันท์	วิบูลย์ปิ่น</h4>
+                    <a href="#demo" data-toggle="collapse">
+                        <img src="/SPT/img/img-people2.png" class="img-circle person" alt="Random Name" style="width: 50%; height: 50%;"></img>
+                    </a>
+                    <div >
+                        <p>Software Developer</p>
+                        <p>ชื่อเล่น: เฟี๊ยว</p>
+                        <p>อีเมลล์: ratthanan_w@softsquaregroup.com</p>
+                    </div>
+                </div>
+
+                <!--<div class=" col-sm-3">-->
+                    <!--<p class="text-center"></p><br/>-->
+                    <!--<h4></h4>-->
+                    <!--<a href="#demo" data-toggle="collapse">-->
+                        <!--<img src="/SPT/img/img-people2.png" class="img-circle person" alt="Random Name" style="width: 50%; height: 50%;"></img>-->
+                    <!--</a>-->
+                    <!--<div >-->
+                        <!--<p>Software Developer</p>-->
+                        <!--<p>ชื่อเล่น: แนน</p>-->
+                        <!--<p>อีเมลล์: </p>-->
+                    <!--</div>-->
+                <!--</div>-->
             </div>
         </div>
-
     </section>
 
     </body>
