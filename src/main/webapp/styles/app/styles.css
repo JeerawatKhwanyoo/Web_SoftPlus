@@ -15,21 +15,19 @@ html {
     height: 100%;
 }
 
-/*--- General sections*/
-/*============================ *!*/
 
-.home-section {
+.contact-section {
 
     width:100%;
     position:relative;
-    /*background: url(../img/dev.jpg) no-repeat top center;*/
-    background: rgba(148, 255, 44, 0.15);
+    /*background: url(/SPT/img/location-iconNEW.png) no-repeat top center;*/
+    background: rgba(255, 192, 0, 0.91);
 
     background-size: cover;
+    /*background-size: 75%;*/
     height: auto;
-
-    padding-top: 110px;
-    padding-bottom: 110px;
+    padding-top: 0%;
+    padding-bottom: 10%;
     display:block;
     position:relative;
     z-index:120;
@@ -51,8 +49,6 @@ html {
 }
 
 
-
-
 .bg-dark {
     background: #575757;
 }
@@ -63,13 +59,6 @@ html {
     color: #fff;
 }
 
-
-
-
-
-/* ===========================
---- Contact
-============================ */
 
 .map-wrapper {
     position:relative;
@@ -89,9 +78,11 @@ html {
     right:0;
 
 }
+.well{
+    background: #f8ff7f;
 
-/*============================*/
-/*header*/
+}
+
 
 .navbar-nav li a:hover, .navbar-nav li.active a {
     color: #050402 !important;
@@ -105,14 +96,25 @@ html {
 
 }
 
-
-/*==========================*!*/
-/*home*/
-
-
-
 .carousel-control.right, .carousel-control.left {
     background-image: none;
     color: #f4511e;
 }
-/*=============*/
+
+footer {
+    text-align: center;
+    padding: 5% 0 ;
+
+}
+
+footer p {
+    color: #f8f8f8;
+}
+
+.credits, .credits a {
+    color: #fff;
+}
+
+footer {
+    background-color: #050402;
+}

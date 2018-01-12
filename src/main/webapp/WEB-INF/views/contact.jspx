@@ -1,27 +1,27 @@
-<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" xmlns="http://www.w3.org/1999/xhtml" version="2.0">
-    <html>
+<html>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:component="urn:jsptagdir:/WEB-INF/tags/component" xmlns:util="urn:jsptagdir:/WEB-INF/tags/util"
+     xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+<jsp:directive.page contentType="text/html;charset=UTF-8" />
+<jsp:output omit-xml-declaration="yes" />
+
+<c:set scope="request" var="label_hello_world"><spring:message code="label_hello_world"/></c:set>
+
+
     <head><title>cotact</title></head>
     <body>
 
      <!--Section: contact-->
-    <section id="contact" class="home-section text-center">
-        <!--<div class="heading-contact">-->
-            <!--<div class="container">-->
-                <!--<div class="row">-->
-                    <!--<div class="col-sm-8 col-sm-offset-2">-->
-                        <!--<div class="wow bounceInDown" data-wow-delay="0.4s">-->
-                            <!--<div class="section-heading">-->
-                                <!--<h2>Get in touch</h2>-->
-                                <!--<i class="fa fa-2x fa-angle-down"></i>-->
-
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
+    <section id="contact" class="contact-section text-center">
 
         <div class="container">
+
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>CONTACT</h1>
+                </div>
+            </div>
+
             <div class="row">
                 <div class="col-sm-12">
                     <div class = "col-sm-5">
@@ -31,11 +31,17 @@
                     </div>
 
                         <div class="col-sm-offset-1 col-sm-6">
-                            <h5><b>Address:</b> 51/597  Soft Square Building, Mueng Ake Village</h5><br/>
+                            <div class="well">
+                                <!--<body background="/SPT/img/location-iconNEW.png"></body>-->
+                                <!--<img src="/SPT/img/location-iconNEW.png" style = "width: 50%; height: 50%"/>-->
+                                <span class="glyphicon glyphicon-map-marker"></span>
+                            <!--<h5><b>Address:</b> 51/597  Soft Square Building, Mueng Ake Village</h5><br/>-->
                             <h5> Moo 7, Lakhok , Muengpathumthani, Pathumthani 12000</h5><br/>
                             <h5><b>Phone:</b> Phone: 0-2997-2000</h5><br/>
                             <h5><b>Fax:</b> Fax: +66 2997 2001</h5>
+                            </div>
                         </div>
+
                 </div>
             </div>
             <div class="row">
@@ -43,24 +49,60 @@
                     <div class="col-sm-5">
                         <input class="form-control" type="text"  placeholder="Full Name"/>
                     </div>
-                    <div class="col-sm-offset-2 col-sm-5">
+                    <div class="col-sm-offset-1 col-sm-5">
                         <input class="form-control" type="text"  placeholder="Email Address"/>
                     </div>
                 </div>
             </div>
+            <br/>
+            <!--<div class="row">-->
+                <!--<div class="col-sm-12">-->
+                    <!--<div class="col-sm-5">-->
+                        <!--<input class="form-control" type="text" placeholder="Phone Number"/>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+
+
             <div class="row">
-                <div class="col-sm-5">
-                    <input class="form-control" type="text" placeholder="Phon Number"/>
+                <div class="col-sm-12">
+                    <div class="col-sm-5">
+                        <input class="form-control" type="textarea" style="margin: 0px 0px 10px; width: 100%; height: 174px;"
+                               placeholder="* Comments..."/>
+
+
+                    </div>
                 </div>
             </div>
 
-            <!--<input class="form-control" type="text" placeholder="Phon Number"/>-->
+
         </div>
 
 
 
     </section>
     <!-- /Section: contact -->
+
+     <footer>
+         <div class="container">
+             <div class="row">
+
+                 <div class="col-sm-12 col-sm-12">
+
+                     <p>SOFT PLUS TECHNOLOGY</p>
+
+                 </div>
+
+             </div>
+         </div>
+     </footer>
+
+
+
+
+
+
+
 
 
 
@@ -80,5 +122,8 @@
 
 
     </body>
+
+
+</div>
     </html>
-</jsp:root>
+
