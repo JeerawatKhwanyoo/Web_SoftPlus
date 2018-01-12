@@ -32,10 +32,10 @@
 
                         <div class="col-sm-offset-1 col-sm-6">
                             <div class="well">
-                                <body background="/SPT/img/location-iconNEW.png"></body>
+                                <!--<body background="/SPT/img/location-iconNEW.png"></body>-->
                                 <!--<img src="/SPT/img/location-iconNEW.png" style = "width: 50%; height: 50%"/>-->
-                                <!--<span class="glyphicon glyphicon-map-marker"></span>-->
-                            <h5><b>Address:</b> 51/597  Soft Square Building, Mueng Ake Village</h5><br/>
+                                <span class="glyphicon glyphicon-map-marker"></span>
+                            <!--<h5><b>Address:</b> 51/597  Soft Square Building, Mueng Ake Village</h5><br/>-->
                             <h5> Moo 7, Lakhok , Muengpathumthani, Pathumthani 12000</h5><br/>
                             <h5><b>Phone:</b> Phone: 0-2997-2000</h5><br/>
                             <h5><b>Fax:</b> Fax: +66 2997 2001</h5>
