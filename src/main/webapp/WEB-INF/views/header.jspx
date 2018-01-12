@@ -6,9 +6,11 @@
     <head>
         <style>
             .navbar-brand{
+
                 padding-top: 20px;
                 font-size: 18px;
             }
+
             .navbar-right li a{
                 font-size: 18px;
                 padding-top: 23px;
