@@ -4,7 +4,18 @@
 
 
     <head>
+        <style>
+            .navbar-brand{
+                padding-top: 20px;
+                font-size: 18px;
+            }
+            .navbar-right li a{
+                font-size: 18px;
+                padding-top: 23px;
+                padding-bottom: 23px;
+            }
 
+        </style>
 
 
     </head>
@@ -12,23 +23,36 @@
     <nav class="navbar navbar-default navbar-fixed-top" style="background-color: #050300">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#myPage">SOFT PLUS</a>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="/SPT/img/logo_spt.png" alt="Logo" style="width: 100%; height: 100%; text-align: left" ></img>
+                    </div>
+                    <div class="col-sm-7">
+                        <a class="navbar-brand" href="#myPage" style="text-align: right;">SOFT PLUS</a>
+                    </div>
+
+                </div>
+                <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">-->
+                    <!--&lt;!&ndash;<span class="icon-bar"></span>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<span class="icon-bar"></span>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<span class="icon-bar"></span>&ndash;&gt;-->
+                <!--</button>-->
+
+
+
             </div>
+
+
 
 
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#ourcompany">OUR COMPANY</a></li>
-                    <li><a href="#people">PEOPLE DELVELOPER</a></li>
+                    <li><a href="#ourcompany" id="01">OUR COMPANY</a></li>
+                    <li><a href="#people" id="01">PEOPLE DELVELOPER</a></li>
                     <!--<li><a href="#ourcustomer">OUR CUSTOMER</a></li>-->
-                    <li><a href="#join">JOIN US</a></li>
+                    <li><a href="#join" id="01">JOIN US</a></li>
                     <!--<li><a href="#news">NEWS</a></li>-->
-                    <li><a href="#contact">CONTACT US</a></li>
+                    <li><a href="#contact" id="01">CONTACT US</a></li>
                 </ul>
             </div>
         </div>

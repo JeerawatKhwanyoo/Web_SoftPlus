@@ -6,6 +6,8 @@ body {
     font-weight: 300;
     color: #666;
     background-color: #fff;
+    padding: 0;
+
 }
 
 html {
@@ -105,3 +107,12 @@ html {
 
 
 /*==========================*!*/
+/*home*/
+
+
+
+.carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #f4511e;
+}
+/*=============*/
