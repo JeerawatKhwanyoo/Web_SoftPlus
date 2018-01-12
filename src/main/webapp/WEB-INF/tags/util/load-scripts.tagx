@@ -42,6 +42,8 @@
 
 
 
+
+
     <spring:url value="/scripts/app/contact.js" var="contact" />
     <spring:url value="/scripts/app/home.js" var="home" />
     <script src="${contact}" type="text/javascript"><!-- required for FF3 and Opera --></script>

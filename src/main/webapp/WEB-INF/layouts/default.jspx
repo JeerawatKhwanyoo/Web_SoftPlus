@@ -18,11 +18,11 @@
 
 </head>
 
-<body class="tundra spring" >
+<body class="container-fluid" >
 <tiles:insertAttribute name="header" ignore="true" />
 <div class="container-mp" style="padding-top: 50px;background-color:#ffffff" >
     <!-- Push Wrapper -->
-    <div class="mp-pusher" id="mp-pusher"  style="padding-top: 10px;">
+    <div class="mp-pusher" id="mp-pusher"  style="padding-top: 0px;">
         <tiles:insertAttribute name="menu" ignore="true" />
         <div class="scroller"><!-- this is for emulating position fixed of the nav -->
             <div class="scroller-inner">
