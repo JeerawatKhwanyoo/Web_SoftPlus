@@ -1,8 +1,12 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
 
-    // $("#01").click(function(){
-    //     // $("home").slideToggle("slow");
-    //     alert("Hello");
-    // });
+    $("#03").click(function(){
+        $("#peopleDev").hide();
+        //      console.log("test")
+
+    });
+
+
+
 });

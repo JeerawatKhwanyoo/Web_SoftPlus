@@ -44,19 +44,9 @@
 
 
 
-    <spring:url value="/scripts/app/contact.js" var="contact" />
-    <spring:url value="/scripts/app/home.js" var="home" />
-    <spring:url value="/scripts/app/header.js" var="header" />
-    <script src="${contact}" type="text/javascript"><!-- required for FF3 and Opera --></script>
-    <script src="${home}" type="text/javascript"><!-- required for FF3 and Opera --></script>
-    <script src="${header}" type="text/javascript"><!-- required for FF3 and Opera --></script>
 
 
-    <spring:url value="/scripts/app/ourCompany.js" var="ourCompany" />
-    <script src="${ourCompany}" type="text/javascript"><!-- required for FF3 and Opera --></script>
 
-    <spring:url value="/scripts/app/coOperation.js" var="coOperation" />
-    <script src="${coOperation}" type="text/javascript"><!-- required for FF3 and Opera --></script>
 
 
     <spring:url value="/styles/app/styles.css" var="styles" />
