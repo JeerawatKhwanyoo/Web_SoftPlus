@@ -5,6 +5,8 @@
     <jsp:output omit-xml-declaration="yes" />
 
     <c:set scope="request" var="label_hello_world"><spring:message code="label_hello_world"/></c:set>
+    <spring:url value="/scripts/app/ourCompany.js" var="ourCompany" />
+    <script src="${ourCompany}" type="text/javascript"><!-- required for FF3 and Opera --></script>
 
     <head>
 
@@ -41,7 +43,7 @@
 
             footer {
                 text-align: center;
-                padding: 5% 0 ;
+                padding: 2% 0 ;
 
             }
 
@@ -77,7 +79,7 @@
 
 
 
-    <body>
+    <div class="container">
 
                 <!-- Section: Our -->
                 <section id="ourCompany" class="Our-section text-center">
@@ -85,7 +87,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-8 col-sm-offset-2">
-                                            <h2>Our Company</h2>
+                                    <h2>Our Company</h2>
                                 </div>
                             </div>
                         </div>
@@ -99,7 +101,6 @@
                             </div>
                         </div>
                     </div>
-
 
 
                     <div class="container">
@@ -123,7 +124,7 @@
                                 </div>
                                 <div class="col-sm-offset-1 col-sm-5">
                                     <div class="well">
-                                        <h3>ประวัติ</h3>
+                                        <h3>ประวัติบริษัท :</h3>
                                             Soft Plus Group has been established since 1988. So far we have approximately 400 IT personnel to provide customers full IT support
                                                 and IT turn-key solution in various kinds of business and industries, including government agents.<br/>
 
@@ -137,23 +138,23 @@
                 <!-- /Section: Our -->
 
 
-                <footer>
-                    <div class="container">
-                        <div class="row">
 
-                            <div class="col-sm-12 col-sm-12">
+    </div>
 
-                                <p>SOFT PLUS TECHNOLOGY</p>
+    <footer>
+        <div class="container">
+            <div class="row">
 
-                            </div>
+                <div class="col-sm-12 col-sm-12">
 
-                        </div>
-                    </div>
-                </footer>
+                    <p>SOFT PLUS TECHNOLOGY</p>
 
+                </div>
 
+            </div>
+        </div>
+    </footer>
 
-    </body>
 
 
 
