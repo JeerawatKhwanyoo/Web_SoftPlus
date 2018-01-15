@@ -6,6 +6,9 @@
 
 <c:set scope="request" var="label_hello_world"><spring:message code="label_hello_world"/></c:set>
 
+    <spring:url value="/scripts/app/contact.js" var="contact" />
+    <script src="${contact}" type="text/javascript"><!-- required for FF3 and Opera --></script>
+
 
     <head><title>cotact</title>
 
@@ -105,7 +108,7 @@
 
             footer {
                 text-align: center;
-                padding: 5% 0 ;
+                padding: 2% 0 ;
 
             }
 
@@ -128,26 +131,14 @@
          /*}*/
 
 
-
-
-
-
-
-
         </style>
 
 
 
 
 
-
-
-
-
-
-
     </head>
-    <body>
+    <div class="container">
 
      <!--Section: contact-->
     <section id="contact" class="contact-section text-center">
@@ -171,6 +162,12 @@
                 </div>
             </div>
 
+            <div class="row">
+                <div class="col-sm-2 col-sm-offset-5">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">ติดต่อ</button>
+                </div>
+            </div>
+
 
             <div class="row">
                 <div class="col-sm-12">
@@ -181,7 +178,7 @@
                     </div>
 
                         <div class="col-sm-offset-1 col-sm-6" id="address">
-                            <!--<div class="well">-->
+
                          <div class="address">
 
                             <br/>
@@ -201,53 +198,24 @@
                             <span class="glyphicon glyphicon-envelope">
                                 <b> Email: </b>contact@ssoftplus.co.th
                            </span>
-
                          </div>
-
                             <br/>
-
                             <img src="/SPT/img/qrcode.jpg" style = "width: 40%;height: 40%;"/>
+                            <div class="row">
+                                <span class="glyphicon glyphicon-hand-up"><b> QR Code Map</b></span>
+                            </div>
 
-
-                            <!--</div>-->
-                        </div>
-
+                            </div>
+                        <!--</div>-->
                 </div>
             </div>
 
 
 
-
-
         </div>
-
-
 
     </section>
     <!-- /Section: contact -->
-
-     <footer>
-         <div class="container">
-             <div class="row">
-
-                 <div class="col-sm-12 col-sm-12">
-                     <p>SOFT PLUS TECHNOLOGY</p>
-                 </div>
-
-             </div>
-         </div>
-     </footer>
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -258,11 +226,98 @@
 
 
 
+    </div>
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style = "background: #ffbc00">
+                    <h5 class="modal-title" id="exampleModalLabel" style = "color: #eef8e9"><b>To. Soft Plus Technology</b></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                             <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="col-sm-2">
+                                        <label for="name" class="col-form-label">Name: </label>
+                                    </div>
+                                    <div class="col-sm-10">
+                                         <input type="text" class="form-control" placeholder="Your name..." id="name"/>
+                                    </div>
+                                </div>
+                             </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="col-sm-2">
+                                        <label for="email" class="col-form-label">Email: </label>
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" placeholder="Your email..." id="email"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--<div class="form-group">-->
+                            <!--<div class="row">-->
+                                <!--<div class="col-sm-12">-->
+                                     <!--<div class="col-sm-2">-->
+                                         <!--<label for="exampleInputFile">File: </label>-->
+                                     <!--</div>-->
+                                    <!--<div class="col-sm-10">-->
+                                          <!--<input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp"/>-->
+                                          <!--<small id="fileHelp" class="form-text text-muted"></small>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+
+                        <div class="form-group">
+                             <div class="row">
+                                 <div class="col-sm-12">
+                                     <div class="col-sm-2">
+                                        <label for="message-text" class="col-form-label">Message:</label>
+                                     </div>
+                                     <div class="col-sm-10">
+                                        <textarea class="form-control" placeholder="Comments..." id="message-text">.</textarea>
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer" style = "background: #ffbc00">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Send message</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
 
-    </body>
+    <footer>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-12 col-sm-12">
+                    <p>SOFT PLUS TECHNOLOGY</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
 
 
 </div>

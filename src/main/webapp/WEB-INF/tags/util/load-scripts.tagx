@@ -47,6 +47,14 @@
 
 
 
+<<<<<<< HEAD
+=======
+
+    <!--<spring:url value="/scripts/app/home.js" var="home" />-->
+    <!--<spring:url value="/scripts/app/header.js" var="header" />-->
+    <!--<script src="${home}" type="text/javascript">&lt;!&ndash; required for FF3 and Opera &ndash;&gt;</script>-->
+    <!--<script src="${header}" type="text/javascript">&lt;!&ndash; required for FF3 and Opera &ndash;&gt;</script>-->
+>>>>>>> Yod
 
 
     <spring:url value="/styles/app/styles.css" var="styles" />
