@@ -18,7 +18,7 @@
 
 </head>
 
-<body class="container-fluid" >
+<body class="container-fluid" id="default-body-index">
 <tiles:insertAttribute name="header" ignore="true" />
 <div class="container-mp" style="padding-top: 50px;background-color:#ffffff" >
     <!-- Push Wrapper -->
@@ -43,4 +43,6 @@
 <tiles:insertAttribute name="plugin" ignore="true"/>
 
 </body>
+
+
 </html>

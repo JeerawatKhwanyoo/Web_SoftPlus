@@ -79,11 +79,11 @@
 
 
 
-<<<<<<< HEAD
+
     <div id="ourCompanyBody">
-=======
+
     <div class="container">
->>>>>>> Yod
+
 
                 <!-- Section: Our -->
                 <section id="ourCompany" class="Our-section text-center">
@@ -128,11 +128,11 @@
                                 </div>
                                 <div class="col-sm-offset-1 col-sm-5">
                                     <div class="well">
-<<<<<<< HEAD
-                                        <h3>History</h3>
-=======
-                                        <h3>ประวัติบริษัท :</h3>
->>>>>>> Yod
+
+
+
+                                        <h3>ประวัติบริษัท </h3>
+
                                             Soft Plus Group has been established since 1988. So far we have approximately 400 IT personnel to provide customers full IT support
                                                 and IT turn-key solution in various kinds of business and industries, including government agents.<br/>
 
@@ -149,28 +149,29 @@
 
     </div>
 
-    <footer>
-        <div class="container">
-            <div class="row">
 
-                <div class="col-sm-12 col-sm-12">
 
-                    <p>SOFT PLUS TECHNOLOGY</p>
 
-                </div>
-
-            </div>
-        </div>
-    </footer>
-
-<<<<<<< HEAD
     </div>
-=======
->>>>>>> Yod
+
+
 
 
 
 
 </div>
+<footer>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-12 col-sm-12">
+
+                <p>SOFT PLUS TECHNOLOGY</p>
+
+            </div>
+
+        </div>
+    </div>
+</footer>
 
 </html>

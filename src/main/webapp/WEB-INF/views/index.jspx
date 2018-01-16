@@ -12,7 +12,9 @@
     <script src="${index_js}" type="text/javascript"><!-- required for FF3 and Opera --></script>
 
     <div id="body-container">
+        <section id="index" class="Our-section text-center">
         <h1>${label_hello_world}</h1>
+        </section>
 
     </div>
 
