@@ -59,11 +59,12 @@
 
 
 
-    <div class="container">
+    <div class="container" style="padding-top: 85px;">
 
 
     <!-- Section: coOperation -->
-    <section id="coOperation" class="home-section text-center">
+    <section id="coOperation" class="home-section text-center" >
+
 
         <div class="heading-about">
             <div class="container">

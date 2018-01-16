@@ -30,6 +30,11 @@
     <put-attribute name="body" value="/WEB-INF/views/coOperation.jspx" />
   </definition>
 
+  <definition name="inbox" extends="defaultCustom">
+    <put-attribute name="body" value="/WEB-INF/views/inbox.jspx" />
+  </definition>
+
+
 
 
 

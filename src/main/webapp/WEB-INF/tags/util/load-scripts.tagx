@@ -26,12 +26,17 @@
     <script src="${bootstrap_tokenfield_min}" type="text/javascript"><!-- required for FF3 and Opera --></script>
     <script src="${json_2}" type="text/javascript"><!-- required for FF3 and Opera --></script>
 
+    <spring:url value="/scripts/jsgrid.min.js" var="jsgrid_js" />
+    <script src="${jsgrid_js}" type="text/javascript"><!-- required for FF3 and Opera --></script>
+
 
 
     <spring:url value="/styles/jquery-ui.min.css" var="jquery_ui_min" />
     <spring:url value="/styles/bootstrap.min.css" var="bootstrap_min" />
     <spring:url value="/styles/bootstrap-tokenfield.min.css" var="bootstrap_tokenfield_min" />
     <spring:url value="/styles/bootstrap-datepicker.min.css" var="bootstrap_datepicler_min" />
+    <spring:url value="/styles/jsgrid.min.css" var="jsgrid_min_css" />
+    <spring:url value="/styles/jsgrid-theme.min.css" var="jsgrid_theme_min_css" />
 
 
 
@@ -39,6 +44,8 @@
     <link rel="stylesheet" type="text/css" href="${bootstrap_min}" />
     <link rel="stylesheet" type="text/css" href="${bootstrap_tokenfield_min}" />
     <link rel="stylesheet" type="text/css" href="${bootstrap_datepicler_min}" />
+    <link rel="stylesheet" type="text/css" href="${jsgrid_min_css}" />
+    <link rel="stylesheet" type="text/css" href="${jsgrid_theme_min_css}" />
 
 
 

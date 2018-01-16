@@ -18,25 +18,18 @@
 
 </head>
 
-<body class="container-fluid" >
+<body class="container-fluid">
 <tiles:insertAttribute name="header" ignore="true" />
-<div style="background-color:#ffffff" >
-    <!-- Push Wrapper -->
-    <div   style="padding-top: 0px; ">
-        <!--<tiles:insertAttribute name="menu" ignore="true" />-->
-        <!--<div class="scroller">&lt;!&ndash; this is for emulating position fixed of the nav &ndash;&gt;-->
-            <!--<div class="scroller-inner">-->
-                <tiles:insertAttribute name="body"/>
-            <!--</div>&lt;!&ndash; /scroller-inner &ndash;&gt;-->
-        <!--</div>&lt;!&ndash; /scroller &ndash;&gt;-->
+<div class="mp-pusher" id="mp-pusher"  style="padding-top: 0px;">
+    <tiles:insertAttribute name="menu" ignore="true" />
+    <div class="scroller"><!-- this is for emulating position fixed of the nav -->
+        <div class="scroller-inner">
+            <tiles:insertAttribute name="body"/>
+            <tiles:insertAttribute name="footer" ignore="true"/>
+        </div><!-- /scroller-inner -->
+    </div><!-- /scroller -->
 
-    </div><!-- /pusher -->
-
-    <tiles:insertAttribute name="footer" ignore="true"/>
-
-
-</div><!-- /container -->
-
+</div><!-- /pusher -->
 
 
 
