@@ -25,8 +25,8 @@
 
                 width:100%;
                 position:relative;
-                background: url(/SPT/img/back001.gif) no-repeat top center;
-                /*background: rgba(255, 192, 0, 0.91);*/
+                /*background: url(/SPT/img/back001.gif) no-repeat top ce?nter;*/
+                /*background: rgba(255, 192, 0, 0.91
 
                 background-size: cover;
                 /*background-size: 75%;*/
@@ -131,10 +131,11 @@
 
 
     </head>
-    <div class="container" id="contactall">
+    <div class="container" id="contactall" style="padding-top: 85px;">
 
      <!--Section: contact-->
-    <section id="contact" class="contact-section text-center">
+    <section id="contact" class="contact-section text-center" >
+
 
         <div class="container">
 
@@ -153,7 +154,7 @@
                     </div>
                 </div>
             </div>
-            <div class="well" style="background: white">
+
             <div class="row">
                 <div class="col-sm-2 col-sm-offset-5">
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">ติดต่อ</button>
@@ -206,7 +207,7 @@
 
 
 </div>
-        </div>
+
 
     </section>
     <!-- /Section: contact -->

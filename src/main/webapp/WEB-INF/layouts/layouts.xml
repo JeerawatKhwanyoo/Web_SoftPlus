@@ -10,5 +10,9 @@
     <put-attribute name="footer" value="/WEB-INF/views/footer.jspx" />
   </definition>
 
+  <definition name="defaultCustom" template="/WEB-INF/layouts/defaultCustom.jspx">
+
+  </definition>
+
 
 </tiles-definitions>

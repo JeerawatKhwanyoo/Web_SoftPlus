@@ -48,4 +48,9 @@ public class IndexController {
         return "coOperation";
     }
 
+    @RequestMapping(value = "/inbox", produces = "text/html", method = RequestMethod.GET)
+    public String inbox(){
+        return "inbox";
+    }
+
 }
