@@ -3,4 +3,48 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
 
+    <style>
+
+        footer {
+            text-align: center;
+            /*padding: 2% 0 ;*/
+            padding-bottom: 4%;
+           /*padding-left: 3%;*/
+            /*padding-right: 3%;*/
+            padding-top: 3%;
+        }
+
+
+        footer p {
+            color: #f8f8f8;
+        }
+
+        .credits, .credits a {
+            color: #fff;
+        }
+
+        footer {
+            background-color: #050402;
+        }
+
+    </style>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-12 col-sm-12">
+
+                    <p>SOFT PLUS TECHNOLOGY</p>
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+
 </div>

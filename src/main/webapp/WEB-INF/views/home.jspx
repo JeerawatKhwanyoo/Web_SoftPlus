@@ -13,20 +13,7 @@
                 padding-right: 0 !important;
             }
 
-            footer {
-                text-align: center;
-                padding: 2% 0 ;
-                background-color: #050402;
 
-            }
-
-            footer p {
-                color: #f8f8f8;
-            }
-
-            .credits, .credits a {
-                color: #fff;
-            }
         </style>
     </head>
 
@@ -80,19 +67,7 @@
     </div>
 
 
-        <footer>
-            <div class="container">
-                <div class="row">
 
-                    <div class="col-sm-12 col-sm-12">
-
-                        <p>SOFT PLUS TECHNOLOGY</p>
-
-                    </div>
-
-                </div>
-            </div>
-        </footer>
 
 
 </div>
