@@ -19,7 +19,7 @@
 
 
 
-    <div class="container-fluid" >
+    <div class="container-fluid">
 
 
     <section id="home" class="contact-section text-center">
@@ -44,7 +44,7 @@
                 <!--</div>-->
 
                 <div class="item">
-                    <img src="/SPT/img/home_4.jpg" alt="home_3" style="width:100%;"></img>
+                    <a href="contact" id="05"><img  src="/SPT/img/home_4.jpg" alt="home_3" style="width:100%;"></img></a>
                 </div>
             </div>
 

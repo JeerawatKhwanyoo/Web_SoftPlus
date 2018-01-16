@@ -30,10 +30,10 @@
     </style>
 
 
-    <footer style="margin-top: -3px;position:fixed;bottom:0;width:100%; padding-top: 10px;">
+    <footer style="margin-top: -3px;position:fixed;bottom:0;width:100%; padding-top: 5px;">
         <div class="footer-copyright" >
-            <div class="container-fluid">
-                © 2017 Copyright: <a href="https://www.MDBootstrap.com"> MDBootstrap.com </a>
+            <div class="container-fluid" style="padding-top: 10px; padding-bottom: 0px;">
+                © Softplus Technology Co Ltd
 
             </div>
         </div>
