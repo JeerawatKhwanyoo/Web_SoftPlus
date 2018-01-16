@@ -1,11 +1,11 @@
 $(document).ready(function () {
 
 
-    $("#03").click(function(){
-        $("#peopleDev").hide();
-        //      console.log("test")
+    $('#03').click(function(){
 
+            console.log("test")
     });
+
 
 
 

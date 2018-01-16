@@ -20,6 +20,10 @@
                 font-size: 18px;
                 padding-top: 23px;
                 padding-bottom: 23px;
+                font-family: "Yu Gothic";
+            }
+            a{
+                font-family: "Yu Gothic"
             }
 
         </style>
@@ -61,11 +65,12 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="ourcompany" id="02">OUR COMPANY</a></li>
                     <li><a href="peopleDeveloper" id="03" >PEOPLE DELVELOPER</a></li>
-                    <!--<li><a href="#ourcustomer">OUR CUSTOMER</a></li>-->
+
                     <li><a href="coOperation" id="04" >CO-OPERATION</a></li>
-                    <!--<li><a href="#news">NEWS</a></li>-->
+
                     <li><a href="contact" id="05">CONTACT US</a></li>
-                </ul>
+
+            </ul>
             </div>
         </div>
     </nav>
