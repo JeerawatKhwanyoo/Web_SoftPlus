@@ -1,5 +1,5 @@
-(function ($) {
 
+$(document).ready(function () {
     $("#slideshow2 > div:gt(0)").hide();
 
     setInterval(function() {
@@ -10,7 +10,6 @@
             .end()
             .appendTo('#slideshow2');
     }, 2000);
+});
 
-
-})(jQuery);
 
