@@ -7,7 +7,7 @@
     <c:set scope="request" var="label_hello_world"><spring:message code="label_hello_world"/></c:set>
     <spring:url value="/scripts/app/ourCompany.js" var="ourCompany" />
     <script src="${ourCompany}" type="text/javascript"><!-- required for FF3 and Opera --></script>
-
+    <link href="https://fonts.googleapis.com/css?family=Maitree" rel="stylesheet"></link>
     <head>
 
         <style>
@@ -25,6 +25,11 @@
                 box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
             }
 
+            p{
+                font-family: 'Maitree', serif;
+            }
+
+
             #slideshow > div {
                 position: absolute;
                 top: 15px;
@@ -36,31 +41,15 @@
 .well{
     background: #eef8e9;
 }
-
-
-
-
-
-            footer {
-                text-align: center;
-                padding: 2% 0 ;
-
+            h2{
+                font-family: 'Maitree', serif;
             }
-
-            footer p {
-                color: #f8f8f8;
+            h3{
+                font-family: 'Maitree', serif;
             }
-
-            .credits, .credits a {
-                color: #fff;
+            h4{
+                font-family: 'Maitree', serif;
             }
-
-            footer {
-                background-color: #050402;
-            }
-
-
-
 
 
 
@@ -80,9 +69,9 @@
 
 
 
-    <div id="ourCompanyBody">
 
-    <div class="container">
+
+    <div class="container" id="ourCompanyBody">
 
 
                 <!-- Section: Our -->
@@ -91,7 +80,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-8 col-sm-offset-2">
-                                    <h2>Our Company</h2>
+                                    <h2>OUR COMPANY</h2>
                                 </div>
                             </div>
                         </div>
@@ -131,11 +120,14 @@
 
 
 
-                                        <h3>ประวัติบริษัท </h3>
-
-                                            Soft Plus Group has been established since 1988. So far we have approximately 400 IT personnel to provide customers full IT support
-                                                and IT turn-key solution in various kinds of business and industries, including government agents.<br/>
-
+                                        <h4>ประวัติบริษัท </h4>
+                                        <p style = "text-align: left"> บริษัท Soft Plus Technology และสถาบันการศึกษา ได้เปิดโอกาสให้นักศึกษานำความรู้ในห้องเรียนไปใช้ในการปฏิบัติงานจริง ซึ่งจะทำให้นักศึกษาได้มีโอกาสได้ฝึกซ้อมใน 1 ภาคการศึกษา
+                                            โดยบริษัทจะจัดเตรียมแผนการสอนและฝึกอบรมให้นักศึกษาก่อน  และสอนให้นักศึกษาสามารถใช้ความรู้ทางวิชาการในการแก้ปัญหาในโลกแห่งความเป็นจริงได้</p>
+                                        <br/>
+                                        <p style = "text-align: left">  ประสบการณ์ที่ได้จาก Soft Plus Technology จะช่วยเพิ่มการเรียนรู้ในห้องเรียน
+                                            และค้นหาความถนัดในสายงานของนักศึกษาได้ดียิ่งขึ้น
+                                            ผลการดำเนินงานของนักศึกษาจะได้รับการตรวจสอบและประเมินโดย บริษัท และสถาบันเมื่อเสร็จสิ้น
+                                        </p>
                                      </div>
                                 </div>
                             </div>
@@ -152,7 +144,7 @@
 
 
 
-    </div>
+
 
 
 
@@ -160,18 +152,6 @@
 
 
 </div>
-<footer>
-    <div class="container">
-        <div class="row">
 
-            <div class="col-sm-12 col-sm-12">
-
-                <p>SOFT PLUS TECHNOLOGY</p>
-
-            </div>
-
-        </div>
-    </div>
-</footer>
 
 </html>

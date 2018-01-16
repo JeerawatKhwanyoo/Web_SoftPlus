@@ -8,7 +8,7 @@
 
     <spring:url value="/scripts/app/contact.js" var="contact" />
     <script src="${contact}" type="text/javascript"><!-- required for FF3 and Opera --></script>
-
+    <link href="https://fonts.googleapis.com/css?family=Maitree" rel="stylesheet"></link>
 
     <head>
 
@@ -21,11 +21,11 @@
                 padding-right: 0 !important;
             }
 
-            .contact-section {
+            #contactall {
 
                 width:100%;
                 position:relative;
-                /*background: url(/SPT/img/location-iconNEW.png) no-repeat top center;*/
+                background: url(/SPT/img/back001.gif) no-repeat top center;
                 /*background: rgba(255, 192, 0, 0.91);*/
 
                 background-size: cover;
@@ -105,24 +105,17 @@
                 background-image: none;
                 color: #f4511e;
             }
-
-            footer {
-                text-align: center;
-                padding: 2% 0 ;
-
+            h2{
+                font-family: 'Maitree', serif;
+            }
+            h3{
+                font-family: 'Maitree', serif;
             }
 
-            footer p {
-                color: #f8f8f8;
+            b{
+                font-family: 'Maitree', serif;
             }
 
-            .credits, .credits a {
-                color: #fff;
-            }
-
-            footer {
-                background-color: #050402;
-            }
 
 
          /*.address{*/
@@ -138,7 +131,7 @@
 
 
     </head>
-    <div class="container">
+    <div class="container" id="contactall">
 
      <!--Section: contact-->
     <section id="contact" class="contact-section text-center">
@@ -148,10 +141,9 @@
 
             <div class="row">
                 <div class="col-sm-12">
-                    <h1>CONTACT</h1>
+                    <h2>CONTACT</h2>
                 </div>
             </div>
-
 
 
             <div class="container">
@@ -161,7 +153,7 @@
                     </div>
                 </div>
             </div>
-
+            <div class="well" style="background: white">
             <div class="row">
                 <div class="col-sm-2 col-sm-offset-5">
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">ติดต่อ</button>
@@ -200,7 +192,9 @@
                            </span>
                          </div>
                             <br/>
-                            <img src="/SPT/img/qrcode.jpg" style = "width: 40%;height: 40%;"/>
+                            <a href="https://www.google.co.th/maps/@13.9681423,100.5992632,19.75z?hl=en">
+                                <img src="/SPT/img/qrcode.jpg" style = "width: 40%;height: 40%;"/>
+                            </a>
                             <div class="row">
                                 <span class="glyphicon glyphicon-hand-up"><b> QR Code Map</b></span>
                             </div>
@@ -211,7 +205,7 @@
             </div>
 
 
-
+</div>
         </div>
 
     </section>
@@ -304,19 +298,6 @@
     </div>
 
 
-
-
-    <footer>
-        <div class="container">
-            <div class="row">
-
-                <div class="col-sm-12 col-sm-12">
-                    <p>SOFT PLUS TECHNOLOGY</p>
-                </div>
-
-            </div>
-        </div>
-    </footer>
 
 
 

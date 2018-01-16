@@ -7,6 +7,7 @@
     <c:set scope="request" var="label_hello_world"><spring:message code="label_hello_world"/></c:set>
     <spring:url value="/scripts/app/coOperation.js" var="coOperation" />
     <script src="${coOperation}" type="text/javascript"><!-- required for FF3 and Opera --></script>
+    <link href="https://fonts.googleapis.com/css?family=Maitree" rel="stylesheet"></link>
 
     <head>
 
@@ -16,6 +17,9 @@
                 padding-right: 0 !important;
             }
 
+            p{
+                font-family: 'Maitree', serif;
+            }
 
 
             #slideshow2 {
@@ -37,26 +41,15 @@
 
             }
 
-            footer {
-                text-align: center;
-                padding: 2% 0 ;
-
+            h2{
+                font-family: 'Maitree', serif;
             }
-
-            footer p {
-                color: #f8f8f8;
+            h3{
+                font-family: 'Maitree', serif;
             }
-
-            .credits, .credits a {
-                color: #fff;
+            h4{
+                font-family: 'Maitree', serif;
             }
-
-            footer {
-                background-color: #050402;
-            }
-
-
-
 
 
 
@@ -78,7 +71,7 @@
                     <div class="col-sm-8 col-sm-offset-2">
                         <div class="wow bounceInDown" data-wow-delay="0.4s">
                             <div class="section-heading">
-                                <h2>สหกิจศึกษา</h2>
+                                <h2>COOPERATIVE EDUCATION</h2>
                                 <!--<i class="fa fa-2x fa-angle-down"></i>-->
 
                             </div>
@@ -101,7 +94,7 @@
                 <div class="col-sm-12">
                     <div class="col-sm-6">
                         <div class="well">
-                            <h4>ภาพรวม สหกิจศึกษา :</h4><br/>
+                            <h4>ภาพรวม สหกิจศึกษา</h4><br/>
                             <p style = "text-align: left"> บริษัท Soft Plus Technology และสถาบันการศึกษา ได้เปิดโอกาสให้นักศึกษานำความรู้ในห้องเรียนไปใช้ในการปฏิบัติงานจริง ซึ่งจะทำให้นักศึกษาได้มีโอกาสได้ฝึกซ้อมใน 1 ภาคการศึกษา
                                 โดยบริษัทจะจัดเตรียมแผนการสอนและฝึกอบรมให้นักศึกษาก่อน  และสอนให้นักศึกษาสามารถใช้ความรู้ทางวิชาการในการแก้ปัญหาในโลกแห่งความเป็นจริงได้</p>
                                 <br/>
@@ -148,23 +141,6 @@
 
 
     </div>
-
-
-
-    <footer>
-        <div class="container">
-            <div class="row">
-
-                <div class="col-sm-12 col-sm-12">
-
-                    <p>SOFT PLUS TECHNOLOGY</p>
-
-                </div>
-
-            </div>
-        </div>
-    </footer>
-
 
 
 

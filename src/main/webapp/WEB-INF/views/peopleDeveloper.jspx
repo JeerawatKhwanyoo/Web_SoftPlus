@@ -8,7 +8,7 @@
 
     <spring:url value="/scripts/app/peopleDeveloper.js" var="peopleDeveloper_js" />
     <script src="${peopleDeveloper_js}" type="text/javascript"><!-- required for FF3 and Opera --></script>
-
+    <link href="https://fonts.googleapis.com/css?family=Maitree" rel="stylesheet"></link>
 
 
     <head>
@@ -52,23 +52,20 @@
             p{
 
             }
-
-
-            footer {
-                text-align: center;
-                padding: 2% 0 ;
-                background-color: #050402;
-
+            h2{
+                font-family: 'Maitree', serif;
+            }
+            h3{
+                font-family: 'Maitree', serif;
             }
 
-            footer p {
-                color: #f8f8f8;
-            }
 
-            .credits, .credits a {
-                color: #fff;
+            h4{
+                font-family: 'Maitree', serif;
             }
-
+            p{
+                font-family: 'Maitree', serif;
+            }
 
 
         </style>
@@ -90,8 +87,21 @@
 
 
     <div class="container-fluid " id="peopleDev">
+<br/>
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 style="text-align: center">PEOPLE DEVELOPER</h2>
+            </div>
+        </div>
 
 
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2 col-sm-offset-5">
+                    <hr class="marginbot-50"/>
+                </div>
+            </div>
+        </div>
 
 
 
@@ -262,20 +272,6 @@
             <!--</div>-->
         <!--</div>-->
     <!--</div>-->
-    <footer>
-        <div class="container">
-            <div class="row">
-
-                <div class="col-sm-12 col-sm-12">
-
-                    <p>SOFT PLUS TECHNOLOGY</p>
-
-                </div>
-
-            </div>
-        </div>
-    </footer>
-
 
 
 
