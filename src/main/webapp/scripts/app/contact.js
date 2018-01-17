@@ -1,4 +1,3 @@
-
 function initializeMap() {
 
     var lat = '13.968177'; //Set your latitude.
@@ -37,71 +36,96 @@ function initializeMap() {
 
 function validateForm() {
     var x = $('#inputemail').val();
+
+    // var checkName = false;
     var atpos = x.indexOf("@");
     var dotpos = x.lastIndexOf(".");
     if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
-        alert("Not a valid e-mail address");
-        
+
         return false;
+
+    }else{
+        return true;
+
+    }
+}
+
+function checkName() {
+    var y = $('#inputname').val();
+    var checkname = false;
+    if(y===''){
+        return false;
+    }else{
+
+        return true;
     }
 }
 
 
 $(document).ready(function () {
 
-    // var dataname = $('#inputname').val();
-    // var dataemail = $('#inputemail').val();
-    // var datamessage = $('#inputmessage').val();
+    $('#close_modal').click(function () {
+        $('#inputname').val('');
+        $('#inputemail').val('');
+        $('#inputmessage').val('');
+        // console.log("test")
+    });
 
+    $('#bnsend').click(function(){
 
-    $('#bnsend').on('click',function(){
-        validateForm();
         var dataname = $('#inputname').val();
         var dataemail = $('#inputemail').val();
         var datamessage = $('#inputmessage').val();
-
-
-
-
-
-
+        // console.log(dataname);
+        // console.log(dataemail);
+        // console.log(datamessage);
+        var data ={"name":dataname,"email":dataemail,"message":datamessage};
+        var checkname = checkName();
+        var checkmail = validateForm();
+        // console.log(check);
         console.log(dataname);
         console.log(dataemail);
         console.log(datamessage);
-        var data ={"name":dataname,"email":dataemail,"message":datamessage};
-        console.log(data);
 
-        $.ajax({
+        if(checkname===false&&checkmail===false){
+            $('#myModalAll').modal('show');
+            return false;
+        }else if(checkmail===true&&checkname===false){
+            $('#myModalName').modal('show');
+            return false;
+        }else if(checkname===true&&checkmail===false){
+            $('#myModalEmail').modal('show');
+            return false;
+        }else if(checkname===true&&checkmail===true){
 
-            type: "POST",
-            contentType: "application/json; charset=utf-8",
-            dataType: "json",
-            headers: {
-                Accept: "application/json"
-            },
-            url: "/SPT/contact/saveContact",
-            data: JSON.stringify(data),
-            complete: function (xhr) {
-                if (xhr.readyState == 4) {
+            $.ajax({
 
-                }
-                $('.dv-background').hide();
+                type: "POST",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                headers: {
+                    Accept: "application/json"
+                },
+                url: "/SPT/contact/saveContact",
+                data: JSON.stringify(data),
+                complete: function (xhr) {
+                    if (xhr.readyState == 4) {
 
-            },
-            async: false
-        });
+                    }
+                    $('.dv-background').hide();
+                    dataname = $('#inputname').val('');
+                    dataemail = $('#inputemail').val('');
+                    datamessage = $('#inputmessage').val('');
+                },
 
 
-
+                async: false
+            });
+        }
+        //
+        //     saveData();
+        // console.log(data);
 
     });
 
 });
-
-
-
-
-
-
-
-
