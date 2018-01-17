@@ -1,6 +1,4 @@
 
-
-
 function initializeMap() {
 
     var lat = '13.968177'; //Set your latitude.
@@ -35,6 +33,74 @@ function initializeMap() {
 
     infowindow.open(map, marker);
 }
+
+
+function validateForm() {
+    var x = $('#inputemail').val();
+    var atpos = x.indexOf("@");
+    var dotpos = x.lastIndexOf(".");
+    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+        alert("Not a valid e-mail address");
+        
+        return false;
+    }
+}
+
+
+$(document).ready(function () {
+
+    // var dataname = $('#inputname').val();
+    // var dataemail = $('#inputemail').val();
+    // var datamessage = $('#inputmessage').val();
+
+
+    $('#bnsend').on('click',function(){
+        validateForm();
+        var dataname = $('#inputname').val();
+        var dataemail = $('#inputemail').val();
+        var datamessage = $('#inputmessage').val();
+
+
+
+
+
+
+        console.log(dataname);
+        console.log(dataemail);
+        console.log(datamessage);
+        var data ={"name":dataname,"email":dataemail,"message":datamessage};
+        console.log(data);
+
+        $.ajax({
+
+            type: "POST",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            headers: {
+                Accept: "application/json"
+            },
+            url: "/SPT/contact/saveContact",
+            data: JSON.stringify(data),
+            complete: function (xhr) {
+                if (xhr.readyState == 4) {
+
+                }
+                $('.dv-background').hide();
+
+            },
+            async: false
+        });
+
+
+
+
+    });
+
+});
+
+
+
+
 
 
 

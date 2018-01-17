@@ -1,8 +1,6 @@
 package com.softplus.spt.controller;
 
-import com.fasterxml.jackson.databind.JsonSerializer;
-import com.fasterxml.jackson.databind.deser.std.JsonNodeDeserializer;
-import com.softplus.spt.service.EmployeeService;
+import com.softplus.spt.service.ContactService;
 import flexjson.JSONSerializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,17 +9,38 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
+
+import java.security.Principal;
 
 @Controller
-@RequestMapping("/employee")
-public class EmployeeController {
+@RequestMapping("/contact")
+public class ContactController {
    @Autowired
-    EmployeeService employeeService;
-   private final Logger LOGGER = LoggerFactory.getLogger(EmployeeController.class);
+   ContactService contactService;
+   private final Logger LOGGER = LoggerFactory.getLogger(ContactController.class);
+
+
+
+    @RequestMapping(value = "/saveContact", method = RequestMethod.POST, headers = "Accept=application/json")
+    public ResponseEntity<String> saveBusinessSubType(@RequestBody String json)
+    {
+        LOGGER.info("{}",json);
+
+        HttpHeaders headers = new HttpHeaders();
+        headers.add("Content-Type", "application/json; charset=utf-8");
+        try{
+            LOGGER.info("saveContact");
+           contactService.saveContact(json);
+            return new ResponseEntity<String>(new JSONSerializer().deepSerialize("true"), headers, HttpStatus.OK);
+
+        }catch(Exception e){
+            LOGGER.error("saveContact error msg : {}",e);
+            return new ResponseEntity<String>("{\"ERROR\":" +e.getMessage()+ "\"}", headers, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+
 
 
    @RequestMapping(value = "/findById", headers = "Accept=aplication/json", produces = "text/html;charset=utf-8")
@@ -34,7 +53,7 @@ public class EmployeeController {
            return new ResponseEntity<String>(new JSONSerializer()
                    .exclude("*.class")
                    .prettyPrint(true)
-                   .deepSerialize(employeeService.findId(id)), headers, HttpStatus.OK);
+                   .deepSerialize(contactService.findId(id)), headers, HttpStatus.OK);
        }catch(Exception e){
         e.printStackTrace();
         throw new RuntimeException(e.getMessage());
@@ -51,12 +70,20 @@ public class EmployeeController {
            return new ResponseEntity<String>(new JSONSerializer()
                    .exclude("*.class")
                    .prettyPrint(true)
-                   .deepSerialize(employeeService.findAll()),headers, HttpStatus.OK);
+                   .deepSerialize(contactService.findAll()),headers, HttpStatus.OK);
        }catch(Exception e){
             e.printStackTrace();
             throw new RuntimeException(e.getMessage());
        }
 
    }
+
+
+
+
+
+
+
+
 
 }
