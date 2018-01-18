@@ -61,8 +61,45 @@ function checkName() {
     }
 }
 
+function checkMail() {
+
+    var check = $("#inputemail").val();
+    var checkmail = validateForm();
+    var mail;
+
+    if(check==="") {
+        // console.log("Null")
+
+    }else if(checkmail===false){
+        var a =  $("#inputemail").val();
+        $('p').append('Invalid format. Ex. xxx@xxx.com');
+        $('#inputemail').css("border-color", "red");
+
+    }
+
+
+}
+
+
+
+
 
 $(document).ready(function () {
+
+    $("#inputemail").focus(function(){
+        $('p').empty();
+        $('#inputemail').css("border-color", "");
+    });
+
+        $("#inputemail").on('blur',function(){
+            checkMail();
+
+            
+
+
+
+    });
+
 
     $('#close_modal').click(function () {
         $('#inputname').val('');
@@ -94,7 +131,12 @@ $(document).ready(function () {
             $('#myModalName').modal('show');
             return false;
         }else if(checkname===true&&checkmail===false){
-            $('#myModalEmail').modal('show');
+            if(dataemail===""){
+                $('#myModalEmail').modal('show');
+            }else {
+
+            }
+
             return false;
         }else if(checkname===true&&checkmail===true){
 
