@@ -81,9 +81,6 @@ function checkMail() {
 }
 
 
-
-
-
 $(document).ready(function () {
 
     $("#inputemail").focus(function(){

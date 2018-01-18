@@ -31,13 +31,17 @@ public class ContactController {
         headers.add("Content-Type", "application/json; charset=utf-8");
         try{
             LOGGER.info("saveContact");
-           contactService.saveContact(json);
+            contactService.saveContact(json);
+            new SendMailController().sendEmail(json);
             return new ResponseEntity<String>(new JSONSerializer().deepSerialize("true"), headers, HttpStatus.OK);
 
         }catch(Exception e){
             LOGGER.error("saveContact error msg : {}",e);
             return new ResponseEntity<String>("{\"ERROR\":" +e.getMessage()+ "\"}", headers, HttpStatus.INTERNAL_SERVER_ERROR);
         }
+
+
+
     }
 
 

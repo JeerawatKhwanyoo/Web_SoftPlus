@@ -46,7 +46,7 @@ public class ContactServicelmp implements ContactService {
 //            LOGGER.info("{}",json);
 
             Contact contact = objectMapper.readValue(json,Contact.class);
-            LOGGER.info("{}",contact.getEmail());
+//            LOGGER.info("{}",contact.getEmail());
 
 
             contactRepository.save(contact);
