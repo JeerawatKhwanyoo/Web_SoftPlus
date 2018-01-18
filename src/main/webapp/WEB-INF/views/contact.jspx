@@ -248,6 +248,8 @@
 
     <!-- Modal -->
 
+
+
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -282,7 +284,11 @@
                                 </div>
                             </div>
                         </div>
-
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <p style="color: red"></p>
+                            </div>
+                        </div>
 
                         <div class="form-group">
                             <div class="row">
@@ -329,10 +335,10 @@
         <div class="modal-dialog" style="width:20%">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4>Warning</h4>
+                    <h4 style="font-size: 22px;"><span style="color: red">!!</span> คำเตือน</h4>
                 </div>
                 <div class="modal-body">
-                    <h4 style="text-align: center;"><b>Not a valid All.</b></h4>
+                    <h4 style="text-align: center;"><b>กรุณากรอกข้อมูลในช่องทีมีเครื่องหมาย(<span style="color: red">*</span>)ให้ครบ</b></h4>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
@@ -346,10 +352,10 @@
         <div class="modal-dialog" style="width:20%">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4>Warning</h4>
+                    <h4 style="font-size: 22px;"><span style="color: red">!!</span> คำเตือน</h4>
                 </div>
                 <div class="modal-body">
-                    <h4 style="text-align: center;"><b>Not a valid Name.</b></h4>
+                    <h4 style="text-align: center;"><b>กรุณากรอกชื่อ</b></h4>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
@@ -362,10 +368,10 @@
         <div class="modal-dialog" style="width:20%">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4>Warning</h4>
+                    <h4 style="font-size: 22px;"><span style="color: red">!!</span> คำเตือน</h4>
                 </div>
                 <div class="modal-body">
-                    <h4 style="text-align: center;"><b>Not a valid Email.</b></h4>
+                    <h4 style="text-align: center;"><b>กรุณากรอกอีเมลล์.</b></h4>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
@@ -373,6 +379,23 @@
             </div>
         </div>
     </div>
+
+    <div id="myModalEmails" class="modal fade">
+        <div class="modal-dialog" style="width:20%">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 style="font-size: 22px;"><span style="color: red">!!</span> คำเตือน</h4>
+                </div>
+                <div class="modal-body">
+                    <h4 style="text-align: center;"><b>กรุณากรอกอีเมลล์ให้ถูกต้อง</b></h4>
+                </div>ง
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
 
