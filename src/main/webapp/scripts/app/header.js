@@ -1,10 +1,8 @@
 $(document).ready(function () {
 
-
-    $('#03').click(function(){
-
-            console.log("test")
-    });
+    // $('#clickhome').click(function () {
+    //    window.location.href;
+    // });
 
 
 

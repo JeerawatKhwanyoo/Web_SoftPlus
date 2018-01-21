@@ -1,10 +1,12 @@
-<html>
+
 <div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:component="urn:jsptagdir:/WEB-INF/tags/component" xmlns:util="urn:jsptagdir:/WEB-INF/tags/util"
      xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
 <jsp:directive.page contentType="text/html;charset=UTF-8" />
 <jsp:output omit-xml-declaration="yes" />
 
 <c:set scope="request" var="label_hello_world"><spring:message code="label_hello_world"/></c:set>
+
+
 
     <spring:url value="/scripts/app/contact.js" var="contact" />
     <script src="${contact}" type="text/javascript"><!-- required for FF3 and Opera --></script>
@@ -259,7 +261,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form id="upload-file-form">
                         <div class="form-group">
                              <div class="row">
                                 <div class="col-sm-12">
@@ -297,8 +299,16 @@
                                          <label for="exampleInputFile">Resume : </label>
                                      </div>
                                     <div class="col-sm-10">
-                                          <input type="file" class="form-control-file" id="inputfile" aria-describedby="fileHelp"/>
+                                          <!--<input type="file" class="form-control-file" id="inputfile" aria-describedby="fileHelp"/>-->
+
+                                        <form id="upload-file-input">
+                                            <!--<label for="upload-file-input">Upload your file:</label>-->
+                                            <input id="upload-file-input" type="file" name="uploadfile" accept="*" />
+                                            <br />
+                                            <!--<span id="upload-file-message"></span>-->
+                                        </form>
                                           <small id="fileHelp" class="form-text text-muted"></small>
+
                                     </div>
                                 </div>
                             </div>
@@ -400,6 +410,9 @@
 
 
 
+
 </div>
-    </html>
+
+
+
 

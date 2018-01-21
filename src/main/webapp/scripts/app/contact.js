@@ -80,6 +80,27 @@ function checkMail() {
 
 }
 
+function uploadFile() {
+    $.ajax({
+        url: "/SPT/contact/uploadFile",
+        type: "POST",
+        data: new FormData($("#upload-file-form")[0]),
+        enctype: 'multipart/form-data',
+        processData: false,
+        contentType: false,
+        cache: false,
+        success: function () {
+            // Handle upload success
+            $("#upload-file-message").text("File succesfully uploaded");
+        },
+        error: function () {
+            // Handle upload error
+            $("#upload-file-message").text(
+                "File not uploaded (perhaps it's too much big)");
+        }
+    });
+}
+
 
 $(document).ready(function () {
 
@@ -90,12 +111,12 @@ $(document).ready(function () {
 
         $("#inputemail").on('blur',function(){
             checkMail();
-
-            
-
-
-
     });
+
+
+    $("#upload-file-form").on("change", uploadFile);
+
+
 
 
     $('#close_modal').click(function () {
@@ -151,10 +172,12 @@ $(document).ready(function () {
                     if (xhr.readyState == 4) {
 
                     }
+
                     $('.dv-background').hide();
                     dataname = $('#inputname').val('');
                     dataemail = $('#inputemail').val('');
                     datamessage = $('#inputmessage').val('');
+                    $('#upload-file-input').val(null);
                 },
 
 

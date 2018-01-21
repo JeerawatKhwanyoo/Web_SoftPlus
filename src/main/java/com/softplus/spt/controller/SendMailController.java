@@ -5,13 +5,26 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
 
 import java.util.*;
 import javax.mail.*;
 import javax.mail.internet.*;
 import javax.activation.*;
 
+import org.springframework.core.io.FileSystemResource;
+import org.springframework.mail.SimpleMailMessage;
+import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.mail.javamail.MimeMessageHelper;
+
 public class SendMailController {
+
+    @Autowired
+    Environment env;
+
+    private JavaMailSender mailSender;
+    private SimpleMailMessage simpleMailMessage;
 
     public void sendEmail(String content) {
 
@@ -34,6 +47,10 @@ public class SendMailController {
                 }
             });
 
+            String pathFile = env.getProperty("netgloo.paths.uploadedFiles");
+//            pathFile = pathFile.replaceAll('\',"\\\\");
+            pathFile += "\\222.txt";
+
 
             MimeMessage message = new MimeMessage(session);
             message.setFrom(new InternetAddress("inoncpe@gmail.com"));
@@ -42,6 +59,18 @@ public class SendMailController {
                     InternetAddress.parse("inoncpe@gmail.com"));
             message.setSubject(joContent.get("name").toString()+" From: "+joContent.get("email").toString(),"UTF-8");
             message.setText(joContent.get("message").toString(),"UTF-8");
+
+
+            MimeMessageHelper helper = new MimeMessageHelper(message,true);
+
+//            helper.setFrom(simpleMailMessage.getFrom());
+//            helper.setTo(simpleMailMessage.getTo());
+//            helper.setSubject(simpleMailMessage.getSubject());
+//            helper.setText(String.format(
+//                    simpleMailMessage.getText(), "inoncpe@gmail.com", content));
+
+            FileSystemResource file = new FileSystemResource("D:\\222.txt");
+            helper.addAttachment(file.getFilename(), file);
 
             Transport.send(message);
 
