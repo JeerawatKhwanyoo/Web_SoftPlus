@@ -113,11 +113,7 @@ $(document).ready(function () {
             checkMail();
     });
 
-
-    $("#upload-file-form").on("change", uploadFile);
-
-
-
+    // $("#upload-file-form").on("change", uploadFile);
 
     $('#close_modal').click(function () {
         $('#inputname').val('');
@@ -154,12 +150,10 @@ $(document).ready(function () {
             }else {
 
             }
-
             return false;
         }else if(checkname===true&&checkmail===true){
 
             $.ajax({
-
                 type: "POST",
                 contentType: "application/json; charset=utf-8",
                 dataType: "json",
@@ -173,6 +167,7 @@ $(document).ready(function () {
 
                     }
 
+                    uploadFile();
                     $('.dv-background').hide();
                     dataname = $('#inputname').val('');
                     dataemail = $('#inputemail').val('');
