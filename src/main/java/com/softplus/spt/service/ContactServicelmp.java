@@ -7,8 +7,14 @@ import flexjson.JSONDeserializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.io.BufferedOutputStream;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,6 +25,7 @@ public class ContactServicelmp implements ContactService {
 
     @Autowired
     ContactRepository contactRepository;
+
 
     @Override
     public Contact findId(Long id) {
@@ -34,22 +41,30 @@ public class ContactServicelmp implements ContactService {
 
 
     @Override
-    public void saveContact(String json) {
-        ObjectMapper objectMapper = new ObjectMapper();
+    public void saveContact(String username,String mail, String message) {
 
 
 
         try{
-//            Contact contactList = new JSONDeserializer<Contact>()
-//                    .use("",Contact.class)
-//                    .deserialize(json);
-//            LOGGER.info("{}",json);
-
-            Contact contact = objectMapper.readValue(json,Contact.class);
-//            LOGGER.info("{}",contact.getEmail());
+//
 
 
-            contactRepository.save(contact);
+            contactRepository.save(new Contact(username,mail,message));
+//            LOGGER.debug("saveSuccess {}",contact.getId());
+           //upload file
+
+//            String filename = uploadfile.getOriginalFilename();
+//            String directory = env.getProperty("netgloo.paths.uploadedFiles");
+//            String filepath = Paths.get(directory, filename).toString();
+//
+//            BufferedOutputStream stream =
+//                    new BufferedOutputStream(new FileOutputStream(new File(filepath)));
+//            stream.write(uploadfile.getBytes());
+//            stream.close();
+//            LOGGER.debug("uploadSuccess {}",filepath);
+
+
+            //sendmail
 
 
         }catch(Exception e){

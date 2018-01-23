@@ -303,7 +303,7 @@
 
                                         <form id="upload-file-input">
                                             <!--<label for="upload-file-input">Upload your file:</label>-->
-                                            <input id="upload-file-input" type="file" name="uploadfile" accept="*" />
+                                                <input id="upload-file-input" type="file" name="file" accept="*" />
                                             <br />
                                             <!--<span id="upload-file-message"></span>-->
                                         </form>
@@ -348,7 +348,7 @@
                     <h4 style="font-size: 22px;"><span style="color: red">!!</span> คำเตือน</h4>
                 </div>
                 <div class="modal-body">
-                    <h4 style="text-align: center;"><b>กรุณากรอกข้อมูลในช่องทีมีเครื่องหมาย(<span style="color: red">*</span>)ให้ครบ</b></h4>
+                    <h4 style="text-align: center;"><b>กรุณากรอกข้อมูลในช่องว่างให้ครบ</b></h4>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>

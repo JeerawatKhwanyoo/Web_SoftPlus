@@ -81,28 +81,33 @@ function checkMail() {
 }
 
 function uploadFile() {
-    $.ajax({
-        url: "/SPT/contact/uploadFile",
-        type: "POST",
-        data: new FormData($("#upload-file-form")[0]),
-        enctype: 'multipart/form-data',
-        processData: false,
-        contentType: false,
-        cache: false,
-        success: function () {
-            // Handle upload success
-            $("#upload-file-message").text("File succesfully uploaded");
-        },
-        error: function () {
-            // Handle upload error
-            $("#upload-file-message").text(
-                "File not uploaded (perhaps it's too much big)");
-        }
-    });
+
+    //
+    // $.ajax({
+    //     url: "/SPT/contact/uploadFile",
+    //     type: "POST",
+    //     data: new FormData($("#upload-file-form")[0]),
+    //     enctype: 'multipart/form-data',
+    //     processData: false,
+    //     contentType: false,
+    //     cache: false,
+    //     success: function () {
+    //         // Handle upload success
+    //         $("#upload-file-message").text("File succesfully uploaded");
+    //     },
+    //     error: function () {
+    //         // Handle upload error
+    //         $("#upload-file-message").text(
+    //             "File not uploaded (perhaps it's too much big)");
+    //     }
+    // });
 }
 
 
+
+
 $(document).ready(function () {
+
 
     $("#inputemail").focus(function(){
         $('p').empty();
@@ -123,14 +128,18 @@ $(document).ready(function () {
     });
 
     $('#bnsend').click(function(){
-
         var dataname = $('#inputname').val();
         var dataemail = $('#inputemail').val();
         var datamessage = $('#inputmessage').val();
-        // console.log(dataname);
-        // console.log(dataemail);
-        // console.log(datamessage);
-        var data ={"name":dataname,"email":dataemail,"message":datamessage};
+
+
+        var file = document.getElementById('upload-file-input').files;
+        var formData = new FormData();
+        formData.append("name",dataname);
+        formData.append("email",dataemail);
+        formData.append("message",datamessage);
+        formData.append('file',file[0]);
+
         var checkname = checkName();
         var checkmail = validateForm();
         // console.log(check);
@@ -153,21 +162,28 @@ $(document).ready(function () {
             return false;
         }else if(checkname===true&&checkmail===true){
 
+            // myFunction();
             $.ajax({
+
+
+
+                // dataType: 'text',
+                processData: false,
+                contentType: false,
+                async:false,
                 type: "POST",
-                contentType: "application/json; charset=utf-8",
+                // contentType: "application/json; charset=utf-8",
                 dataType: "json",
                 headers: {
                     Accept: "application/json"
                 },
                 url: "/SPT/contact/saveContact",
-                data: JSON.stringify(data),
+                data: formData,
                 complete: function (xhr) {
                     if (xhr.readyState == 4) {
 
                     }
 
-                    uploadFile();
                     $('.dv-background').hide();
                     dataname = $('#inputname').val('');
                     dataemail = $('#inputemail').val('');
