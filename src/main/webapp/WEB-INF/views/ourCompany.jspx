@@ -83,18 +83,31 @@
                     <div class="col-sm-5">
                         <div id="slideshow">
                             <div>
-                                <img src="/SPT/img/s1.png" style = "width: 100%; height: 100%" />
+                                <img src="/SPT/img/img2.jpg" style = "width: 100%; height: 100%" />
                             </div>
                             <div>
-                                <img src="/SPT/img/s2.jpg" style = "width: 100%; height: 100%"/>
+                                <img src="/SPT/img/img4.jpg" style = "width: 100%; height: 100%"/>
                             </div>
                             <div>
-                                <img src="/SPT/img/s3.jpg" style = "width: 100%; height: 100%"/>
+                                <img src="/SPT/img/img3.jpg" style = "width: 100%; height: 100%"/>
                             </div>
                             <div>
-                                <img src="/SPT/img/s4.jpg" style = "width: 100%; height: 100%"/>
+                                <img src="/SPT/img/img1.jpg" style = "width: 100%; height: 100%"/>
+                            </div>
+                            <div>
+                                <img src="/SPT/img/img5.jpg" style = "width: 100%; height: 100%"/>
                             </div>
                         </div>
+
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+
                     </div>
 
                     <div class="col-sm-offset-1 col-sm-5">
@@ -103,12 +116,9 @@
 
 
                             <h4>ประวัติบริษัท </h4>
-                            <p style = "text-align: left"> บริษัท Soft Plus Technology และสถาบันการศึกษา ได้เปิดโอกาสให้นักศึกษานำความรู้ในห้องเรียนไปใช้ในการปฏิบัติงานจริง ซึ่งจะทำให้นักศึกษาได้มีโอกาสได้ฝึกซ้อมใน 1 ภาคการศึกษา
-                                โดยบริษัทจะจัดเตรียมแผนการสอนและฝึกอบรมให้นักศึกษาก่อน  และสอนให้นักศึกษาสามารถใช้ความรู้ทางวิชาการในการแก้ปัญหาในโลกแห่งความเป็นจริงได้</p>
+                            <p style = "text-align: left"> </p>
                             <br/>
-                            <p style = "text-align: left">  ประสบการณ์ที่ได้จาก Soft Plus Technology จะช่วยเพิ่มการเรียนรู้ในห้องเรียน
-                                และค้นหาความถนัดในสายงานของนักศึกษาได้ดียิ่งขึ้น
-                                ผลการดำเนินงานของนักศึกษาจะได้รับการตรวจสอบและประเมินโดย บริษัท และสถาบันเมื่อเสร็จสิ้น
+                            <p style = "text-align: left">
                             </p>
                         </div>
                     </div>

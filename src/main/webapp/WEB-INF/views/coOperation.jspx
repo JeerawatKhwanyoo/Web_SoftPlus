@@ -109,21 +109,37 @@
                     <div class="col-sm-offset-1 col-sm-5">
                         <div id="slideshow2">
                             <div>
-                                <img src="/SPT/img/softcoop2.JPG" style="width: 100%;height: 100%"/>
+                                <img src="/SPT/img/ss6.jpg" style="width: 100%;height: 100%"/>
                             </div>
                             <div>
-                                <img src="/SPT/img/softcoop1.jpg" style="width: 100%;height: 100%"/>
+                                <img src="/SPT/img/ss9.jpg" style="width: 100%;height: 100%"/>
                             </div>
                             <div>
-                                <img src="/SPT/img/softcoop3.jpg" style="width: 100%;height: 100%"/>
+                                <img src="/SPT/img/ss8.jpg" style="width: 100%;height: 100%"/>
                             </div>
                             <div>
-                                <img src="/SPT/img/softcoop4.jpg" style="width: 100%;height: 100%"/>
+                                <img src="/SPT/img/ss5.jpg" style="width: 100%;height: 100%"/>
                             </div>
                             <div>
-                                <img src="/SPT/img/softcoop5.png" style="width: 100%;height: 100%"/>
+                                <img src="/SPT/img/ss2.jpg" style="width: 100%;height: 100%"/>
+                            </div>
+                            <div>
+                                <img src="/SPT/img/ss4.jpg" style="width: 100%;height: 100%"/>
+                            </div>
+                            <div>
+                                <img src="/SPT/img/ss10.jpg" style="width: 100%;height: 100%"/>
                             </div>
                         </div>
+
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+
                     </div>
                 </div>
             </div>

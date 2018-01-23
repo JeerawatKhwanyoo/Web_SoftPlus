@@ -104,7 +104,7 @@ public class SendMailController {
 
             /*** Recipient ***/
             message.setRecipients(Message.RecipientType.TO,
-                    InternetAddress.parse("khwanyoo.ns@gmail.com")); // To
+                    InternetAddress.parse("yodwitthawat@hotmail.com")); // To
             message.setSubject(name + " From: " + email,"UTF-8");
             message.setContent(msg,"UTF-8");
             message.setText(msg,"UTF-8");
