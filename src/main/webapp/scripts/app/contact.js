@@ -107,7 +107,7 @@ function uploadFile() {
 
 
 $(document).ready(function () {
-
+    $('#loader').hide();
 
     $("#inputemail").focus(function(){
         $('p').empty();
@@ -125,6 +125,7 @@ $(document).ready(function () {
         $('#inputemail').val('');
         $('#inputmessage').val('');
         // console.log("test")
+        $('#loader').hide();
     });
 
     $('#bnsend').click(function(){
