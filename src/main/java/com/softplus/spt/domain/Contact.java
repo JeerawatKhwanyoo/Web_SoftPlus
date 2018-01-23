@@ -15,15 +15,15 @@ public class Contact {
     Long id;
     private String name;
     private String email;
-    private String message;
+    private String msg;
 
 
     private Contact() {}
 
-    public Contact(String name, String email, String message) {
+    public Contact(String name, String email, String msg) {
         this.name = name;
         this.email = email;
-        this.message = message;
+        this.msg = msg;
 
     }
 }

@@ -69,10 +69,11 @@ function checkMail() {
 
     if(check==="") {
         // console.log("Null")
+        return false;
 
     }else if(checkmail===false){
         var a =  $("#inputemail").val();
-        $('p').append('Invalid format. Ex. xxx@xxx.com');
+        $('#warning-mail').append('Invalid format. Ex. xxx@xxx.com');
         $('#inputemail').css("border-color", "red");
 
     }
@@ -99,36 +100,19 @@ function checkPdfFile() {
         return false;
     }
 
-    //
-    // $.ajax({
-    //     url: "/SPT/contact/uploadFile",
-    //     type: "POST",
-    //     data: new FormData($("#upload-file-form")[0]),
-    //     enctype: 'multipart/form-data',
-    //     processData: false,
-    //     contentType: false,
-    //     cache: false,
-    //     success: function () {
-    //         // Handle upload success
-    //         $("#upload-file-message").text("File succesfully uploaded");
-    //     },
-    //     error: function () {
-    //         // Handle upload error
-    //         $("#upload-file-message").text(
-    //             "File not uploaded (perhaps it's too much big)");
-    //     }
-    // });
 }
 
 
 
 
 $(document).ready(function () {
+
+
     $('#loader').hide();
 
 
     $("#inputemail").focus(function(){
-        $('p').empty();
+        $('#warning-mail').empty();
         $('#inputemail').css("border-color", "");
     });
 
@@ -136,7 +120,9 @@ $(document).ready(function () {
             checkMail();
     });
 
-    // $("#upload-file-form").on("change", uploadFile);
+    $("#upload-file-input").on("change", function () {
+      checkPdfFile();
+    });
 
     $('#close_modal').click(function () {
         $('#inputname').val('');
@@ -149,6 +135,10 @@ $(document).ready(function () {
     $('#bnsend').click(function(){
 
 
+        var checkPDF = $('#upload-file-input').val();
+        var arr = checkPDF.split(".");
+
+
         var dataname = $('#inputname').val();
         var dataemail = $('#inputemail').val();
         var datamessage = $('#inputmessage').val();
@@ -158,11 +148,12 @@ $(document).ready(function () {
         var formData = new FormData();
         formData.append("name",dataname);
         formData.append("email",dataemail);
-        formData.append("message",datamessage);
+        formData.append("msg",datamessage);
         formData.append('file',file[0]);
 
         var checkname = checkName();
         var checkmail = validateForm();
+        var checkfile = checkPdfFile()
         // console.log(check);
         console.log(dataname);
         console.log(dataemail);
@@ -194,20 +185,12 @@ $(document).ready(function () {
                    return false;
                }
 
-
-
-
-
-
-
         }else if(checkname===true&&checkmail===true&&checkfile===true){
+            $('#bnsend').prop('disabled', true);
+            $('#loader').show();
 
             // myFunction();
             $.ajax({
-
-
-
-                // dataType: 'text',
                 processData: false,
                 contentType: false,
                 async:false,

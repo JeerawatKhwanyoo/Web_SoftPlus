@@ -120,7 +120,7 @@ public class SendMailController {
             String  Attach = content;
 
             //fill message
-            messageBodyPart.setText("");
+            messageBodyPart.setText(msg,"UTF-8");
             LOGGER.info("set mail content");
 
             Multipart multipart = new MimeMultipart();

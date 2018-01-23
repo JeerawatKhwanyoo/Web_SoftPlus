@@ -41,7 +41,7 @@ public class ContactServicelmp implements ContactService {
 
 
     @Override
-    public void saveContact(String username,String mail, String message) {
+    public void saveContact(String username,String mail, String msg) {
 
 
 
@@ -49,7 +49,7 @@ public class ContactServicelmp implements ContactService {
 //
 
 
-            contactRepository.save(new Contact(username,mail,message));
+            contactRepository.save(new Contact(username,mail,msg));
 //            LOGGER.debug("saveSuccess {}",contact.getId());
            //upload file
 
