@@ -80,7 +80,24 @@ function checkMail() {
 
 }
 
-function uploadFile() {
+function checkPdfFile() {
+    var checkPDF = $('#upload-file-input').val();
+    var arr = checkPDF.split(".");
+    $('#warning_file').empty();
+    if(arr[1]  ==="pdf"){
+            console.log("PDF file")
+        $('#warning_file').empty();
+            return true;
+    }else if(arr[1]===undefined){
+        console.log("null")
+        $('#warning_file').empty();
+
+           return false;
+    }else if(arr[1]!==""){
+        console.log("Not PDF File")
+        $('#warning_file').append('Invalid file');
+        return false;
+    }
 
     //
     // $.ajax({
@@ -151,24 +168,40 @@ $(document).ready(function () {
         console.log(dataemail);
         console.log(datamessage);
 
-        if(checkname===false&&checkmail===false){
+        if(checkname===false&&checkmail===false&&checkfile===false){
             $('#myModalAll').modal('show');
             return false;
-        }else if(checkmail===true&&checkname===false){
+        }else if(checkmail===true&&checkname===false&&checkfile===true){
             $('#myModalName').modal('show');
             return false;
-        }else if(checkname===true&&checkmail===false){
-            if(dataemail===""){
-                $('#myModalEmail').modal('show');
-            }else {
+        }else if(checkname===true&&checkmail===false&&checkfile===false) {
+            if (dataemail === "") {
+                $('#myModalAll').modal('show');
+            } else {
 
             }
             return false;
-        }else if(checkname===true&&checkmail===true){
-            $('#bnsend').prop('disabled', true);
+        }else if(checkname===true&&checkmail===false&&checkfile===true){
+                $('#myModalAll').modal('show');
+                return false;
+        }else if(checkfile==false&&checkname===true&&checkmail===true){
+
+               if(arr[1]===undefined){
+                   $('#myModalfile').modal('show');
+                   return false;
+               }else if(arr[1]!==""){
+
+                   return false;
+               }
 
 
-            $('#loader').show();
+
+
+
+
+
+        }else if(checkname===true&&checkmail===true&&checkfile===true){
+
             // myFunction();
             $.ajax({
 
