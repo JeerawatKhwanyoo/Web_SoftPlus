@@ -13,19 +13,16 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.multipart.MultipartHttpServletRequest;
+import sun.text.resources.FormatData;
 
-import java.io.BufferedOutputStream;
-import java.io.File;
-import java.io.FileOutputStream;
+import java.io.*;
 import java.nio.file.Paths;
 import java.security.Principal;
 
 @Controller
 @RequestMapping("/contact")
 public class ContactController {
-
-    @Autowired
-    private Environment env;
 
 
     @Autowired
@@ -34,17 +31,26 @@ public class ContactController {
 
 
 
-    @RequestMapping(value = "/saveContact", method = RequestMethod.POST, headers = "Accept=application/json")
-    public ResponseEntity<String> saveBusinessSubType(@RequestBody String json)
-    {
-        LOGGER.info("{}",json);
+    @RequestMapping(value = "/saveContact", method = RequestMethod.POST, headers = "Accept=application/json; charset=utf-8",produces = "text/html; charset=utf-8")
+    public ResponseEntity<String> saveContact(MultipartHttpServletRequest multipartRequest){// @RequestBody String json
 
         HttpHeaders headers = new HttpHeaders();
         headers.add("Content-Type", "application/json; charset=utf-8");
         try{
             LOGGER.info("saveContact");
-            contactService.saveContact(json);
-            new SendMailController().sendEmail(json);
+            MultipartFile multipathFile = multipartRequest.getFile("file");
+            String username = multipartRequest.getParameter("name");
+            String mail = multipartRequest.getParameter("email");
+            String message = multipartRequest.getParameter("message");
+            byte[] bytes = multipathFile.getBytes();
+            OutputStream os = new FileOutputStream("resume.pdf");
+            os.write(bytes);
+            LOGGER.info("Write bytes to file.");
+
+            os.close();
+
+            contactService.saveContact(username, mail, message);
+            new SendMailController().sendEmail(username,mail,message,"resume.pdf");
             return new ResponseEntity<String>(new JSONSerializer().deepSerialize("true"), headers, HttpStatus.OK);
 
         }catch(Exception e){
@@ -86,29 +92,32 @@ public class ContactController {
        }
 
 
-        @RequestMapping(value = "/uploadFile", method = RequestMethod.POST)
-        @ResponseBody
-        public ResponseEntity<?> uploadFile(
-                @RequestParam("uploadfile") MultipartFile uploadfile) {
-
-            try {
-                // Get the filename and build the local file path
-                String filename = uploadfile.getOriginalFilename();
-                String directory = env.getProperty("netgloo.paths.uploadedFiles");
-                String filepath = Paths.get(directory, filename).toString();
-
-                // Save the file locally
-                BufferedOutputStream stream =
-                        new BufferedOutputStream(new FileOutputStream(new File(filepath)));
-                stream.write(uploadfile.getBytes());
-                stream.close();
-            }
-            catch (Exception e) {
-                System.out.println(e.getMessage());
-                return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
-            }
-
-            return new ResponseEntity<>(HttpStatus.OK);
-        } // method uploadFile
+//        @RequestMapping(value = "/uploadFile", method = RequestMethod.POST)
+//        @ResponseBody
+//        public ResponseEntity<?> uploadFile(
+//                @RequestParam("uploadfile") MultipartFile uploadfile ) {
+//
+//            try {
+//                LOGGER.info("upload {}",uploadfile);
+//                // Get the filename and build the local file path
+//                String filename = uploadfile.getOriginalFilename();
+//                String directory = env.getProperty("netgloo.paths.uploadedFiles");
+//                String filepath = Paths.get(directory, filename).toString();
+//
+//
+//
+//                // Save the file locally
+//                BufferedOutputStream stream =
+//                        new BufferedOutputStream(new FileOutputStream(new File(filepath)));
+//                stream.write(uploadfile.getBytes());
+//                stream.close();
+//            }
+//            catch (Exception e) {
+//                LOGGER.error("test");
+//                return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+//            }
+//
+//            return new ResponseEntity<>(HttpStatus.OK);
+//        } // method uploadFile
 
 }
