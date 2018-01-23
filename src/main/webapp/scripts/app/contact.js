@@ -1,7 +1,7 @@
 function initializeMap() {
 
-    var lat = '13.968177'; //Set your latitude.
-    var lon = '100.599283'; //Set your longitude.
+    var lat = '13.9681754'; //Set your latitude.
+    var lon = '100.5992342'; //Set your longitude.
 
     var centerLon = lon - 0.0105;
 
@@ -128,6 +128,8 @@ $(document).ready(function () {
     });
 
     $('#bnsend').click(function(){
+        $('#loader').show();
+
         var dataname = $('#inputname').val();
         var dataemail = $('#inputemail').val();
         var datamessage = $('#inputmessage').val();
@@ -189,6 +191,7 @@ $(document).ready(function () {
                     dataemail = $('#inputemail').val('');
                     datamessage = $('#inputmessage').val('');
                     $('#upload-file-input').val(null);
+                    $('#loader').hide();
                 },
 
 

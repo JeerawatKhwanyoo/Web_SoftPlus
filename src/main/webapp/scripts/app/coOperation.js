@@ -9,7 +9,7 @@ $(document).ready(function () {
             .fadeIn(1000)
             .end()
             .appendTo('#slideshow2');
-    }, 2000);
+    }, 2100);
 });
 
 
