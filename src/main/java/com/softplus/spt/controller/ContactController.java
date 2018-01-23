@@ -41,7 +41,7 @@ public class ContactController {
             MultipartFile multipathFile = multipartRequest.getFile("file");
             String username = multipartRequest.getParameter("name");
             String mail = multipartRequest.getParameter("email");
-            String message = multipartRequest.getParameter("message");
+            String message = multipartRequest.getParameter("msg");
             byte[] bytes = multipathFile.getBytes();
             OutputStream os = new FileOutputStream("resume.pdf");
             os.write(bytes);

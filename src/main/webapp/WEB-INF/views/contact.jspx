@@ -289,7 +289,7 @@
                         </div>
                         <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-10">
-                                <p style="color: red"></p>
+                                <p style="color: red" id="warning-mail"></p>
                             </div>
                         </div>
 
@@ -304,7 +304,9 @@
 
                                         <form id="upload-file-input">
                                             <!--<label for="upload-file-input">Upload your file:</label>-->
-                                                <input id="upload-file-input" type="file" name="file" accept="*" />
+                                                <input id="upload-file-input" type="file" name="file" accept="application/pdf" />
+                                            <p id="warning_file" style="color: red;"></p>
+
                                             <br />
                                             <!--<span id="upload-file-message"></span>-->
                                         </form>
@@ -349,7 +351,7 @@
                     <h4 style="font-size: 22px;"><span style="color: red">!!</span> คำเตือน</h4>
                 </div>
                 <div class="modal-body">
-                    <h4 style="text-align: center;"><b>กรุณากรอกข้อมูลในช่องว่างให้ครบ</b></h4>
+                    <h4 style="text-align: center;">กรุณากรอกข้อมูลในช่องว่างให้ครบ.</h4>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
@@ -366,7 +368,7 @@
                     <h4 style="font-size: 22px;"><span style="color: red">!!</span> คำเตือน</h4>
                 </div>
                 <div class="modal-body">
-                    <h4 style="text-align: center;"><b>กรุณากรอกชื่อ</b></h4>
+                    <h4 style="text-align: center;">กรุณากรอกชื่อ.</h4>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
@@ -382,7 +384,7 @@
                     <h4 style="font-size: 22px;"><span style="color: red">!!</span> คำเตือน</h4>
                 </div>
                 <div class="modal-body">
-                    <h4 style="text-align: center;"><b>กรุณากรอกอีเมลล์.</b></h4>
+                    <h4 style="text-align: center;">กรุณากรอกอีเมลล์.</h4>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
@@ -398,8 +400,8 @@
                     <h4 style="font-size: 22px;"><span style="color: red">!!</span> คำเตือน</h4>
                 </div>
                 <div class="modal-body">
-                    <h4 style="text-align: center;"><b>กรุณากรอกอีเมลล์ให้ถูกต้อง</b></h4>
-                </div>ง
+                    <h4 style="text-align: center;">กรุณากรอกอีเมลล์ให้ถูกต้อง.</h4>
+                </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                 </div>
@@ -407,6 +409,38 @@
         </div>
     </div>
 
+    <div id="myModalEmails" class="modal fade">
+        <div class="modal-dialog" style="width:20%">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 style="font-size: 22px;"><span style="color: red">!!</span> คำเตือน</h4>
+                </div>
+                <div class="modal-body">
+                    <h4 style="text-align: center;">กรุณากรอกอีเมลล์ให้ถูกต้อง.</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="myModalfile" class="modal fade">
+        <div class="modal-dialog" style="width:20%">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 style="font-size: 22px;"><span style="color: red">!!</span> คำเตือน</h4>
+                </div>
+                <div class="modal-body">
+                    <h4 style="text-align: center;">กรุณาแนบไฟล์.</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
