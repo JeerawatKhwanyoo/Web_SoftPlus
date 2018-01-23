@@ -109,6 +109,7 @@ function uploadFile() {
 $(document).ready(function () {
     $('#loader').hide();
 
+
     $("#inputemail").focus(function(){
         $('p').empty();
         $('#inputemail').css("border-color", "");
@@ -129,7 +130,7 @@ $(document).ready(function () {
     });
 
     $('#bnsend').click(function(){
-        $('#loader').show();
+
 
         var dataname = $('#inputname').val();
         var dataemail = $('#inputemail').val();
@@ -164,7 +165,10 @@ $(document).ready(function () {
             }
             return false;
         }else if(checkname===true&&checkmail===true){
+            $('#bnsend').prop('disabled', true);
 
+
+            $('#loader').show();
             // myFunction();
             $.ajax({
 
@@ -193,6 +197,8 @@ $(document).ready(function () {
                     datamessage = $('#inputmessage').val('');
                     $('#upload-file-input').val(null);
                     $('#loader').hide();
+                    $('#bnsend').prop('disabled', false);
+
                 },
 
 
@@ -202,6 +208,7 @@ $(document).ready(function () {
         //
         //     saveData();
         // console.log(data);
+        // $('#loader').hide();
 
     });
 
