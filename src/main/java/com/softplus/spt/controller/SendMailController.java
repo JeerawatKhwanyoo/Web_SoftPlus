@@ -1,5 +1,6 @@
 package com.softplus.spt.controller;
 
+import com.softplus.spt.constant.ConstantVariableUtil;
 import flexjson.JSON;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -57,33 +58,15 @@ public class SendMailController {
     public void sendEmail(String name,String email,String msg,String content) throws JSONException {
 
 
-//        try {
-//            //Convert String to Json Obj First
-//            JSONObject joContent = new JSONObject(content);
-//            MimeMessage message = new MimeMessage(session);
-//            message.setFrom(new InternetAddress("inoncpe@gmail.com"));
-//            message.setHeader("Content-Type", "text/html; charset=UTF-8");
-//            message.setRecipients(Message.RecipientType.TO,
-//                    InternetAddress.parse("inoncpe@gmail.com"));
-//            message.setSubject(joContent.get("name").toString()+" From: "+joContent.get("email").toString(),"UTF-8");
-//            message.setText(joContent.get("message").toString(),"UTF-8");
-//            message.setContent(joContent.get("message").toString(),"UTF-8");
-
-
-
-        final String auth_host = "mail.thaicreate.com";
-        final String auth_port = "25";
-        final String auth_email = "no-reply@thaicreate.com";
-        final String auth_password = "password";
 
         Properties props = new Properties();
 
-        props.put("mail.smtp.host", "smtp.gmail.com");
-        props.put("mail.smtp.socketFactory.port", "465");
+        props.put("mail.smtp.host", ConstantVariableUtil.MAIL_SMTP_HOST);
+        props.put("mail.smtp.socketFactory.port", ConstantVariableUtil.MAIL_SMTP_SOCKETFACTORY_PORT);
         props.put("mail.smtp.socketFactory.class",
-                "javax.net.ssl.SSLSocketFactory");
-        props.put("mail.smtp.auth", "true");
-        props.put("mail.smtp.port", "465");
+                ConstantVariableUtil.MAIL_SMTP_SOCKETFACTORY_CLASS);
+        props.put("mail.smtp.auth", ConstantVariableUtil.MAIL_SMTP_AUTH);
+        props.put("mail.smtp.port", ConstantVariableUtil.MAIL_SMTP_PORT);
 
         try {
 
@@ -93,7 +76,7 @@ public class SendMailController {
                         protected PasswordAuthentication
                         getPasswordAuthentication() {
                             return new PasswordAuthentication
-                                    ("inoncpe@gmail.com","inon2537");
+                                    (ConstantVariableUtil.SENDER_MAIL_USERNAME,ConstantVariableUtil.SENDER_MAIL_PASSWORD);
                         }
                     });
 
@@ -104,8 +87,10 @@ public class SendMailController {
 
             /*** Recipient ***/
             message.setRecipients(Message.RecipientType.TO,
-                    InternetAddress.parse("yodwitthawat@hotmail.com")); // To
-            message.setSubject(name + " From: " + email,"UTF-8");
+                    InternetAddress.parse(ConstantVariableUtil.RECIEVER_MAIL)); // To
+            message.setRecipients(Message.RecipientType.CC,
+                    InternetAddress.parse(ConstantVariableUtil.CC_MAIL));
+            message.setSubject(ConstantVariableUtil.TITLE_MAIL,"UTF-8");
             message.setContent(msg,"UTF-8");
             message.setText(msg,"UTF-8");
             message.setDescription(msg,"UTF-8");
@@ -120,7 +105,7 @@ public class SendMailController {
             String  Attach = content;
 
             //fill message
-            messageBodyPart.setText(msg,"UTF-8");
+//            messageBodyPart.setText(name+'<br/>'+email,"UTF-8");
             LOGGER.info("set mail content");
 
             Multipart multipart = new MimeMultipart();
