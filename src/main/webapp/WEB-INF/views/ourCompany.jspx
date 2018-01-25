@@ -6,6 +6,9 @@
     <spring:url value="/scripts/app/ourCompany.js" var="ourCompany" />
     <script src="${ourCompany}" type="text/javascript"><!-- required for FF3 and Opera --></script>
     <link href="https://fonts.googleapis.com/css?family=Maitree" rel="stylesheet"></link>
+
+    <c:set scope="request" var="label_OUR_COMPANY"><spring:message code="label_OUR_COMPANY"/></c:set>
+
     <head>
 
         <style>
@@ -61,7 +64,7 @@
 
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <h2>OUR COMPANY</h2>
+                        <h2>${label_OUR_COMPANY}</h2>
                     </div>
                 </div>
 

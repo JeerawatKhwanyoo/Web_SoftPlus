@@ -12,6 +12,45 @@
     <script src="${contact}" type="text/javascript"><!-- required for FF3 and Opera --></script>
     <link href="https://fonts.googleapis.com/css?family=Maitree" rel="stylesheet"></link>
 
+
+    <c:set scope="request" var="label_CONTACT"><spring:message code="label_CONTACT"/></c:set>
+    <c:set scope="request" var="label_ADDRESS"><spring:message code="label_ADDRESS"/></c:set>
+    <c:set scope="request" var="label_ADDRESS_data1"><spring:message code="label_ADDRESS_data1"/></c:set>
+    <c:set scope="request" var="label_ADDRESS_data2"><spring:message code="label_ADDRESS_data2"/></c:set>
+    <c:set scope="request" var="label_PHONE"><spring:message code="label_PHONE"/></c:set>
+    <c:set scope="request" var="label_PHONE_NUMBER"><spring:message code="label_PHONE_NUMBER"/></c:set>
+    <c:set scope="request" var="label_EMAIL"><spring:message code="label_EMAIL"/></c:set>
+    <c:set scope="request" var="label_EMAIL_data"><spring:message code="label_EMAIL_data"/></c:set>
+    <c:set scope="request" var="label_QR_CODE_MAP"><spring:message code="label_QR_CODE_MAP"/></c:set>
+
+
+
+    <c:set scope="request" var="MESSAGE_TO_SOFT_PLUS_TECHNOLOGY"><spring:message code="MESSAGE_TO_SOFT_PLUS_TECHNOLOGY"/></c:set>
+    <c:set scope="request" var="MESSAGE_NAME"><spring:message code="MESSAGE_NAME"/></c:set>
+    <c:set scope="request" var="MESSAGE_EMAIL"><spring:message code="MESSAGE_EMAIL"/></c:set>
+    <c:set scope="request" var="MESSAGE_RESUME"><spring:message code="MESSAGE_RESUME"/></c:set>
+    <c:set scope="request" var="MESSAGE_MESSAGE"><spring:message code="MESSAGE_MESSAGE"/></c:set>
+
+
+    <c:set scope="request" var="MESSAGE_WARNING"><spring:message code="MESSAGE_WARNING"/></c:set>
+    <c:set scope="request" var="MESSAGE_NULL_INPUT_ALL"><spring:message code="MESSAGE_NULL_INPUT_ALL"/></c:set>
+    <c:set scope="request" var="MESSAGE_NULL_INPUT_NAME"><spring:message code="MESSAGE_NULL_INPUT_NAME"/></c:set>
+    <c:set scope="request" var="MESSAGE_NULL_INPUT_EMAIL"><spring:message code="MESSAGE_NULL_INPUT_EMAIL"/></c:set>
+    <c:set scope="request" var="MESSAGE_ERROR_INPUT_EMAIL"><spring:message code="MESSAGE_ERROR_INPUT_EMAIL"/></c:set>
+    <c:set scope="request" var="MESSAGE_NULL_INPUT_FILE"><spring:message code="MESSAGE_NULL_INPUT_FILE"/></c:set>
+    <c:set scope="request" var="MESSAGE_ERROR_INPUT_FILE_SIZE"><spring:message code="MESSAGE_ERROR_INPUT_FILE_SIZE"/></c:set>
+
+
+
+    <c:set scope="request" var="BUTTOM_CLOSE"><spring:message code="BUTTOM_CLOSE"/></c:set>
+    <c:set scope="request" var="BUTTOM_SEND_MESSAGE"><spring:message code="BUTTOM_SEND_MESSAGE"/></c:set>
+    <c:set scope="request" var="BUTTOM_CONTACT_COOP"><spring:message code="BUTTOM_CONTACT_COOP"/></c:set>
+
+
+
+
+
+
     <head>
 
 
@@ -157,7 +196,7 @@
 
             <div class="row">
                 <div class="col-sm-12">
-                    <h2>CONTACT</h2>
+                    <h2>${label_CONTACT}</h2>
                 </div>
             </div>
 
@@ -187,35 +226,35 @@
 
                             <br/>
                                 <span class="glyphicon glyphicon-map-marker">
-                                    <b> Address:</b> 51/597  Soft Square Building, Mueng Ake Village
+                                    <b> ${label_ADDRESS}</b> ${label_ADDRESS_data1}
                                     <br/>
                                    <br/>
-                                    Moo 7, Lakhok , Muengpathumthani, Pathumthani 12000
+                                    ${label_ADDRESS_data2}
                                 </span>
                             <br/>
                             <br/>
                             <span class="glyphicon glyphicon-phone-alt">
-                                <b> Phone: </b>0-2997-2000
+                                <b> ${label_PHONE}</b> ${label_PHONE_NUMBER}
                            </span>
                             <br/>
                             <br/>
                             <span class="glyphicon glyphicon-envelope">
-                                <b> Email: </b>contact@ssoftplus.co.th
+                                <b> ${label_EMAIL}</b> ${label_EMAIL_data}
                            </span>
                          </div>
 
-
                             <br/>
-                            <a href="https://www.google.co.th/maps/search/softplus+technology/@13.9681706,100.5991735,20z?hl=en">
-                                <img src="/SPT/img/QRCodeNeww.png" style = "width: 40%;height: 40%;"/>
-                            </a>
+                                    <a href="https://www.google.co.th/maps/search/softplus+technology/@13.9681706,100.5991735,20z?hl=en">
+                                        <img src="/SPT/img/QRCodeNeww.png" style = "width: 20%;height: 20%;"/>
+                                    </a>
+
                             <div class="row">
-                                <span class="glyphicon glyphicon-hand-up"><b> QR Code Map</b></span>
+                                <span class="glyphicon glyphicon-hand-up"><b>${label_QR_CODE_MAP}</b></span>
                             </div>
                             <br/>
                             <div class="row">
-                                <div class="col-sm-2 col-sm-offset-5">
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">ติดต่อ</button>
+                                <div class="col-sm-offset-5 col-sm-2" >
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">${BUTTOM_CONTACT_COOP}</button>
                                     <!--<h3>สนใจสมัครสหกิจศึกษา</h3>-->
                                 </div>
                             </div>
@@ -257,7 +296,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header" style = "background: #ffbc00">
-                    <h5 class="modal-title" id="exampleModalLabel" style = "color: black"><b>To. Soft Plus Technology</b></h5>
+                    <h5 class="modal-title" id="exampleModalLabel" style = "color: black"><b>${MESSAGE_TO_SOFT_PLUS_TECHNOLOGY}</b></h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     </button>
                 </div>
@@ -267,7 +306,7 @@
                              <div class="row">
                                 <div class="col-sm-12">
                                     <div class="col-sm-2">
-                                        <label for="name" class="col-form-label">Name: <span style="color: red">*</span></label>
+                                        <label for="name" class="col-form-label">${MESSAGE_NAME}<span style="color: red">*</span></label>
                                     </div>
                                     <div class="col-sm-10">
                                          <input type="text" class="form-control" placeholder="Your name..." id="inputname"/>
@@ -279,7 +318,7 @@
                             <div class="row">
                                 <div class="col-sm-12">
                                     <div class="col-sm-2">
-                                        <label for="email"  class="col-form-label" >Email: <span style="color: red">*</span></label>
+                                        <label for="email"  class="col-form-label" >${MESSAGE_EMAIL}<span style="color: red">*</span></label>
                                     </div>
                                     <div class="col-sm-10">
                                         <input type="text" class="form-control" placeholder="Your email..." id="inputemail"/>
@@ -297,7 +336,7 @@
                             <div class="row">
                                 <div class="col-sm-12">
                                     <div class="col-sm-2">
-                                        <label for="exampleInputFile">Resume : </label>
+                                        <label for="exampleInputFile">${MESSAGE_RESUME}</label>
                                     </div>
                                     <div class="col-sm-4">
                                         <!--<input type="file" class="form-control-file" id="inputfile" aria-describedby="fileHelp"/>-->
@@ -325,7 +364,7 @@
                              <div class="row">
                                  <div class="col-sm-12">
                                      <div class="col-sm-2">
-                                        <label for="message-text" class="col-form-label">Message:</label>
+                                        <label for="message-text" class="col-form-label">${MESSAGE_MESSAGE}</label>
                                      </div>
                                      <div class="col-sm-10">
 
@@ -339,8 +378,8 @@
                     </form>
                 </div>
                 <div class="modal-footer" style = "background: #ffbc00">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal" id="close_modal">Close</button>
-                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="bnsend" >Send message</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" id="close_modal">${BUTTOM_CLOSE}</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="bnsend" >${BUTTOM_SEND_MESSAGE}</button>
                 </div>
             </div>
         </div>
@@ -351,13 +390,13 @@
         <div class="modal-dialog" style="width:20%">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 style="font-size: 22px;"><span style="color: red">!!</span> คำเตือน</h4>
+                    <h4 style="font-size: 22px;"><span style="color: red">!!</span>${MESSAGE_WARNING}</h4>
                 </div>
                 <div class="modal-body">
-                    <h4 style="text-align: center;">กรุณากรอกข้อมูลในช่องว่างให้ครบ.</h4>
+                    <h4 style="text-align: center;">${MESSAGE_NULL_INPUT_ALL}.</h4>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">${BUTTOM_CLOSE}</button>
                 </div>
             </div>
         </div>
@@ -368,13 +407,13 @@
         <div class="modal-dialog" style="width:20%">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 style="font-size: 22px;"><span style="color: red">!!</span> คำเตือน</h4>
+                    <h4 style="font-size: 22px;"><span style="color: red">!!</span> ${MESSAGE_WARNING}</h4>
                 </div>
                 <div class="modal-body">
-                    <h4 style="text-align: center;">กรุณากรอกชื่อ.</h4>
+                    <h4 style="text-align: center;">${MESSAGE_NULL_INPUT_NAME}.</h4>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">${BUTTOM_CLOSE}</button>
                 </div>
             </div>
         </div>
@@ -384,13 +423,13 @@
         <div class="modal-dialog" style="width:20%">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 style="font-size: 22px;"><span style="color: red">!!</span> คำเตือน</h4>
+                    <h4 style="font-size: 22px;"><span style="color: red">!!</span> ${MESSAGE_WARNING}</h4>
                 </div>
                 <div class="modal-body">
-                    <h4 style="text-align: center;">กรุณากรอกอีเมลล์.</h4>
+                    <h4 style="text-align: center;">${MESSAGE_NULL_INPUT_EMAIL}.</h4>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">${BUTTOM_CLOSE}</button>
                 </div>
             </div>
         </div>
@@ -400,46 +439,31 @@
         <div class="modal-dialog" style="width:20%">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 style="font-size: 22px;"><span style="color: red">!!</span> คำเตือน</h4>
+                    <h4 style="font-size: 22px;"><span style="color: red">!!</span> ${MESSAGE_WARNING}</h4>
                 </div>
                 <div class="modal-body">
-                    <h4 style="text-align: center;">กรุณากรอกอีเมลล์ให้ถูกต้อง.</h4>
+                    <h4 style="text-align: center;">${MESSAGE_ERROR_INPUT_EMAIL}.</h4>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">${BUTTOM_CLOSE}</button>
                 </div>
             </div>
         </div>
     </div>
-
-    <div id="myModalEmails" class="modal fade" data-backdrop="static">
-        <div class="modal-dialog" style="width:20%">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 style="font-size: 22px;"><span style="color: red">!!</span> คำเตือน</h4>
-                </div>
-                <div class="modal-body">
-                    <h4 style="text-align: center;">กรุณากรอกอีเมลล์ให้ถูกต้อง.</h4>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
+    fu
 
 
     <div id="myModalfile" class="modal fade" data-backdrop="static">
         <div class="modal-dialog" style="width:20%">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 style="font-size: 22px;"><span style="color: red">!!</span> คำเตือน</h4>
+                    <h4 style="font-size: 22px;"><span style="color: red">!!</span> ${MESSAGE_WARNING}</h4>
                 </div>
                 <div class="modal-body">
-                    <h4 style="text-align: center;">กรุณาแนบไฟล์.</h4>
+                    <h4 style="text-align: center;">${MESSAGE_NULL_INPUT_FILE}.</h4>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">${BUTTOM_CLOSE}</button>
                 </div>
             </div>
         </div>
@@ -449,13 +473,13 @@
         <div class="modal-dialog" style="width:20%">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 style="font-size: 22px;"><span style="color: red">!!</span> คำเตือน</h4>
+                    <h4 style="font-size: 22px;"><span style="color: red">!!</span> ${MESSAGE_WARNING}</h4>
                 </div>
                 <div class="modal-body">
-                    <h4 style="text-align: center;">ไฟล์ของคุณไม่ถูกต้อง(.pdf) หรือมีขนาดใหญ่เกิน 3 Mb</h4>
+                    <h4 style="text-align: center;">${MESSAGE_ERROR_INPUT_FILE_SIZE}.</h4>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" id="closesize" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger" id="closesize" data-dismiss="modal">${BUTTOM_CLOSE}</button>
                 </div>
             </div>
         </div>
