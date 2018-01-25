@@ -156,6 +156,7 @@ $(document).ready(function () {
         $('#inputname').val('');
         $('#inputemail').val('');
         $('#inputmessage').val('');
+        $('#upload-file-input').val('');
         // console.log("test")
         $('#loader').hide();
     });
@@ -214,7 +215,7 @@ $(document).ready(function () {
             return false;
         }
         else if(checkname===true&&checkmail===false&&checkfile===true){
-                // $('#myModalAll').modal('show');
+                $('#myModalEmail').modal('show');
                 return false;
         }else if(checkfile==false&&checkname===true&&checkmail===true) {
             if (arr[1] === undefined) {
@@ -226,29 +227,18 @@ $(document).ready(function () {
             }
         }else if(checkfile==true&&checkname===false&&checkmail===false){
 
-            // var fileSize = $('#upload-file-input')[0].files[0].size;
-            // if(fileSize<=3145728){
-            //     if(arr[1]  ==="pdf"){
-            //         console.log("PDF file")
-            //         $('#warning_file').empty();
-            //         return true;
-            //     }else if(arr[1]===undefined){
-            //         console.log("null")
-            //         $('#warning_file').empty();
-            //
-            //         return false;
-            //     }else if(arr[1]!==""){
-            //         console.log("Not PDF File")
-            //         $('#warning_file').append('Invalid file');
-            //         return false;
-            //     }
-            // }else{
-            //     $('#warning_size_files').append('File size is greater than 3MB');
-            //     return false;
-            // }
+            $('#myModalAll').modal('show');
+            return false;
 
+        }
+        else if(checkfile==false&&checkname===false&&checkmail===true){
 
-        }else if(checkname===true&&checkmail===true&&checkfile===true){
+            $('#myModalName').modal('show');
+            return false;
+
+        }
+
+        else if(checkname===true&&checkmail===true&&checkfile===true){
             $('#bnsend').prop('disabled', true);
             $('#loader').show();
 
