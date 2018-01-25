@@ -85,21 +85,32 @@ function checkPdfFile() {
     var checkPDF = $('#upload-file-input').val();
     var arr = checkPDF.split(".");
     $('#warning_file').empty();
+    $('#warning_size_files').empty();
+    // $('#bnsend').prop('disabled', false)
     if(checkPDF){
-        // var fileSize = $('#upload-file-input')[0].files[0].size;
+        var fileSize = $('#upload-file-input')[0].files[0].size;
         // if(fileSize<=3145728){
-            if(arr[1]  ==="pdf"){
+            if(arr[1]  ==="pdf"&&fileSize<=3145728){
                 console.log("PDF file")
                 $('#warning_file').empty();
+                // $('#bnsend').prop('disabled', false);
                 return true;
-            }else if(arr[1]===undefined){
-                console.log("null")
-                $('#warning_file').empty();
-
-                return false;
-            }else if(arr[1]!==""){
+            }
+            // else if(arr[1]===undefined){
+            //     console.log("null")
+            //     $('#warning_file').empty();
+            //
+            //     return false;
+            // }
+            else if(arr[1]!==""){
                 console.log("Not PDF File")
-                $('#warning_file').append('Invalid file');
+                // $('#warning_file').append('Invalid file');
+                // $('#warning_size_files').append('Size 3 Mb');
+                // $('#bnsend').prop('disabled', true);
+
+                $('#myModalsizefile').modal('show');
+                $('#upload-file-input').empty();
+
                 return false;
             }
         // }else{
@@ -148,6 +159,15 @@ $(document).ready(function () {
         // console.log("test")
         $('#loader').hide();
     });
+
+
+
+
+    $('#closesize').click(function(){
+        $('#upload-file-input').val('');
+
+    });
+
 
     $('#bnsend').click(function(){
 
@@ -204,26 +224,26 @@ $(document).ready(function () {
             }
         }else if(checkfile==true&&checkname===false&&checkmail===false){
 
-            var fileSize = $('#upload-file-input')[0].files[0].size;
-            if(fileSize<=3145728){
-                if(arr[1]  ==="pdf"){
-                    console.log("PDF file")
-                    $('#warning_file').empty();
-                    return true;
-                }else if(arr[1]===undefined){
-                    console.log("null")
-                    $('#warning_file').empty();
-
-                    return false;
-                }else if(arr[1]!==""){
-                    console.log("Not PDF File")
-                    $('#warning_file').append('Invalid file');
-                    return false;
-                }
-            }else{
-                $('#warning_size_files').append('File size is greater than 3MB');
-                return false;
-            }
+            // var fileSize = $('#upload-file-input')[0].files[0].size;
+            // if(fileSize<=3145728){
+            //     if(arr[1]  ==="pdf"){
+            //         console.log("PDF file")
+            //         $('#warning_file').empty();
+            //         return true;
+            //     }else if(arr[1]===undefined){
+            //         console.log("null")
+            //         $('#warning_file').empty();
+            //
+            //         return false;
+            //     }else if(arr[1]!==""){
+            //         console.log("Not PDF File")
+            //         $('#warning_file').append('Invalid file');
+            //         return false;
+            //     }
+            // }else{
+            //     $('#warning_size_files').append('File size is greater than 3MB');
+            //     return false;
+            // }
 
 
         }else if(checkname===true&&checkmail===true&&checkfile===true){
