@@ -296,22 +296,25 @@
                         <div class="form-group">
                             <div class="row">
                                 <div class="col-sm-12">
-                                     <div class="col-sm-2">
-                                         <label for="exampleInputFile">Resume : </label>
-                                     </div>
-                                    <div class="col-sm-10">
-                                          <!--<input type="file" class="form-control-file" id="inputfile" aria-describedby="fileHelp"/>-->
+                                    <div class="col-sm-2">
+                                        <label for="exampleInputFile">Resume : </label>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <!--<input type="file" class="form-control-file" id="inputfile" aria-describedby="fileHelp"/>-->
 
                                         <form id="upload-file-input">
                                             <!--<label for="upload-file-input">Upload your file:</label>-->
-                                                <input id="upload-file-input" type="file" name="file" accept="application/pdf" />
+                                            <input id="upload-file-input" type="file" name="file" accept="application/pdf" />
                                             <p id="warning_file" style="color: red;"></p>
 
                                             <br />
                                             <!--<span id="upload-file-message"></span>-->
                                         </form>
-                                          <small id="fileHelp" class="form-text text-muted"></small>
+                                        <small id="fileHelp" class="form-text text-muted"></small>
 
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <p id="warning_size_files" style="color: red;"></p>
                                     </div>
                                 </div>
                             </div>
@@ -337,7 +340,7 @@
                 </div>
                 <div class="modal-footer" style = "background: #ffbc00">
                     <button type="button" class="btn btn-danger" data-dismiss="modal" id="close_modal">Close</button>
-                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="bnsend">Send message</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="bnsend" >Send message</button>
                 </div>
             </div>
         </div>

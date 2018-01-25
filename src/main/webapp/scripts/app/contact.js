@@ -85,20 +85,36 @@ function checkPdfFile() {
     var checkPDF = $('#upload-file-input').val();
     var arr = checkPDF.split(".");
     $('#warning_file').empty();
-    if(arr[1]  ==="pdf"){
-            console.log("PDF file")
-        $('#warning_file').empty();
-            return true;
-    }else if(arr[1]===undefined){
-        console.log("null")
-        $('#warning_file').empty();
+    if(checkPDF){
+        // var fileSize = $('#upload-file-input')[0].files[0].size;
+        // if(fileSize<=3145728){
+            if(arr[1]  ==="pdf"){
+                console.log("PDF file")
+                $('#warning_file').empty();
+                return true;
+            }else if(arr[1]===undefined){
+                console.log("null")
+                $('#warning_file').empty();
 
-           return false;
-    }else if(arr[1]!==""){
-        console.log("Not PDF File")
-        $('#warning_file').append('Invalid file');
+                return false;
+            }else if(arr[1]!==""){
+                console.log("Not PDF File")
+                $('#warning_file').append('Invalid file');
+                return false;
+            }
+        // }else{
+        //     $('#warning_size_files').append('File size is greater than 3MB');
+        //     return false;
+        // }
+
+
+    }else{
+        console.log("Not File")
+        $('#warning_size_files').empty();
         return false;
+
     }
+
 
 }
 
@@ -122,6 +138,7 @@ $(document).ready(function () {
 
     $("#upload-file-input").on("change", function () {
       checkPdfFile();
+
     });
 
     $('#close_modal').click(function () {
@@ -137,6 +154,8 @@ $(document).ready(function () {
 
         var checkPDF = $('#upload-file-input').val();
         var arr = checkPDF.split(".");
+
+
 
 
         var dataname = $('#inputname').val();
@@ -175,15 +194,37 @@ $(document).ready(function () {
         }else if(checkname===true&&checkmail===false&&checkfile===true){
                 $('#myModalAll').modal('show');
                 return false;
-        }else if(checkfile==false&&checkname===true&&checkmail===true){
+        }else if(checkfile==false&&checkname===true&&checkmail===true) {
+            if (arr[1] === undefined) {
+                $('#myModalfile').modal('show');
+                return false;
+            } else if (arr[1] !== "") {
 
-               if(arr[1]===undefined){
-                   $('#myModalfile').modal('show');
-                   return false;
-               }else if(arr[1]!==""){
+                return false;
+            }
+        }else if(checkfile==true&&checkname===false&&checkmail===false){
 
-                   return false;
-               }
+            var fileSize = $('#upload-file-input')[0].files[0].size;
+            if(fileSize<=3145728){
+                if(arr[1]  ==="pdf"){
+                    console.log("PDF file")
+                    $('#warning_file').empty();
+                    return true;
+                }else if(arr[1]===undefined){
+                    console.log("null")
+                    $('#warning_file').empty();
+
+                    return false;
+                }else if(arr[1]!==""){
+                    console.log("Not PDF File")
+                    $('#warning_file').append('Invalid file');
+                    return false;
+                }
+            }else{
+                $('#warning_size_files').append('File size is greater than 3MB');
+                return false;
+            }
+
 
         }else if(checkname===true&&checkmail===true&&checkfile===true){
             $('#bnsend').prop('disabled', true);
@@ -214,6 +255,7 @@ $(document).ready(function () {
                     $('#upload-file-input').val(null);
                     $('#loader').hide();
                     $('#bnsend').prop('disabled', false);
+
 
                 },
 
