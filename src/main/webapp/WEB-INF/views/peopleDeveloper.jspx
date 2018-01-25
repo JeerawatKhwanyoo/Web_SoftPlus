@@ -10,6 +10,7 @@
     <script src="${peopleDeveloper_js}" type="text/javascript"><!-- required for FF3 and Opera --></script>
     <link href="https://fonts.googleapis.com/css?family=Maitree" rel="stylesheet"></link>
 
+    <c:set scope="request" var="label_PEOPLE_DEVELOPER"><spring:message code="label_PEOPLE_DEVELOPER"/></c:set>
 
     <head>
 
@@ -76,7 +77,7 @@
 
         <div class="row">
             <div class="col-sm-12">
-                <h2 style="text-align: center">PEOPLE DEVELOPER</h2>
+                <h2 style="text-align: center">${label_PEOPLE_DEVELOPER}</h2>
             </div>
         </div>
 

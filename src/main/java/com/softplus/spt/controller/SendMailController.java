@@ -104,7 +104,7 @@ public class SendMailController {
             String  Attach = content;
 
             //fill message
-            messageBodyPart.setText(name +" "+ email  +"    "+ msg,"UTF-8");
+            messageBodyPart.setText(name +" "+ email  +"    \n"+ msg,"UTF-8");
             LOGGER.info("set mail content");
 
             Multipart multipart = new MimeMultipart();

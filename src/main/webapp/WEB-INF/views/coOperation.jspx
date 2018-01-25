@@ -9,6 +9,8 @@
     <script src="${coOperation}" type="text/javascript"><!-- required for FF3 and Opera --></script>
     <link href="https://fonts.googleapis.com/css?family=Maitree" rel="stylesheet"></link>
 
+    <c:set scope="request" var="label_COOPERATIVE_EDUCATIONR"><spring:message code="label_COOPERATIVE_EDUCATIONR"/></c:set>
+
     <head>
 
         <style>
@@ -72,7 +74,7 @@
                     <div class="col-sm-8 col-sm-offset-2">
                         <div class="wow bounceInDown" data-wow-delay="0.4s">
                             <div class="section-heading">
-                                <h2>COOPERATIVE EDUCATION</h2>
+                                <h2>${label_COOPERATIVE_EDUCATIONR}</h2>
                                 <!--<i class="fa fa-2x fa-angle-down"></i>-->
 
                             </div>
