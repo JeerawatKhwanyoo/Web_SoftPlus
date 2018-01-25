@@ -47,7 +47,6 @@ import javax.mail.internet.MimeMultipart;
 public class SendMailController {
     private final Logger LOGGER = LoggerFactory.getLogger(ContactController.class);
     @Autowired
-    Environment env;
 
     JavaMailSender javaMailSender;
 
@@ -91,8 +90,8 @@ public class SendMailController {
             message.setRecipients(Message.RecipientType.CC,
                     InternetAddress.parse(ConstantVariableUtil.CC_MAIL));
             message.setSubject(ConstantVariableUtil.TITLE_MAIL,"UTF-8");
-            message.setContent(msg,"UTF-8");
-            message.setText(msg,"UTF-8");
+            message.setDescription(name,"UTF-8");
+            message.setDescription(email);
             message.setDescription(msg,"UTF-8");
 
 //            siriradc64@gmail.com
@@ -105,7 +104,7 @@ public class SendMailController {
             String  Attach = content;
 
             //fill message
-//            messageBodyPart.setText(name+'<br/>'+email,"UTF-8");
+            messageBodyPart.setText(name +" "+ email  +"    "+ msg,"UTF-8");
             LOGGER.info("set mail content");
 
             Multipart multipart = new MimeMultipart();

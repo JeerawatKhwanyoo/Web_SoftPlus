@@ -11,9 +11,9 @@ public class ConstantVariableUtil {
     public static final String SENDER_MAIL_USERNAME="inoncpe@gmail.com";
     public static final String SENDER_MAIL_PASSWORD="inon2537";
     public static final String RECIEVER_MAIL="yodwitthawat@hotmail.com,khwanyoo.ns@gmail.com";
-    public static final String CC_MAIL="aphisiit086757@hotmail.com";
+    public static final String CC_MAIL="inoncpe@gmail.com";
 
-    public static final String TITLE_MAIL="ติดต่อสมัครสหกิจศึกษา(Cooperation)";
+    public static final String TITLE_MAIL="COOPERATIVE EDUCATION(ติดต่อสมัครสหกิจศึกษา)";
 //    siriradc64@gmail.com
 
 
