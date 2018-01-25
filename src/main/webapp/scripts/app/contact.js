@@ -204,15 +204,17 @@ $(document).ready(function () {
         }else if(checkmail===true&&checkname===false&&checkfile===true){
             $('#myModalName').modal('show');
             return false;
-        }else if(checkname===true&&checkmail===false&&checkfile===false) {
+        }
+        else if(checkname===true&&checkmail===false&&checkfile===false) {
             if (dataemail === "") {
                 $('#myModalAll').modal('show');
             } else {
 
             }
             return false;
-        }else if(checkname===true&&checkmail===false&&checkfile===true){
-                $('#myModalAll').modal('show');
+        }
+        else if(checkname===true&&checkmail===false&&checkfile===true){
+                // $('#myModalAll').modal('show');
                 return false;
         }else if(checkfile==false&&checkname===true&&checkmail===true) {
             if (arr[1] === undefined) {
