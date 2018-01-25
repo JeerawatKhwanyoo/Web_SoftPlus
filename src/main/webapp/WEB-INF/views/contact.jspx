@@ -347,7 +347,7 @@
     </div>
 
 
-    <div id="myModalAll" class="modal fade">
+    <div id="myModalAll" class="modal fade" data-backdrop="static">
         <div class="modal-dialog" style="width:20%">
             <div class="modal-content">
                 <div class="modal-header">
@@ -364,7 +364,7 @@
     </div>
 
 
-    <div id="myModalName" class="modal fade">
+    <div id="myModalName" class="modal fade" data-backdrop="static">
         <div class="modal-dialog" style="width:20%">
             <div class="modal-content">
                 <div class="modal-header">
@@ -380,7 +380,7 @@
         </div>
     </div>
 
-    <div id="myModalEmail" class="modal fade">
+    <div id="myModalEmail" class="modal fade" data-backdrop="static">
         <div class="modal-dialog" style="width:20%">
             <div class="modal-content">
                 <div class="modal-header">
@@ -396,7 +396,7 @@
         </div>
     </div>
 
-    <div id="myModalEmails" class="modal fade">
+    <div id="myModalEmails" class="modal fade" data-backdrop="static">
         <div class="modal-dialog" style="width:20%">
             <div class="modal-content">
                 <div class="modal-header">
@@ -412,7 +412,7 @@
         </div>
     </div>
 
-    <div id="myModalEmails" class="modal fade">
+    <div id="myModalEmails" class="modal fade" data-backdrop="static">
         <div class="modal-dialog" style="width:20%">
             <div class="modal-content">
                 <div class="modal-header">
@@ -429,7 +429,7 @@
     </div>
 
 
-    <div id="myModalfile" class="modal fade">
+    <div id="myModalfile" class="modal fade" data-backdrop="static">
         <div class="modal-dialog" style="width:20%">
             <div class="modal-content">
                 <div class="modal-header">
