@@ -35,7 +35,8 @@
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
-                <div class="item active">
+                <div class="item active img-responsive">
+                asdasdas
                     <img src="/SPT/img/home_1.jpg" alt="home_1" style="width:100%;"></img>
                 </div>
 
@@ -43,8 +44,9 @@
                     <!--<img src="/SPT/img/home_2.jpg" alt="home_2" style="width:100%;"></img>-->
                 <!--</div>-->
 
-                <div class="item">
-                    <a href="contact" id="05"><img  src="/SPT/img/home_4.jpg" alt="home_3" style="width:100%;"></img></a>
+                <div class="item img-responsive" >
+                 <!--dddddddddddddddddd-->
+                    <a href="contact" id="05"><img  src="/SPT/img/home_4.jpg" alt="home_3" style="width:100%;" ></img></a>
                 </div>
             </div>
 

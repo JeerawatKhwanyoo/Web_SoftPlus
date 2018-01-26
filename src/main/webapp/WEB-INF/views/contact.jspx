@@ -22,6 +22,9 @@
     <c:set scope="request" var="label_EMAIL"><spring:message code="label_EMAIL"/></c:set>
     <c:set scope="request" var="label_EMAIL_data"><spring:message code="label_EMAIL_data"/></c:set>
     <c:set scope="request" var="label_QR_CODE_MAP"><spring:message code="label_QR_CODE_MAP"/></c:set>
+    <c:set scope="request" var="label_LOAD_MAP"><spring:message code="label_LOAD_MAP"/></c:set>
+    <c:set scope="request" var="label_COOP"><spring:message code="label_COOP"/></c:set>
+
 
 
 
@@ -154,6 +157,12 @@
             }
 
 
+            h4{
+                font-family: 'Maitree', serif;
+            }
+
+
+
             h5{
                 font-family: 'Maitree', serif;
             }
@@ -216,52 +225,77 @@
                 <div class="col-sm-12">
                     <div class = "col-sm-5">
                         <div class="map-wrapper">
-                            <div class="map-canvas" id="map-canvas">Loading map...</div>
+                            <div class="map-canvas" id="map-canvas">${label_LOAD_MAP}</div>
                         </div>
                     </div>
 
                         <div class="col-sm-offset-1 col-sm-6" id="address">
 
-                         <div class="address">
+                            <br/>
+                             <div class="col-sm-12">
+                                         <div class="row">
+                                                <span class="glyphicon glyphicon-map-marker">
+                                                    <b> ${label_ADDRESS}</b> ${label_ADDRESS_data1}
+                                                    <br/>
+                                                   <br/>
+                                                    ${label_ADDRESS_data2}
+                                                </span>
+                                         </div>
+                                         <br/>
+                                         <div class="row">
+                                                <span class="glyphicon glyphicon-phone-alt">
+                                                    <b> ${label_PHONE}</b> ${label_PHONE_NUMBER}
+                                               </span>
+                                         </div>
+                                         <br/>
+                                         <div class="row">
+                                            <span class="glyphicon glyphicon-envelope">
+                                                <b> ${label_EMAIL}</b> ${label_EMAIL_data}
+                                           </span>
+                                         </div>
 
-                            <br/>
-                                <span class="glyphicon glyphicon-map-marker">
-                                    <b> ${label_ADDRESS}</b> ${label_ADDRESS_data1}
-                                    <br/>
-                                   <br/>
-                                    ${label_ADDRESS_data2}
-                                </span>
-                            <br/>
-                            <br/>
-                            <span class="glyphicon glyphicon-phone-alt">
-                                <b> ${label_PHONE}</b> ${label_PHONE_NUMBER}
-                           </span>
-                            <br/>
-                            <br/>
-                            <span class="glyphicon glyphicon-envelope">
-                                <b> ${label_EMAIL}</b> ${label_EMAIL_data}
-                           </span>
-                         </div>
+                                            <!--<a href="https://www.google.co.th/maps/search/softplus+technology/@13.9681706,100.5991735,20z?hl=en">-->
+                                                <!--<img src="/SPT/img/QRCodeNeww.png" style = "width: 20%;height: 20%;"/>-->
+                                            <!--</a>-->
+                                        <br/>
 
-                            <br/>
-                                    <a href="https://www.google.co.th/maps/search/softplus+technology/@13.9681706,100.5991735,20z?hl=en">
-                                        <img src="/SPT/img/QRCodeNeww.png" style = "width: 20%;height: 20%;"/>
-                                    </a>
+                                        <div class="row">
+                                            <div class="col-sm-offset-2 col-sm-4" >
+                                                <a href="https://www.google.co.th/maps/search/softplus+technology/@13.9681706,100.5991735,20z?hl=en">
+                                                    <img src="/SPT/img/QRCodeNeww.png" style = "width:100%;height: 100%;" class="img-responsive"  />
+                                                </a>
+                                                <span class="glyphicon glyphicon-hand-up"><b>${label_QR_CODE_MAP}</b></span>
 
-                            <div class="row">
-                                <span class="glyphicon glyphicon-hand-up"><b>${label_QR_CODE_MAP}</b></span>
-                            </div>
-                            <br/>
-                            <div class="row">
-                                <div class="col-sm-offset-5 col-sm-2" >
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">${BUTTOM_CONTACT_COOP}</button>
-                                    <!--<h3>สนใจสมัครสหกิจศึกษา</h3>-->
-                                </div>
-                            </div>
+                                            </div>
+                                            <br/>
+                                            <br/>
 
 
+                                            <div class="col-sm-offset-1 col-sm-4" >
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">${BUTTOM_CONTACT_COOP}</button>
+                                                <div class="row">
+                                                    <br/>
+                                                     <img src="/SPT/img/arrowup.gif" style = "width:20%;height: 20%;"/>
+                                                    <img src="/SPT/img/arrowup.gif" style = "width:20%;height: 20%;" />
+                                                    <img src="/SPT/img/arrowup.gif" style = "width:20%;height: 20%;"/>
+                                                    <h5><b>${label_COOP}</b></h5>
+                                                </div>
 
-                            </div>
+
+                                            </div>
+                                        </div>
+
+                                            <!--<div class="row">-->
+                                                <!--<div class="col-sm-offset-2 col-sm-4" >-->
+                                                     <!--<span class="glyphicon glyphicon-hand-up"><b>${label_QR_CODE_MAP}</b></span>-->
+                                                <!--</div>-->
+                                                <!--<div class="col-sm-offset-1 col-sm-4" >-->
+                                                    <!--<h5><b>สหกิจศึกษา</b></h5>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                             </div>
+
+                        </div>
                         <!--</div>-->
                 </div>
             </div>
@@ -296,7 +330,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header" style = "background: #ffbc00">
-                    <h5 class="modal-title" id="exampleModalLabel" style = "color: black"><b>${MESSAGE_TO_SOFT_PLUS_TECHNOLOGY}</b></h5>
+                    <h3 class="modal-title" id="exampleModalLabel" style = "color: black"><b>${MESSAGE_TO_SOFT_PLUS_TECHNOLOGY}</b></h3>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     </button>
                 </div>
@@ -334,9 +368,9 @@
 
                         <div class="form-group">
                             <div class="row">
-                                <div class="col-sm-12">
+                                <div class="col-sx-12">
                                     <div class="col-sm-2">
-                                        <label for="exampleInputFile">${MESSAGE_RESUME}</label>
+                                        <label for="exampleInputFile">${MESSAGE_RESUME}<span style="color: red">*</span></label>
                                     </div>
                                     <div class="col-sm-4">
                                         <!--<input type="file" class="form-control-file" id="inputfile" aria-describedby="fileHelp"/>-->
@@ -386,11 +420,11 @@
     </div>
 
 
-    <div id="myModalAll" class="modal fade" data-backdrop="static">
-        <div class="modal-dialog" style="width:20%">
+    <div id="myModalAll" class="modal fade " data-backdrop="static">
+        <div class="modal-dialog modal-sm">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 style="font-size: 22px;"><span style="color: red">!!</span>${MESSAGE_WARNING}</h4>
+                        <h4 style="font-size: 22px;"><span style="color: red">!!</span>${MESSAGE_WARNING}</h4>
                 </div>
                 <div class="modal-body">
                     <h4 style="text-align: center;">${MESSAGE_NULL_INPUT_ALL}.</h4>
@@ -404,7 +438,7 @@
 
 
     <div id="myModalName" class="modal fade" data-backdrop="static">
-        <div class="modal-dialog" style="width:20%">
+        <div class="modal-dialog modal-sm">
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 style="font-size: 22px;"><span style="color: red">!!</span> ${MESSAGE_WARNING}</h4>
@@ -420,7 +454,7 @@
     </div>
 
     <div id="myModalEmail" class="modal fade" data-backdrop="static">
-        <div class="modal-dialog" style="width:20%">
+        <div class="modal-dialog modal-sm">
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 style="font-size: 22px;"><span style="color: red">!!</span> ${MESSAGE_WARNING}</h4>
@@ -436,7 +470,7 @@
     </div>
 
     <div id="myModalEmails" class="modal fade" data-backdrop="static">
-        <div class="modal-dialog" style="width:20%">
+        <div class="modal-dialog modal-sm">
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 style="font-size: 22px;"><span style="color: red">!!</span> ${MESSAGE_WARNING}</h4>
@@ -454,7 +488,7 @@
 
 
     <div id="myModalfile" class="modal fade" data-backdrop="static">
-        <div class="modal-dialog" style="width:20%">
+        <div class="modal-dialog modal-sm">
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 style="font-size: 22px;"><span style="color: red">!!</span> ${MESSAGE_WARNING}</h4>
@@ -470,13 +504,13 @@
     </div>
 
     <div id="myModalsizefile" class="modal fade" data-backdrop="static">
-        <div class="modal-dialog" style="width:20%">
+        <div class="modal-dialog modal-sm">
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 style="font-size: 22px;"><span style="color: red">!!</span> ${MESSAGE_WARNING}</h4>
                 </div>
                 <div class="modal-body">
-                    <h4 style="text-align: center;">${MESSAGE_ERROR_INPUT_FILE_SIZE}.</h4>
+                    <h5 style="text-align: center;">${MESSAGE_ERROR_INPUT_FILE_SIZE}.</h5>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" id="closesize" data-dismiss="modal">${BUTTOM_CLOSE}</button>
@@ -484,6 +518,7 @@
             </div>
         </div>
     </div>
+
 
 
 
