@@ -66,6 +66,17 @@ function checkName() {
     }
 }
 
+function checkTel() {
+    var y = $('#inputtel').val();
+    var checkTel = false;
+    if(y===''||y.trim()==""){
+        return false;
+    }else{
+
+        return true;
+    }
+}
+
 function checkMail() {
 
     var check = $("#inputemail").val();
@@ -101,27 +112,15 @@ function checkPdfFile() {
                 // $('#bnsend').prop('disabled', false);
                 return true;
             }
-            // else if(arr[1]===undefined){
-            //     console.log("null")
-            //     $('#warning_file').empty();
-            //
-            //     return false;
-            // }
+
             else if(arr[1]!==""){
                 console.log("Not PDF File")
-                // $('#warning_file').append('Invalid file');
-                // $('#warning_size_files').append('Size 3 Mb');
-                // $('#bnsend').prop('disabled', true);
 
                 $('#myModalsizefile').modal('show');
                 $('#upload-file-input').empty();
 
                 return false;
             }
-        // }else{
-        //     $('#warning_size_files').append('File size is greater than 3MB');
-        //     return false;
-        // }
 
 
     }else{
@@ -160,6 +159,7 @@ $(document).ready(function () {
     $('#close_modal').click(function () {
         $('#inputname').val('');
         $('#inputemail').val('');
+        $('#inputtel').val('');
         $('#inputmessage').val('');
         $('#upload-file-input').val('');
         // console.log("test")
@@ -200,20 +200,22 @@ $(document).ready(function () {
 
         var checkname = checkName();
         var checkmail = validateForm();
-        var checkfile = checkPdfFile()
+        var checkTel= checkTel();
+        var checkfile = checkPdfFile();
+
         // console.log(check);
         console.log(dataname);
         console.log(dataemail);
         console.log(datamessage);
 
-        if(checkname===false&&checkmail===false&&checkfile===false){
+        if(checkname===false&&checkmail===false&&checkfile===false&&checkTel===false){
             $('#myModalAll').modal('show');
             return false;
-        }else if(checkmail===true&&checkname===false&&checkfile===true){
+        }else if(checkname===false&&checkmail===true&&checkfile===true&&checkTel===true){
             $('#myModalName').modal('show');
             return false;
         }
-        else if(checkname===true&&checkmail===false&&checkfile===false) {
+        else if(checkname===true&&checkmail===false&&checkfile===false&&checkTel===true) {
             if (dataemail === "") {
                 $('#myModalAll').modal('show');
             } else {
@@ -221,10 +223,10 @@ $(document).ready(function () {
             }
             return false;
         }
-        else if(checkname===true&&checkmail===false&&checkfile===true){
+        else if(checkname===true&&checkmail===false&&checkfile===true&&checkTel===true){
                 $('#myModalEmail').modal('show');
                 return false;
-        }else if(checkfile==false&&checkname===true&&checkmail===true) {
+        }else if(checkfile==false&&checkname===true&&checkmail===true&&checkTel===true) {
             if (arr[1] === undefined) {
                 $('#myModalfile').modal('show');
                 return false;
@@ -232,20 +234,33 @@ $(document).ready(function () {
 
                 return false;
             }
-        }else if(checkfile==true&&checkname===false&&checkmail===false){
+        }else if(checkfile==true&&checkname===false&&checkmail===false&&checkTel===true){
 
             $('#myModalAll').modal('show');
             return false;
 
         }
-        else if(checkfile==false&&checkname===false&&checkmail===true){
+        else if(checkfile==false&&checkname===false&&checkmail===true&&checkTel===true){
 
-            $('#myModalName').modal('show');
+            $('#myModalAll').modal('show');
+            return false;
+
+        }
+        else if(checkfile==false&&checkname===true&&checkmail===false&&checkTel===false){
+
+            $('#myModalAll').modal('show');
             return false;
 
         }
 
-        else if(checkname===true&&checkmail===true&&checkfile===true){
+
+
+
+
+
+
+
+        else if(checkname&&checkmail&&checkfile&&checkTel){
             $('#bnsend').prop('disabled', true);
             $('#loader').show();
 
