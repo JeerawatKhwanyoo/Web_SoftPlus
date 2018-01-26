@@ -41,6 +41,7 @@ public class ContactController {
             MultipartFile multipathFile = multipartRequest.getFile("file");
             String username = multipartRequest.getParameter("name");
             String mail = multipartRequest.getParameter("email");
+            String tel = multipartRequest.getParameter("tel");
             String message = multipartRequest.getParameter("msg");
             byte[] bytes = multipathFile.getBytes();
             OutputStream os = new FileOutputStream("resume.pdf");
@@ -49,8 +50,8 @@ public class ContactController {
 
             os.close();
 
-            contactService.saveContact(username, mail, message);
-            new SendMailController().sendEmail(username,mail,message,"resume.pdf");
+            contactService.saveContact(username, mail,tel, message);
+            new SendMailController().sendEmail(username,mail,tel, message,"resume.pdf");
             return new ResponseEntity<String>(new JSONSerializer().deepSerialize("true"), headers, HttpStatus.OK);
 
         }catch(Exception e){
