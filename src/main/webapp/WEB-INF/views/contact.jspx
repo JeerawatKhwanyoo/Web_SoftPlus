@@ -41,6 +41,7 @@
     <c:set scope="request" var="MESSAGE_NULL_INPUT_NAME"><spring:message code="MESSAGE_NULL_INPUT_NAME"/></c:set>
     <c:set scope="request" var="MESSAGE_NULL_INPUT_EMAIL"><spring:message code="MESSAGE_NULL_INPUT_EMAIL"/></c:set>
     <c:set scope="request" var="MESSAGE_ERROR_INPUT_EMAIL"><spring:message code="MESSAGE_ERROR_INPUT_EMAIL"/></c:set>
+    <c:set scope="request" var="MESSAGE_NULL_INPUT_TEL"><spring:message code="MESSAGE_NULL_INPUT_TEL"/></c:set>
     <c:set scope="request" var="MESSAGE_NULL_INPUT_FILE"><spring:message code="MESSAGE_NULL_INPUT_FILE"/></c:set>
     <c:set scope="request" var="MESSAGE_ERROR_INPUT_FILE_SIZE"><spring:message code="MESSAGE_ERROR_INPUT_FILE_SIZE"/></c:set>
 
@@ -472,6 +473,22 @@
         </div>
     </div>
 
+
+    <div id="myModaltel" class="modal fade" data-backdrop="static">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 style="font-size: 22px;"><span style="color: red">!!</span> ${MESSAGE_WARNING}</h4>
+                </div>
+                <div class="modal-body">
+                    <h4 style="text-align: center;">${MESSAGE_NULL_INPUT_TEL}.</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">${BUTTOM_CLOSE}</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <div id="myModalfile" class="modal fade" data-backdrop="static">
