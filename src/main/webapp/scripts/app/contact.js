@@ -68,7 +68,7 @@ function checkName() {
 
 function checkTel() {
     var y = $('#inputtel').val();
-    var checkTel = false;
+    var checktel = false;
     if(y===''||y.trim()==""){
         return false;
     }else{
@@ -200,7 +200,7 @@ $(document).ready(function () {
 
         var checkname = checkName();
         var checkmail = validateForm();
-        var checkTel= checkTel();
+        var checktel= checkTel();
         var checkfile = checkPdfFile();
 
         // console.log(check);
@@ -208,59 +208,48 @@ $(document).ready(function () {
         console.log(dataemail);
         console.log(datamessage);
 
-        if(checkname===false&&checkmail===false&&checkfile===false&&checkTel===false){
-            $('#myModalAll').modal('show');
-            return false;
-        }else if(checkname===false&&checkmail===true&&checkfile===true&&checkTel===true){
-            $('#myModalName').modal('show');
-            return false;
-        }
-        else if(checkname===true&&checkmail===false&&checkfile===false&&checkTel===true) {
-            if (dataemail === "") {
-                $('#myModalAll').modal('show');
-            } else {
-
-            }
-            return false;
-        }
-        else if(checkname===true&&checkmail===false&&checkfile===true&&checkTel===true){
-                $('#myModalEmail').modal('show');
-                return false;
-        }else if(checkfile==false&&checkname===true&&checkmail===true&&checkTel===true) {
-            if (arr[1] === undefined) {
-                $('#myModalfile').modal('show');
-                return false;
-            } else if (arr[1] !== "") {
-
-                return false;
-            }
-        }else if(checkfile==true&&checkname===false&&checkmail===false&&checkTel===true){
-
-            $('#myModalAll').modal('show');
-            return false;
-
-        }
-        else if(checkfile==false&&checkname===false&&checkmail===true&&checkTel===true){
-
-            $('#myModalAll').modal('show');
-            return false;
-
-        }
-        else if(checkfile==false&&checkname===true&&checkmail===false&&checkTel===false){
-
-            $('#myModalAll').modal('show');
-            return false;
-
-        }
+        // if(checkname===false&&checkmail===false&&checkfile===false&&checktel===false){
+        //     $('#myModalAll').modal('show');
+        //     return false;
+        // }else if(checkname===false&&checkmail===true&&checkfile===true&&checktel===true){
+        //     $('#myModalName').modal('show');
+        //     return false;
+        // }
+        // else if(checkname===true&&checkmail===false&&checkfile===false&&checktel===true) {
+        //     if (dataemail === "") {
+        //         $('#myModalAll').modal('show');
+        //     } else {
+        //
+        //     }
+        //     return false;
+        // }
+        // else if(checkname===true&&checkmail===false&&checkfile===true&&checktel===true){
+        //         $('#myModalEmail').modal('show');
+        //         return false;
+        // }else if(checkfile==false&&checkname===true&&checkmail===true&&checktel===true) {
+        //     if (arr[1] === undefined) {
+        //         $('#myModalfile').modal('show');
+        //         return false;
+        //     } else if (arr[1] !== "") {
+        //
+        //         return false;
+        //     }
+        // }else if(checkfile==true&&checkname===false&&checkmail===false&&checktel===false){
+        //
+        //     $('#myModalAll').modal('show');
+        //     return false;
+        //
+        // }
+        // else if(checkfile==false&&checkname===false&&checkmail===true&&checktel===false){
+        //
+        //     $('#myModalAll').modal('show');
+        //     return false;
+        //
+        // }
 
 
 
-
-
-
-
-
-        else if(checkname&&checkmail&&checkfile&&checkTel){
+     if(checkname===true&&checkmail===true&&checktel===true&&checkfile===true){
             $('#bnsend').prop('disabled', true);
             $('#loader').show();
 
@@ -297,11 +286,35 @@ $(document).ready(function () {
 
                 async: false
             });
-        }
-        //
-        //     saveData();
-        // console.log(data);
-        // $('#loader').hide();
+        }else if(checkname===true&&checkmail===true&&checktel===true&&checkfile===false){
+            $('#myModalfile').modal('show');
+            return false;
+        }else if(checkname===true&&checkmail===true&&checktel===false&&checkfile===true){
+         $('#myModaltel').modal('show');
+         return false;
+         }else if(checkname===true&&checkmail===false&&checktel===true&&checkfile===true){
+             // $('#myModalEmail').modal('show');
+             // return false;
+
+         if (dataemail === "") {
+             $('#myModalAll').modal('show');
+         } else {
+
+         }
+         return false;
+     
+         }else if(checkname===false&&checkmail===true&&checktel===true&&checkfile===true){
+         $('#myModalName').modal('show');
+         return false;
+         }
+         else{
+         $('#myModalAll').modal('show');
+         return false;
+         }
+
+
+
+
 
     });
 
