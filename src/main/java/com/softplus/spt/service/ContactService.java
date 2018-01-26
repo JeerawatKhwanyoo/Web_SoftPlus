@@ -8,6 +8,6 @@ import java.util.List;
 public interface ContactService {
     Contact findId(Long id);
     List<Contact> findAll();
-    void saveContact(String username,String mail, String message);
+    void saveContact(String username,String mail, String tel,String message);
 
 }

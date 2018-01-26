@@ -50,10 +50,15 @@ function validateForm() {
     }
 }
 
+
+// if((int)input==32&&input.length<3){
+//     return;
+// }
+
 function checkName() {
     var y = $('#inputname').val();
     var checkname = false;
-    if(y===''){
+    if(y===''||y.trim()==""){
         return false;
     }else{
 
@@ -67,7 +72,7 @@ function checkMail() {
     var checkmail = validateForm();
     var mail;
 
-    if(check==="") {
+    if(check===""||check.trim()=="") {
         // console.log("Null")
         return false;
 
@@ -181,6 +186,7 @@ $(document).ready(function () {
 
         var dataname = $('#inputname').val();
         var dataemail = $('#inputemail').val();
+        var datatel = $('#inputtel').val();
         var datamessage = $('#inputmessage').val();
 
 
@@ -188,6 +194,7 @@ $(document).ready(function () {
         var formData = new FormData();
         formData.append("name",dataname);
         formData.append("email",dataemail);
+        formData.append("tel",datatel);
         formData.append("msg",datamessage);
         formData.append('file',file[0]);
 
@@ -263,6 +270,7 @@ $(document).ready(function () {
                     $('.dv-background').hide();
                     dataname = $('#inputname').val('');
                     dataemail = $('#inputemail').val('');
+                    datatel = $('#inputtel').val('');
                     datamessage = $('#inputmessage').val('');
                     $('#upload-file-input').val(null);
                     $('#loader').hide();

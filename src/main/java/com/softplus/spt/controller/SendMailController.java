@@ -54,7 +54,7 @@ public class SendMailController {
     private SimpleMailMessage simpleMailMessage;
 
 
-    public void sendEmail(String name,String email,String msg,String content) throws JSONException {
+    public void sendEmail(String name,String email,String tel ,String msg,String content) throws JSONException {
 
 
 
@@ -104,7 +104,7 @@ public class SendMailController {
             String  Attach = content;
 
             //fill message
-            messageBodyPart.setText(name +" "+ email  +"    \n"+ msg,"UTF-8");
+            messageBodyPart.setText(name +" "+ email  +" "+tel+"\n"+ msg,"UTF-8");
             LOGGER.info("set mail content");
 
             Multipart multipart = new MimeMultipart();

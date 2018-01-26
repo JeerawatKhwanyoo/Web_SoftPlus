@@ -31,6 +31,7 @@
     <c:set scope="request" var="MESSAGE_TO_SOFT_PLUS_TECHNOLOGY"><spring:message code="MESSAGE_TO_SOFT_PLUS_TECHNOLOGY"/></c:set>
     <c:set scope="request" var="MESSAGE_NAME"><spring:message code="MESSAGE_NAME"/></c:set>
     <c:set scope="request" var="MESSAGE_EMAIL"><spring:message code="MESSAGE_EMAIL"/></c:set>
+    <c:set scope="request" var="MESSAGE_PHONE"><spring:message code="MESSAGE_PHONE"/></c:set>
     <c:set scope="request" var="MESSAGE_RESUME"><spring:message code="MESSAGE_RESUME"/></c:set>
     <c:set scope="request" var="MESSAGE_MESSAGE"><spring:message code="MESSAGE_MESSAGE"/></c:set>
 
@@ -179,17 +180,7 @@
 
 
 
-
-
-         /*.address{*/
-             /*background: url(/SPT/img/location-iconNEW.png) no-repeat top center;*/
-            /**/
-         /*}*/
-
-
         </style>
-
-
 
 
 
@@ -202,7 +193,6 @@
 
         <div class="container">
 
-
             <div class="row">
                 <div class="col-sm-12">
                     <h2>${label_CONTACT}</h2>
@@ -210,14 +200,11 @@
             </div>
 
 
-
                 <div class="row">
                     <div class="col-sm-2 col-sm-offset-5">
                         <hr class="marginbot-50"/>
                     </div>
                 </div>
-
-
 
 
 
@@ -254,9 +241,7 @@
                                            </span>
                                          </div>
 
-                                            <!--<a href="https://www.google.co.th/maps/search/softplus+technology/@13.9681706,100.5991735,20z?hl=en">-->
-                                                <!--<img src="/SPT/img/QRCodeNeww.png" style = "width: 20%;height: 20%;"/>-->
-                                            <!--</a>-->
+
                                         <br/>
 
                                         <div class="row">
@@ -285,24 +270,13 @@
                                             </div>
                                         </div>
 
-                                            <!--<div class="row">-->
-                                                <!--<div class="col-sm-offset-2 col-sm-4" >-->
-                                                     <!--<span class="glyphicon glyphicon-hand-up"><b>${label_QR_CODE_MAP}</b></span>-->
-                                                <!--</div>-->
-                                                <!--<div class="col-sm-offset-1 col-sm-4" >-->
-                                                    <!--<h5><b>สหกิจศึกษา</b></h5>-->
-                                                <!--</div>-->
-                                            <!--</div>-->
+
                              </div>
 
                         </div>
                         <!--</div>-->
                 </div>
             </div>
-
-
-
-
 
 
 </div>
@@ -323,8 +297,6 @@
     </div>
 
     <!-- Modal -->
-
-
 
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
         <div class="modal-dialog" role="document">
@@ -360,9 +332,24 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-10">
                                 <p style="color: red" id="warning-mail"></p>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="col-sm-2">
+                                        <label for="phone" class="col-form-label">${MESSAGE_PHONE}<span style="color: red">*</span></label>
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" placeholder="Your phone..." id="inputtel"/>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -518,10 +505,6 @@
             </div>
         </div>
     </div>
-
-
-
-
 
 
 
