@@ -41,7 +41,7 @@
     <footer style="margin-top: -3px;position:fixed;bottom:0;width:100%; padding-top: 5px;  padding-right: 5px;">
         <div class="footer-copyright" >
             <div class="container-fluid" style="padding-top: 10px; padding-bottom: 0px;">
-                © Softplus Technology Co Ltd
+                © Softplus Technology Co., Ltd.
             </div>
 
 
@@ -50,7 +50,7 @@
             <!--<button type="button" class="btn btn-danger" id="bnen" alt="en" data-dismiss="modal">en</button>-->
             <!--<button type="button" class="btn btn-danger" id="bnth" alt="th" data-dismiss="modal">th</button>-->
 
-            <a href="#" id="bnth" alt="th"><span class="badge">ไทย</span></a> | <a href="#" id="bnen" alt="en"><span class="badge">English </span></a>
+            <!--<a href="#" id="bnth" alt="th"><span class="badge">ไทย</span></a> | <a href="#" id="bnen" alt="en"><span class="badge">English </span></a>-->
 
         </div>
     </footer>
