@@ -6,7 +6,9 @@
     <!--<script src="${header_js}" type="text/javascript">&lt;!&ndash; required for FF3 and Opera &ndash;&gt;</script>-->
     <spring:url value="/scripts/app/header.js" var="header_js" />
     <script src="${header_js}" type="text/javascript"><!-- required for FF3 and Opera --></script>
+    <link href="https://fonts.googleapis.com/css?family=Maitree" rel="stylesheet"></link>
 
+    <c:set scope="request" var="label_tab_home"><spring:message code="label_tab_home"/></c:set>
     <c:set scope="request" var="label_logo_spt"><spring:message code="label_logo_spt"/></c:set>
     <c:set scope="request" var="label_tab_our_company"><spring:message code="label_tab_our_company"/></c:set>
     <c:set scope="request" var="label_tab_people_dev"><spring:message code="label_tab_people_dev"/></c:set>
@@ -52,10 +54,14 @@
                 color: #ffffff;
                 font-size: 20px;
 
+
                 padding: 10px;
                 margin: 10px;
                 margin-right: 30px;
 
+            }
+            li{
+           font-family: 'Maitree', serif;
             }
 
             .navbar-right li a:hover{
@@ -137,16 +143,8 @@
 
         <div class="navbar-header" >
             <div class="col-sm-12" style="padding-top: 5px;">
-                <div class="col-sm-3" style="text-align: right" id="logo">
-                    <a ><img href="home" class="img hidden-xs hidden-sm"  src="/SPT/img/logo_spt.png" alt="Logo" style="width: 60%; height: 60%; text-align: right" ></img></a>
-                </div>
-                <div class="col-sm-7" id="softplus">
-                    <b>
-                        <a class="navbar-brand visible-xs" href="home"  id="01" style="text-align: right;">${label_logo_spt}</a>
-                        <a class="navbar-brand visible-sm" href="home" style="text-align: right;">${label_logo_spt}</a>
-                        <a class="navbar-brand visible-md" href="home"  style="text-align: right;">${label_logo_spt}</a>
-                        <a class="navbar-brand visible-lg" href="home"  style="text-align: right;">${label_logo_spt}</a>
-                    </b>
+                <div class="col-sm-3 " style="text-align: right" id="logo">
+                    <a ><img href="home" class="img hidden-xs hidden-sm"  src="/SPT/img/LOGO_SPT_HOME.png" alt="Logo" style="width: 190px; height:50px; text-align: right" ></img></a>
                 </div>
             </div>
 
@@ -173,10 +171,11 @@
 
         <b><div class="collapse navbar-collapse" id="myNavbar" style="text-align: center">
             <ul class="nav navbar-nav navbar-right" >
-                <li><a href="ourcompany" id="02">${label_tab_our_company}</a></li>
-                <li><a href="peopleDeveloper" id="03" >${label_tab_people_dev}</a></li>
-                <li><a href="coOperation" id="04" >${label_tab_co_operation}</a></li>
-                <li><a href="contact" id="05">${label_tab_contact}</a></li>
+                <li><a href="home" id="01" style="font-family: 'Maitree', serif;">${label_tab_home}</a></li>
+                <li><a href="ourcompany" id="02" style="font-family: 'Maitree', serif;">${label_tab_our_company}</a></li>
+                <li><a href="peopleDeveloper" id="03" style="font-family: 'Maitree', serif;">${label_tab_people_dev}</a></li>
+                <li><a href="coOperation" id="04" style="font-family: 'Maitree', serif;">${label_tab_co_operation}</a></li>
+                <li><a href="contact" id="05" style="font-family: 'Maitree', serif;">${label_tab_contact}</a></li>
 
             </ul>
         </div></b>

@@ -129,6 +129,12 @@
                 right:0;
 
             }
+            /*p{*/
+                /*font-family: 'Maitree', serif;*/
+                /*font-size: 16px;*/
+            /*}*/
+
+
             /*.well{*/
                 /*!*background: #f8ff7f;*!*/
 
@@ -514,7 +520,7 @@
                     <h4 style="font-size: 22px;"><span style="color: red">!!</span> ${MESSAGE_WARNING}</h4>
                 </div>
                 <div class="modal-body">
-                    <h5 style="text-align: center;">${MESSAGE_ERROR_INPUT_FILE_SIZE}.</h5>
+                    <h4 style="text-align: center;">${MESSAGE_ERROR_INPUT_FILE_SIZE}.</h4>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" id="closesize" data-dismiss="modal">${BUTTOM_CLOSE}</button>

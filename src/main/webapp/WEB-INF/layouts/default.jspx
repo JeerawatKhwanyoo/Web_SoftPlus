@@ -28,8 +28,7 @@
         <!--<div class="scroller">&lt;!&ndash; this is for emulating position fixed of the nav &ndash;&gt;-->
             <!--<div class="scroller-inner">-->
                 <tiles:insertAttribute name="body"/>
-            <!--</div>&lt;!&ndash; /scroller-inner &ndash;&gt;-->
-        <!--</div>&lt;!&ndash; /scroller &ndash;&gt;-->
+
 
     </div><!-- /pusher -->
 
