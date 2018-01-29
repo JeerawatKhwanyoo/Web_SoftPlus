@@ -69,9 +69,10 @@ function checkName() {
 function checkTel() {
     var y = $('#inputtel').val();
     var checktel = false;
+
     if(y===''||y.trim()==""){
         return false;
-    }else{
+    }else {
 
         return true;
     }
@@ -137,6 +138,24 @@ function checkPdfFile() {
 
 
 $(document).ready(function () {
+
+    // $("#inputtel").keydown(function(event) {
+    //     // Allow: backspace, delete, tab, escape, enter and .
+    //     if ( $.inArray(event.keyCode,[46,8,9,27,13,190]) !== -1 ||
+    //         // Allow: Ctrl+A
+    //         (event.keyCode == 65 && event.ctrlKey === true) ||
+    //         // Allow: home, end, left, right
+    //         (event.keyCode >= 35 && event.keyCode <= 39)) {
+    //         // let it happen, don't do anything
+    //         return;
+    //     }
+    //     else {
+    //         // Ensure that it is a number and stop the keypress
+    //         if (event.shiftKey || (event.keyCode < 48 || event.keyCode > 57) && (event.keyCode < 96 || event.keyCode > 105 )) {
+    //             event.preventDefault();
+    //         }
+    //     }
+    // });
 
 
     $('#loader').hide();
@@ -296,8 +315,8 @@ $(document).ready(function () {
              // $('#myModalEmail').modal('show');
              // return false;
 
-         if (dataemail === "") {
-             $('#myModalAll').modal('show');
+         if (dataemail===""||dataemail.trim()=="") {
+             $('#myModalEmail').modal('show');
          } else {
 
          }
