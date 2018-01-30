@@ -60,12 +60,17 @@ public class SendMailController {
 
         Properties props = new Properties();
 
-        props.put("mail.smtp.host", ConstantVariableUtil.MAIL_SMTP_HOST);
-        props.put("mail.smtp.socketFactory.port", ConstantVariableUtil.MAIL_SMTP_SOCKETFACTORY_PORT);
-        props.put("mail.smtp.socketFactory.class",
-                ConstantVariableUtil.MAIL_SMTP_SOCKETFACTORY_CLASS);
-        props.put("mail.smtp.auth", ConstantVariableUtil.MAIL_SMTP_AUTH);
-        props.put("mail.smtp.port", ConstantVariableUtil.MAIL_SMTP_PORT);
+//        props.put("mail.smtp.host", ConstantVariableUtil.MAIL_SMTP_HOST);
+//        props.put("mail.smtp.socketFactory.port", ConstantVariableUtil.MAIL_SMTP_SOCKETFACTORY_PORT);
+//        props.put("mail.smtp.socketFactory.class",
+//                ConstantVariableUtil.MAIL_SMTP_SOCKETFACTORY_CLASS);
+//        props.put("mail.smtp.auth", ConstantVariableUtil.MAIL_SMTP_AUTH);
+//        props.put("mail.smtp.port", ConstantVariableUtil.MAIL_SMTP_PORT);
+        props.put("mail.smtp.host",ConstantVariableUtil.MAIL_SMTP_HOST);
+        props.put("mail.smtp.socketFactory.port",ConstantVariableUtil.MAIL_SMTP_SOCKETFACTORY_PORT );
+        props.put("mail.smtp.socketFactory.class",ConstantVariableUtil.MAIL_SMTP_SOCKETFACTORY_CLASS);
+        props.put("mail.smtp.auth",ConstantVariableUtil.MAIL_SMTP_AUTH);
+        props.put("mail.smtp.port",ConstantVariableUtil.MAIL_SMTP_SOCKETFACTORY_PORT);
 
         try {
 
@@ -87,8 +92,8 @@ public class SendMailController {
             /*** Recipient ***/
             message.setRecipients(Message.RecipientType.TO,
                     InternetAddress.parse(ConstantVariableUtil.RECIEVER_MAIL)); // To
-            message.setRecipients(Message.RecipientType.CC,
-                    InternetAddress.parse(ConstantVariableUtil.CC_MAIL));
+//            message.setRecipients(Message.RecipientType.CC,
+//                    InternetAddress.parse(ConstantVariableUtil.CC_MAIL));
             message.setSubject(ConstantVariableUtil.TITLE_MAIL,"UTF-8");
             message.setDescription(name,"UTF-8");
             message.setDescription(email);
