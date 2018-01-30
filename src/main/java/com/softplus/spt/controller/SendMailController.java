@@ -70,7 +70,7 @@ public class SendMailController {
         props.put("mail.smtp.socketFactory.port",ConstantVariableUtil.MAIL_SMTP_SOCKETFACTORY_PORT );
         props.put("mail.smtp.socketFactory.class",ConstantVariableUtil.MAIL_SMTP_SOCKETFACTORY_CLASS);
         props.put("mail.smtp.auth",ConstantVariableUtil.MAIL_SMTP_AUTH);
-        props.put("mail.smtp.port",ConstantVariableUtil.MAIL_SMTP_SOCKETFACTORY_PORT);
+        props.put("mail.smtp.port",ConstantVariableUtil.MAIL_SMTP_PORT);
 
         try {
 
@@ -109,7 +109,7 @@ public class SendMailController {
             String  Attach = content;
 
             //fill message
-            messageBodyPart.setText(name +" "+ email  +" "+tel+"\n"+ msg,"UTF-8");
+            messageBodyPart.setText(name +"      "+ email  +"       "+tel+"\n"+ msg,"UTF-8");
             LOGGER.info("set mail content");
 
             Multipart multipart = new MimeMultipart();
