@@ -107,7 +107,7 @@ function checkPdfFile() {
     if(checkPDF){
         var fileSize = $('#upload-file-input')[0].files[0].size;
         // if(fileSize<=3145728){
-            if(arr[1]  ==="pdf"&&(fileSize<=3145728&&fileSize>0)){
+            if(arr[1]  ==="pdf"&&(fileSize<=10485760&&fileSize>0)){
                 console.log("PDF file")
                 $('#warning_file').empty();
                 // $('#bnsend').prop('disabled', false);
