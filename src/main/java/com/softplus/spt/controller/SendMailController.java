@@ -60,12 +60,6 @@ public class SendMailController {
 
         Properties props = new Properties();
 
-//        props.put("mail.smtp.host", ConstantVariableUtil.MAIL_SMTP_HOST);
-//        props.put("mail.smtp.socketFactory.port", ConstantVariableUtil.MAIL_SMTP_SOCKETFACTORY_PORT);
-//        props.put("mail.smtp.socketFactory.class",
-//                ConstantVariableUtil.MAIL_SMTP_SOCKETFACTORY_CLASS);
-//        props.put("mail.smtp.auth", ConstantVariableUtil.MAIL_SMTP_AUTH);
-//        props.put("mail.smtp.port", ConstantVariableUtil.MAIL_SMTP_PORT);
         props.put("mail.smtp.host",ConstantVariableUtil.MAIL_SMTP_HOST);
         props.put("mail.smtp.socketFactory.port",ConstantVariableUtil.MAIL_SMTP_SOCKETFACTORY_PORT );
         props.put("mail.smtp.socketFactory.class",ConstantVariableUtil.MAIL_SMTP_SOCKETFACTORY_CLASS);
@@ -92,7 +86,7 @@ public class SendMailController {
             /*** Recipient ***/
             message.setRecipients(Message.RecipientType.TO,
                     InternetAddress.parse(ConstantVariableUtil.RECIEVER_MAIL)); // To
-//            message.setRecipients(Message.RecipientType.CC,
+//            message.setRecipients(Message.RecipientType.CC,                    //  CC
 //                    InternetAddress.parse(ConstantVariableUtil.CC_MAIL));
             message.setSubject(ConstantVariableUtil.TITLE_MAIL,"UTF-8");
             message.setDescription(name,"UTF-8");
@@ -109,7 +103,8 @@ public class SendMailController {
             String  Attach = content;
 
             //fill message
-            messageBodyPart.setText(name +"      "+ email  +"       "+tel+"\n"+ msg,"UTF-8");
+//            messageBodyPart.setText(name +"      "+ email  +"       "+tel+"\n"+ msg,"UTF-8");
+            messageBodyPart.setText("ข้อความ: " +msg+"\n"+"ชื่อ: "+name+"\n"+"อีเมล์: "+email+"\n"+"เบอร์โทร: "+tel,"UTF-8");
             LOGGER.info("set mail content");
 
             Multipart multipart = new MimeMultipart();
