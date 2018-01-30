@@ -191,7 +191,7 @@
 
 
                                 <!--<p style = "text-align: left">►คุณสมบัติของนักศึกษาและข้อกำหนดอื่นๆ: (เช่น อุปกรณ์ หรือ เครื่องมือที่ต้องนำติดตัวไป หรือ-->
-                                    <!--สถานที่ปฏิบัติงานของนักศึกษา) เพศหญิง หรือเพศชาย (ผ่านการเกณฑ์ทหารหรือเรียน ร.ด. เท่านั้น)</p>-->
+                                <!--สถานที่ปฏิบัติงานของนักศึกษา) เพศหญิง หรือเพศชาย (ผ่านการเกณฑ์ทหารหรือเรียน ร.ด. เท่านั้น)</p>-->
                                 <!--<p style = "text-align: left">►ลักษณะงานที่นักศึกษาต้องปฏิบัติ: อาจเป็นงานโครงงาน งานวิจัย หรืองานประจำที่สอดคล้องกับสาขาวิชา</p>-->
                                 <!--<p style = "text-align: left"> ►งานประจำ : เขียนโปรแกรมด้วยภาษา Java, พัฒนาซอฟต์แวร์ และอื่นๆตามที่ได้รับมอบหมาย</p>-->
 
@@ -212,7 +212,7 @@
                                 <!--<p style = "text-align: left">► Self-motivated person.</p>-->
                                 <!--<p style = "text-align: left">► Good command in both written and spoken English</p>-->
                                 <!--<p style = "text-align: left">►คุณสมบัติของนักศึกษาและข้อกำหนดอื่นๆ: (เช่น อุปกรณ์ หรือ เครื่องมือที่ต้องนำติดตัวไป หรือ-->
-                                    <!--สถานที่ปฏิบัติงานของนักศึกษา) เพศหญิง หรือเพศชาย (ผ่านการเกณฑ์ทหารหรือเรียน ร.ด. เท่านั้น)</p>-->
+                                <!--สถานที่ปฏิบัติงานของนักศึกษา) เพศหญิง หรือเพศชาย (ผ่านการเกณฑ์ทหารหรือเรียน ร.ด. เท่านั้น)</p>-->
                                 <!--<p style = "text-align: left">►ลักษณะงานที่นักศึกษาต้องปฏิบัติ: อาจเป็นงานโครงาน งานวิจัย หรืองานประจำที่สอดคล้องกับสาขาวิชา</p>-->
                                 <!--<p style = "text-align: left"> ►งานประจำ : เขียนโปรแกรมด้วยภาษา Java, พัฒนาซอฟต์แวร์ และอื่นๆตามที่ได้รับมอบหมาย</p>-->
                                 <p style = "text-align: left">►คุณสมบัติพื้นฐานของนักศึกษา: มีความรู้พื้นฐานในภาษา PL/SQL</p>
@@ -243,211 +243,211 @@
             </div>
 
             <!--<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">-->
-                <!--<div class="modal-dialog" role="document">-->
-                    <!--<div class="modal-content">-->
-                        <!--<div class="modal-header" style = "background: #ffbc00">-->
-                            <!--<h3 class="modal-title" id="exampleModalLabel" style = "color: black"><b>${MESSAGE_TO_SOFT_PLUS_TECHNOLOGY}</b></h3>-->
-                            <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
-                            <!--</button>-->
-                        <!--</div>-->
-                        <!--<div class="modal-body">-->
-                            <!--<form id="upload-file-form">-->
-                                <!--<div class="form-group">-->
-                                    <!--<div class="row">-->
-                                        <!--<div class="col-sm-12">-->
-                                            <!--<div class="col-sm-2">-->
-                                                <!--<label for="name" class="col-form-label">${MESSAGE_NAME}<span style="color: red">*</span></label>-->
-                                            <!--</div>-->
-                                            <!--<div class="col-sm-10">-->
-                                                <!--<input type="text" class="form-control" placeholder="Your name..." id="inputname"/>-->
-                                            <!--</div>-->
-                                        <!--</div>-->
-                                    <!--</div>-->
-                                <!--</div>-->
-                                <!--<div class="form-group">-->
-                                    <!--<div class="row">-->
-                                        <!--<div class="col-sm-12">-->
-                                            <!--<div class="col-sm-2">-->
-                                                <!--<label for="email"  class="col-form-label" >${MESSAGE_EMAIL}<span style="color: red">*</span></label>-->
-                                            <!--</div>-->
-                                            <!--<div class="col-sm-10">-->
-                                                <!--<input type="text" class="form-control" placeholder="Your email..." id="inputemail"/>-->
-                                            <!--</div>-->
-                                        <!--</div>-->
-                                    <!--</div>-->
-                                <!--</div>-->
+            <!--<div class="modal-dialog" role="document">-->
+            <!--<div class="modal-content">-->
+            <!--<div class="modal-header" style = "background: #ffbc00">-->
+            <!--<h3 class="modal-title" id="exampleModalLabel" style = "color: black"><b>${MESSAGE_TO_SOFT_PLUS_TECHNOLOGY}</b></h3>-->
+            <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+            <!--</button>-->
+            <!--</div>-->
+            <!--<div class="modal-body">-->
+            <!--<form id="upload-file-form">-->
+            <!--<div class="form-group">-->
+            <!--<div class="row">-->
+            <!--<div class="col-sm-12">-->
+            <!--<div class="col-sm-2">-->
+            <!--<label for="name" class="col-form-label">${MESSAGE_NAME}<span style="color: red">*</span></label>-->
+            <!--</div>-->
+            <!--<div class="col-sm-10">-->
+            <!--<input type="text" class="form-control" placeholder="Your name..." id="inputname"/>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--<div class="form-group">-->
+            <!--<div class="row">-->
+            <!--<div class="col-sm-12">-->
+            <!--<div class="col-sm-2">-->
+            <!--<label for="email"  class="col-form-label" >${MESSAGE_EMAIL}<span style="color: red">*</span></label>-->
+            <!--</div>-->
+            <!--<div class="col-sm-10">-->
+            <!--<input type="text" class="form-control" placeholder="Your email..." id="inputemail"/>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
 
-                                <!--<div class="form-group">-->
-                                    <!--<div class="col-sm-offset-2 col-sm-10">-->
-                                        <!--<p style="color: red" id="warning-mail"></p>-->
-                                    <!--</div>-->
-                                <!--</div>-->
-
-
-                                <!--<div class="form-group">-->
-                                    <!--<div class="row">-->
-                                        <!--<div class="col-sm-12">-->
-                                            <!--<div class="col-sm-2">-->
-                                                <!--<label for="phone" class="col-form-label">${MESSAGE_PHONE}<span style="color: red">*</span></label>-->
-                                            <!--</div>-->
-                                            <!--<div class="col-sm-10">-->
-                                                <!--<input type="text" class="form-control" placeholder="Your phone..." id="inputtel"/>-->
-                                            <!--</div>-->
-                                        <!--</div>-->
-                                    <!--</div>-->
-                                <!--</div>-->
-
-                                <!--<div class="form-group">-->
-                                    <!--<div class="row">-->
-                                        <!--<div class="col-sm-12">-->
-                                            <!--<div class="col-sm-2">-->
-                                                <!--<label for="exampleInputFile">${MESSAGE_RESUME}<span style="color: red">*</span></label>-->
-                                            <!--</div>-->
-                                            <!--<div class="col-sm-4">-->
-                                                <!--&lt;!&ndash;<input type="file" class="form-control-file" id="inputfile" aria-describedby="fileHelp"/>&ndash;&gt;-->
-
-                                                <!--<form id="upload-file-input">-->
-                                                    <!--&lt;!&ndash;<label for="upload-file-input">Upload your file:</label>&ndash;&gt;-->
-                                                    <!--<input id="upload-file-input" type="file" name="file" accept="application/pdf" />-->
-                                                    <!--<p id="warning_file" style="color: red;"></p>-->
-
-                                                    <!--<br />-->
-                                                    <!--&lt;!&ndash;<span id="upload-file-message"></span>&ndash;&gt;-->
-                                                <!--</form>-->
-                                                <!--<small id="fileHelp" class="form-text text-muted"></small>-->
-
-                                            <!--</div>-->
-                                            <!--<div class="col-sm-5">-->
-                                                <!--<p id="warning_size_files" style="color: red;"></p>-->
-                                            <!--</div>-->
-                                        <!--</div>-->
-                                    <!--</div>-->
-                                <!--</div>-->
+            <!--<div class="form-group">-->
+            <!--<div class="col-sm-offset-2 col-sm-10">-->
+            <!--<p style="color: red" id="warning-mail"></p>-->
+            <!--</div>-->
+            <!--</div>-->
 
 
-                                <!--<div class="form-group">-->
-                                    <!--<div class="row">-->
-                                        <!--<div class="col-sm-12">-->
-                                            <!--<div class="col-sm-2">-->
-                                                <!--<label for="message-text" class="col-form-label">${MESSAGE_MESSAGE}</label>-->
-                                            <!--</div>-->
-                                            <!--<div class="col-sm-10">-->
+            <!--<div class="form-group">-->
+            <!--<div class="row">-->
+            <!--<div class="col-sm-12">-->
+            <!--<div class="col-sm-2">-->
+            <!--<label for="phone" class="col-form-label">${MESSAGE_PHONE}<span style="color: red">*</span></label>-->
+            <!--</div>-->
+            <!--<div class="col-sm-10">-->
+            <!--<input type="text" class="form-control" placeholder="Your phone..." id="inputtel"/>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
 
-                                        <!--<textarea  placeholder="Comments..." style="width: 100%" id="inputmessage"><jsp:text/>-->
-                                        <!--</textarea>-->
+            <!--<div class="form-group">-->
+            <!--<div class="row">-->
+            <!--<div class="col-sm-12">-->
+            <!--<div class="col-sm-2">-->
+            <!--<label for="exampleInputFile">${MESSAGE_RESUME}<span style="color: red">*</span></label>-->
+            <!--</div>-->
+            <!--<div class="col-sm-4">-->
+            <!--&lt;!&ndash;<input type="file" class="form-control-file" id="inputfile" aria-describedby="fileHelp"/>&ndash;&gt;-->
 
-                                            <!--</div>-->
-                                        <!--</div>-->
-                                    <!--</div>-->
-                                <!--</div>-->
-                            <!--</form>-->
-                        <!--</div>-->
-                        <!--<div class="modal-footer" style = "background: #ffbc00">-->
-                            <!--<button type="button" class="btn btn-danger" data-dismiss="modal" id="close_modal">${BUTTOM_CLOSE}</button>-->
-                            <!--<button type="button" class="btn btn-primary" data-dismiss="modal" id="bnsend" >${BUTTOM_SEND_MESSAGE}</button>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
+            <!--<form id="upload-file-input">-->
+            <!--&lt;!&ndash;<label for="upload-file-input">Upload your file:</label>&ndash;&gt;-->
+            <!--<input id="upload-file-input" type="file" name="file" accept="application/pdf" />-->
+            <!--<p id="warning_file" style="color: red;"></p>-->
+
+            <!--<br />-->
+            <!--&lt;!&ndash;<span id="upload-file-message"></span>&ndash;&gt;-->
+            <!--</form>-->
+            <!--<small id="fileHelp" class="form-text text-muted"></small>-->
+
+            <!--</div>-->
+            <!--<div class="col-sm-5">-->
+            <!--<p id="warning_size_files" style="color: red;"></p>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+
+
+            <!--<div class="form-group">-->
+            <!--<div class="row">-->
+            <!--<div class="col-sm-12">-->
+            <!--<div class="col-sm-2">-->
+            <!--<label for="message-text" class="col-form-label">${MESSAGE_MESSAGE}</label>-->
+            <!--</div>-->
+            <!--<div class="col-sm-10">-->
+
+            <!--<textarea  placeholder="Comments..." style="width: 100%" id="inputmessage"><jsp:text/>-->
+            <!--</textarea>-->
+
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</form>-->
+            <!--</div>-->
+            <!--<div class="modal-footer" style = "background: #ffbc00">-->
+            <!--<button type="button" class="btn btn-danger" data-dismiss="modal" id="close_modal">${BUTTOM_CLOSE}</button>-->
+            <!--<button type="button" class="btn btn-primary" data-dismiss="modal" id="bnsend" >${BUTTOM_SEND_MESSAGE}</button>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
             <!--</div>-->
 
 
             <!--<div id="myModalAll" class="modal fade " data-backdrop="static">-->
-                <!--<div class="modal-dialog modal-sm">-->
-                    <!--<div class="modal-content">-->
-                        <!--<div class="modal-header">-->
-                            <!--<h4 style="font-size: 22px;"><span style="color: red">!!</span>${MESSAGE_WARNING}</h4>-->
-                        <!--</div>-->
-                        <!--<div class="modal-body">-->
-                            <!--<h4 style="text-align: center;">${MESSAGE_NULL_INPUT_ALL}.</h4>-->
-                        <!--</div>-->
-                        <!--<div class="modal-footer">-->
-                            <!--<button type="button" class="btn btn-danger" data-dismiss="modal">${BUTTOM_CLOSE}</button>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
+            <!--<div class="modal-dialog modal-sm">-->
+            <!--<div class="modal-content">-->
+            <!--<div class="modal-header">-->
+            <!--<h4 style="font-size: 22px;"><span style="color: red">!!</span>${MESSAGE_WARNING}</h4>-->
+            <!--</div>-->
+            <!--<div class="modal-body">-->
+            <!--<h4 style="text-align: center;">${MESSAGE_NULL_INPUT_ALL}.</h4>-->
+            <!--</div>-->
+            <!--<div class="modal-footer">-->
+            <!--<button type="button" class="btn btn-danger" data-dismiss="modal">${BUTTOM_CLOSE}</button>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
             <!--</div>-->
 
 
             <!--<div id="myModalName" class="modal fade" data-backdrop="static">-->
-                <!--<div class="modal-dialog modal-sm">-->
-                    <!--<div class="modal-content">-->
-                        <!--<div class="modal-header">-->
-                            <!--<h4 style="font-size: 22px;"><span style="color: red">!!</span> ${MESSAGE_WARNING}</h4>-->
-                        <!--</div>-->
-                        <!--<div class="modal-body">-->
-                            <!--<h4 style="text-align: center;">${MESSAGE_NULL_INPUT_NAME}.</h4>-->
-                        <!--</div>-->
-                        <!--<div class="modal-footer">-->
-                            <!--<button type="button" class="btn btn-danger" data-dismiss="modal">${BUTTOM_CLOSE}</button>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
+            <!--<div class="modal-dialog modal-sm">-->
+            <!--<div class="modal-content">-->
+            <!--<div class="modal-header">-->
+            <!--<h4 style="font-size: 22px;"><span style="color: red">!!</span> ${MESSAGE_WARNING}</h4>-->
+            <!--</div>-->
+            <!--<div class="modal-body">-->
+            <!--<h4 style="text-align: center;">${MESSAGE_NULL_INPUT_NAME}.</h4>-->
+            <!--</div>-->
+            <!--<div class="modal-footer">-->
+            <!--<button type="button" class="btn btn-danger" data-dismiss="modal">${BUTTOM_CLOSE}</button>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
             <!--</div>-->
 
             <!--<div id="myModalEmail" class="modal fade" data-backdrop="static">-->
-                <!--<div class="modal-dialog modal-sm">-->
-                    <!--<div class="modal-content">-->
-                        <!--<div class="modal-header">-->
-                            <!--<h4 style="font-size: 22px;"><span style="color: red">!!</span> ${MESSAGE_WARNING}</h4>-->
-                        <!--</div>-->
-                        <!--<div class="modal-body">-->
-                            <!--<h4 style="text-align: center;">${MESSAGE_NULL_INPUT_EMAIL}.</h4>-->
-                        <!--</div>-->
-                        <!--<div class="modal-footer">-->
-                            <!--<button type="button" class="btn btn-danger" data-dismiss="modal">${BUTTOM_CLOSE}</button>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
+            <!--<div class="modal-dialog modal-sm">-->
+            <!--<div class="modal-content">-->
+            <!--<div class="modal-header">-->
+            <!--<h4 style="font-size: 22px;"><span style="color: red">!!</span> ${MESSAGE_WARNING}</h4>-->
+            <!--</div>-->
+            <!--<div class="modal-body">-->
+            <!--<h4 style="text-align: center;">${MESSAGE_NULL_INPUT_EMAIL}.</h4>-->
+            <!--</div>-->
+            <!--<div class="modal-footer">-->
+            <!--<button type="button" class="btn btn-danger" data-dismiss="modal">${BUTTOM_CLOSE}</button>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
             <!--</div>-->
 
             <!--<div id="myModalEmails" class="modal fade" data-backdrop="static">-->
-                <!--<div class="modal-dialog modal-sm">-->
-                    <!--<div class="modal-content">-->
-                        <!--<div class="modal-header">-->
-                            <!--<h4 style="font-size: 22px;"><span style="color: red">!!</span> ${MESSAGE_WARNING}</h4>-->
-                        <!--</div>-->
-                        <!--<div class="modal-body">-->
-                            <!--<h4 style="text-align: center;">${MESSAGE_ERROR_INPUT_EMAIL}.</h4>-->
-                        <!--</div>-->
-                        <!--<div class="modal-footer">-->
-                            <!--<button type="button" class="btn btn-danger" data-dismiss="modal">${BUTTOM_CLOSE}</button>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
+            <!--<div class="modal-dialog modal-sm">-->
+            <!--<div class="modal-content">-->
+            <!--<div class="modal-header">-->
+            <!--<h4 style="font-size: 22px;"><span style="color: red">!!</span> ${MESSAGE_WARNING}</h4>-->
+            <!--</div>-->
+            <!--<div class="modal-body">-->
+            <!--<h4 style="text-align: center;">${MESSAGE_ERROR_INPUT_EMAIL}.</h4>-->
+            <!--</div>-->
+            <!--<div class="modal-footer">-->
+            <!--<button type="button" class="btn btn-danger" data-dismiss="modal">${BUTTOM_CLOSE}</button>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
             <!--</div>-->
 
 
 
             <!--<div id="myModalfile" class="modal fade" data-backdrop="static">-->
-                <!--<div class="modal-dialog modal-sm">-->
-                    <!--<div class="modal-content">-->
-                        <!--<div class="modal-header">-->
-                            <!--<h4 style="font-size: 22px;"><span style="color: red">!!</span> ${MESSAGE_WARNING}</h4>-->
-                        <!--</div>-->
-                        <!--<div class="modal-body">-->
-                            <!--<h4 style="text-align: center;">${MESSAGE_NULL_INPUT_FILE}.</h4>-->
-                        <!--</div>-->
-                        <!--<div class="modal-footer">-->
-                            <!--<button type="button" class="btn btn-danger" data-dismiss="modal">${BUTTOM_CLOSE}</button>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
+            <!--<div class="modal-dialog modal-sm">-->
+            <!--<div class="modal-content">-->
+            <!--<div class="modal-header">-->
+            <!--<h4 style="font-size: 22px;"><span style="color: red">!!</span> ${MESSAGE_WARNING}</h4>-->
+            <!--</div>-->
+            <!--<div class="modal-body">-->
+            <!--<h4 style="text-align: center;">${MESSAGE_NULL_INPUT_FILE}.</h4>-->
+            <!--</div>-->
+            <!--<div class="modal-footer">-->
+            <!--<button type="button" class="btn btn-danger" data-dismiss="modal">${BUTTOM_CLOSE}</button>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
             <!--</div>-->
 
             <!--<div id="myModalsizefile" class="modal fade" data-backdrop="static">-->
-                <!--<div class="modal-dialog modal-sm">-->
-                    <!--<div class="modal-content">-->
-                        <!--<div class="modal-header">-->
-                            <!--<h4 style="font-size: 22px;"><span style="color: red">!!</span> ${MESSAGE_WARNING}</h4>-->
-                        <!--</div>-->
-                        <!--<div class="modal-body">-->
-                            <!--<h5 style="text-align: center;">${MESSAGE_ERROR_INPUT_FILE_SIZE}.</h5>-->
-                        <!--</div>-->
-                        <!--<div class="modal-footer">-->
-                            <!--<button type="button" class="btn btn-danger" id="closesize" data-dismiss="modal">${BUTTOM_CLOSE}</button>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
+            <!--<div class="modal-dialog modal-sm">-->
+            <!--<div class="modal-content">-->
+            <!--<div class="modal-header">-->
+            <!--<h4 style="font-size: 22px;"><span style="color: red">!!</span> ${MESSAGE_WARNING}</h4>-->
+            <!--</div>-->
+            <!--<div class="modal-body">-->
+            <!--<h5 style="text-align: center;">${MESSAGE_ERROR_INPUT_FILE_SIZE}.</h5>-->
+            <!--</div>-->
+            <!--<div class="modal-footer">-->
+            <!--<button type="button" class="btn btn-danger" id="closesize" data-dismiss="modal">${BUTTOM_CLOSE}</button>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
             <!--</div>-->
 
 
